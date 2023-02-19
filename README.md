@@ -39,6 +39,7 @@ Remember, use code **CodyWick13** or **Jack** at checkout for 10% off your order
 *These tables are provided above in an Excel format if it's easier to view. (Check the Board Assembly tab)*
 
 Here's a table of the components you'll need for the PCB. Mouser cart with everything that isn't salvaged from an original board is here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=be99fee590
+
 I included multiples of all the passives, since they're small, and a few parts that are prone to being broken. I also added tactile switches to the order, which you can remove if you want the regular OEM feel without clicky buttons. 
 
 Note: You do not need parts for the power board if you are using a GBPP, or Frogulator instead of my power board. I do not condone the use of Retrosix's Clean Power boards.
