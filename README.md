@@ -2,6 +2,8 @@
 
 This repo is for the beta testers!
 
+![image](https://user-images.githubusercontent.com/97127539/219991707-c83d69cf-715f-4326-8e82-952a977f087f.png)
+
 ## Disclaimer
 
 Before I go any further, please read this VERY important disclaimer, if you are thinking about making this yourself.
@@ -12,7 +14,44 @@ If you choose to build this project yourself, be warned - this is a considerably
 
 **DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! You will AT MINIMUM need to be proficient in drag soldering and hot air reflowing. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
 
-## High Level Assembly BOM (Bill of Materials)
+## Assembly Notes
+
+![image](https://user-images.githubusercontent.com/97127539/219990501-9b55efcf-ba02-4d8f-96f3-af7368b2cbde.png)
+
+1) Reset button capability
+- Bridge the solder pads labeled RST (near bottom left of CPU) to turn the rocker switch into a reset button when you press the switch inwards.
+
+![image](https://user-images.githubusercontent.com/97127539/219990759-c0daa3ab-4273-4972-9a4b-8c09f85be486.png)
+
+2) Power LED brightness
+- Change R9 to adjust the brightness (lower resistance, higher brightess; higher resistance, lower brightness)
+- Change R10 to adjust the brightness when at low power (will always be dimmer than at regular power)
+
+![image](https://user-images.githubusercontent.com/97127539/219990809-ff8819f6-2264-47de-baca-57e49f7fabfd.png)
+
+3) Q5 Screen Kit Control (OSD, brightness, palette)
+- Solder wires from the screen kit to the various pads on the top left corner of the board to control the screen kit
+- A, B, and SEL are for the OSD controls, and BAT is for measuring the battery level
+- "Up" and "Down" refer to the rocking direction on the rocker switch (where the contrast dial used to be) and are intended to be used with the touch-pads on the screen kit for controlling brightness and color palettes - desolder the touch pads, and in their place solder a wire on each to go from the kit to the MGBC board
+- Try to keep the touch-pad wires as close to the board as possible after assembly - if they are touching the shell, then you can accidentally activate the touch controls
+
+![image](https://user-images.githubusercontent.com/97127539/219991227-96a3e537-2404-4101-9735-b8606fba0f43.png)
+
+Here is an example image from the DMGC project to give you an idea.
+
+![image](https://user-images.githubusercontent.com/97127539/219991285-62322c20-a4b8-4ee3-8df7-6642a62ff0f1.png)
+
+4) On the power board, make sure you short R2 with solder, and keep R3 depopulated. R2 is circled in red, R3 is circled in blue.
+
+![image](https://user-images.githubusercontent.com/97127539/219991414-bc774b71-1174-4a31-b891-569e2c6f3b34.png)
+
+5) If adding tactile switches, make note that start and select are rotated 90 degrees compared to the other buttons.
+
+![image](https://user-images.githubusercontent.com/97127539/219991535-fd780568-689e-4bf6-9d48-6ef12466366d.png)
+
+6) If you are adding a lipo with the GBPP, **REMOVE EM7**. (I haven't tested this yet.... so do so at your OWN RISK).
+
+## High Level Assembly Bill of Materials (BOM)
 
 You will need at least **one donor GBC** for this project. No Game Boy Pocket is required, unless you want to reuse OEM parts.
 
@@ -28,13 +67,14 @@ Remember, use code **CodyWick13** or **Jack** at checkout for 10% off your order
   - Example: https://retrogamerepairshop.com/collections/gbp-lenses-1
 - **Screen Kit**: This is the important one. You *NEED* this specific type of screen - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido (you cannot use the lens or any shell included in this kit). Image below of what to look for. Laminated ones are not compatible.
   - https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228
+  - https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-osd-ips-kit-with-color-changing-logo?variant=41819042185388 (you can disable the colored logo, not like you can use it for this mod anyway)
   - https://www.aliexpress.us/item/3256804561453158.html
   - https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido
   - Other AliExpress or eBay shops (watch out for scams)
 
 ![image](https://user-images.githubusercontent.com/97127539/219914419-9598df9f-57f9-4181-9b5b-c7bccd6a1209.png)
 
-## PCB BOM
+## PCB Bill of Materials
 
 *These tables are provided above in an Excel format if it's easier to view. (Check the Board Assembly tab)*
 
