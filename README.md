@@ -59,7 +59,7 @@ Here is an example image from the DMGC project to give you an idea.
 
 You will need at least **one donor GBC** for this project. No Game Boy Pocket is required, unless you want to reuse OEM parts.
 
-Remember, use code **CodyWick13** or **Jack** at checkout for 10% off your order at RGRS!
+Remember, use code **CodyWick13** or **JackV** at checkout for 10% off your order at RGRS!
 
 - **Shell**: Get the Funnyplaying "IPS Ready" ones if you don't want to trim anything. If you don't, then you're on your own for how to prepare it - generally, you can follow guides for preparing a Pocket for an IPS screen kit.
   - Example: https://retrogamerepairshop.com/collections/gbp-lenses/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut
