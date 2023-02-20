@@ -51,6 +51,10 @@ Here is an example image from the DMGC project to give you an idea.
 
 6) If you are adding a lipo with the GBPP, **REMOVE EM7**. (I haven't tested this yet.... so do so at your OWN RISK).
 
+7) After you've assembled the PCBs, I suggest you test the output of the regulator board to make sure you are getting 5V out of the output pin *before* connecting it all to the main PCB. So, what you can do is just use wires instead of closer standoffs, and do not wire up the 5V output to the main board (5V output circled in red in the image below). Once you've checked that 5V is being output, then I would go ahead and solder the regulator board on properly.
+
+![image](https://user-images.githubusercontent.com/97127539/220013209-31ed1b23-bfa9-404d-90dc-a969d6078904.png)
+
 ## High Level Assembly Bill of Materials (BOM)
 
 You will need at least **one donor GBC** for this project. No Game Boy Pocket is required, unless you want to reuse OEM parts.
