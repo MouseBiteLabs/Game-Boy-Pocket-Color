@@ -82,7 +82,7 @@ Remember, use code **CodyWick13** or **JackV** at checkout for 10% off your orde
 
 *These tables are provided above in an Excel format if it's easier to view. (Check the Board Assembly tab)*
 
-Here's a table of the components you'll need for the PCB. Mouser cart with everything that isn't salvaged from an original board is here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=be99fee590
+Here's a table of the components you'll need for the PCB. Mouser cart with everything that isn't salvaged from an original board is here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=1970a339d8
 
 I included multiples of all the passives, since they're small, and a few parts that are prone to being broken. I also added tactile switches to the order, which you can remove if you want the regular OEM feel without clicky buttons. 
 
