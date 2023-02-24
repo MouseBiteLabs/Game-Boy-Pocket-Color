@@ -69,7 +69,9 @@ Remember, use code **CodyWick13** or **JackV** at checkout for 10% off your orde
   - Example: https://retrogamerepairshop.com/collections/gbp-buttons-1/products/game-boy-pocket-high-quality-conductive-pads
 - **Lens**: Make sure you get an "IPS Lens" as the viewing area is larger than the OEM one.
   - Example: https://retrogamerepairshop.com/collections/gbp-lenses-1
-- **Screen Kit**: This is the important one. You *NEED* this specific type of screen - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido (you cannot use the lens or any shell included in this kit). Image below of what to look for. Laminated ones are not compatible.
+- **Battery contact terminals**: If you're only using a donor Game Boy Color, you'll also need a set of Game Boy Pocket battery contact terminals.
+  - Example: https://retrogamerepairshop.com/products/gbp-game-boy-pocket-high-quality-replacement-battery-contact-terminals
+- **Screen Kit**: This is the important one. You _NEED_ this specific type of screen - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido (you cannot use the lens or any shell included in this kit). Image below of what to look for. Laminated ones are not compatible.
   - https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228
   - https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-osd-ips-kit-with-color-changing-logo?variant=41819042185388 (you can disable the colored logo, not like you can use it for this mod anyway)
   - https://www.aliexpress.us/item/3256804561453158.html
