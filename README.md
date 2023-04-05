@@ -55,6 +55,10 @@ Here is an example image from the DMGC project to give you an idea.
 
 ![image](https://user-images.githubusercontent.com/97127539/220013209-31ed1b23-bfa9-404d-90dc-a969d6078904.png)
 
+## Compatibility with Other Mods
+
+[watch this space]
+
 ## High Level Assembly Bill of Materials (BOM)
 
 You will need at least **one donor GBC** for this project. No Game Boy Pocket is required, unless you want to reuse OEM parts.
