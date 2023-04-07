@@ -1,8 +1,21 @@
 # Game Boy Pocket Color (MGBC-MBL-01)
 
-This repo is for the beta testers!
+This repo is currently for the beta testers! Things are still generally unfinished here.
 
 ![image](https://user-images.githubusercontent.com/97127539/219991707-c83d69cf-715f-4326-8e82-952a977f087f.png)
+
+My <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color">DMGC project</a> put a Game Boy Color put into an original Game Boy shell. But then I said, "Hey! This is neat, but I would rather it be small and cramped and have shorter battery life!" Enter the MGBC, or Pocket Color - a Game Boy Pocket (model name MGB) with the guts of a Game Boy Color (GBC). The PCB here is an original creation with some new features, though the concept and implementation of the "MGBC" or "Pocket Color" has been around for a while! Here are the project goals:
+
+- A Game Boy Pocket aesthetic, using the original Game Boy Pocket shell and interfaces (link port, volume wheel, power switch, etc.), but with the capability of playing both Game Boy and Game Boy Color games.
+- A nice, large IPS screen – the GBC Q5 XL IPS Backlight with OSD kit – with brightness and color palette control via the "navigation switch" housed where the contrast wheel used to be. (I will refer to the PCB attached to the Q5 screen as the “Q5 board”)
+- A modernized, efficient switch mode power supply that can run off 2x AAA batteries or input from the DC jack, just like the original MGB. Testing shows that playing with NiMH AAA batteries can yield about 3.5 hours of gameplay at normal settings.
+- Louder, cleaner sound through a modern audio amplifier.
+- The option for tactile switches for the face buttons - like the GBA SP.
+- No externally viewable case modifications.
+
+The MGBC-MBL-01 requires a power board, located at the same bottom corner as the Game Boy Pocket. I have made the <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a> to accompany this project, though there are other boards out there that are compatible! Check the compatibility list further down.
+
+All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder.
 
 ## Disclaimer
 
@@ -12,7 +25,21 @@ I made this project first and foremost for my own purposes. Nearly all of the fe
 
 If you choose to build this project yourself, be warned - this is a considerably advanced, and expensive build. You must be comfortable with the fact that you may lose or damage expensive components. You are 100% liable for any damage done to your property or yourself. I am not responsible for any damage or loss of property incurred while attempting this project, or after completion of the project - you alone accept all risk. While I am confident in this design, I cannot claim full compatibility with every system configuration. And there may be latent issues that have yet to crop up. If you see anything I may have missed, or some dubious design choice, feel free to ask questions or comment as such - feedback is appreciated, corrections are welcome. You accept all risks and costs associated to this build if you choose to attempt it.
 
+![image](https://user-images.githubusercontent.com/97127539/230615632-93c3e6fc-b554-4ee2-8f35-8e44d3867af7.png)
+
 **DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! You will AT MINIMUM need to be proficient in drag soldering and hot air reflowing. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
+
+## Board Characteristics
+
+The zipped folder contains all the gerber files for this board. 
+
+-	Layers: 2
+-	Thickness: 1 mm
+-	Surface Finish: ENIG or HASL
+-   **NOTE: When ordering PCBs, add this note to the order: "The file milling.gbr contains outlines for plated slots. Please add plated slots on the PCB according to this layer."**
+
+*HASL will work, but will potentially be more difficult for soldering fine-pitch parts like the CPU and FFC connector. 
+ENIG is required for reliable button press detection; you can use HASL if you are using tactile switches.*
 
 ## Assembly Notes
 
