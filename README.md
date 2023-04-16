@@ -29,17 +29,55 @@ If you choose to build this project yourself, be warned - this is a considerably
 
 **DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! You will AT MINIMUM need to be proficient in drag soldering and hot air reflowing. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
 
-## Board Characteristics
+## Bill of Materials (BOM)
 
-The zipped folder contains all the gerber files for this board. 
+### Brand New Electronic Parts
 
--	Layers: 2
--	Thickness: 1 mm
--	Surface Finish: ENIG or HASL
--   **NOTE: When ordering PCBs, add this note to the order: "The file milling.gbr contains outlines for plated slots. Please add plated slots on the PCB according to this layer."**
+The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the link sprovided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates. Double check to see if any parts are missing, and ocnsider ordering multipels of some parts. Also, there are some parts you may want to remove (like the tactile switches).
 
-*HASL will work, but will potentially be more difficult for soldering fine-pitch parts like the CPU and FFC connector. 
-ENIG is required for reliable button press detection; you can use HASL if you are using tactile switches.*
+**If a part is backordered, or out of stock** - check the Excel file, or the BOMs listed at the bottom of each board's folder in this repo. There may be alternate part options. You can also check for stock at places like Digikey. And you can always use Octopart.com to help find in-stock parts at other websites. I can't maintain the cart for every out-of-stock part, so please do some research :)
+
+### Game Boy Electronic Parts
+
+There are a handful of parts that I have not located aftermarket substitutes for, and will therefore necessitate an original Game Boy console to salvage from.
+
+- The following parts from an original Game Boy Color console
+  -	U1 - CGB CPU (all revisions *except* REV E, which is *incompatible*)
+  - X1 – 8.388 MHz crystal oscillator
+- The following parts from an original Game Boy Color **OR** Game Boy Pocket console
+  -	P1 – Cartridge connector
+  -	P5 - Headphone jack
+
+The following parts can be salvaged from a Game Boy, but aftermarket options exist:
+
+  - U2 - LH52256CVTXIZ; alternate: https://mou.sr/3f8G0Mi
+  - EM10; alternate: https://mou.sr/3FiMvXw
+  -	VR1 – Volume dial
+  -	SW1 – Power switch
+  -	P3 - Link port
+  -	P4 - DC jack
+
+### External Build Parts
+
+The following is the high-level BOM for my specific build pictured above. Note that parts that deviate from the ones listed here (like different shell designs) might necessitate different fitment modifications, or end up being incompatible. 
+
+-	<a href="https://retrogamerepairshop.com/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228">GBC Q5 XL IPS Backlight with OSD</a>
+-	<a href="https://retrogamerepairshop.com/collections/gbp-lenses-1/products/funnyplaying-game-boy-pocket-ips-retro-pixel-mod-led-hole-glass-screen-lens?variant=37635319988396">FunnyPlaying Game Boy Pocket IPS Retro Pixel Mod LED Hole Glass Screen Lens</a>
+-	<a href="https://retrogamerepairshop.com/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut?pr_prod_strat=copurchase&pr_rec_id=d8b0186ad&pr_rec_pid=6280907751596&pr_ref_pid=6115075391660&pr_seq=uniform">FunnyPlaying Game Boy Pocket IPS Backlight Ready Shell Housing No Cut</a>
+- <a href="https://retrogamerepairshop.com/collections/gbp-buttons-1/products/funnyplaying-game-boy-custom-pocket-buttons?variant=41432879169708">FunnyPlaying Game Boy Pocket Custom Buttons</a>
+- <a href="https://retrogamerepairshop.com/collections/gbp-buttons-1/products/funnyplaying-game-boy-pocket-silicone-button-contact-pad-membranes?variant=40593166401708">FunnyPlaying Game Boy Pocket Silicone Button Contact Pad Membranes
+- <a href="https://retrogamerepairshop.com/collections/gbp-audio/products/funnyplaying-clear-game-boy-color-speaker?variant=37728953761964">FunnyPlaying Clear Game Boy Color & Pocket Speaker</a>
+
+<b>Buying from RGRS? Consider helping out some cool people with these referral links:</b>
+- <a href="https://retrogamerepairshop.com/?ref=ltyD2rUX">CodyWick</a>
+- <a href="https://retrogamerepairshop.com/?ref=HSj4v5OO">JackV</a>
+
+<b>Or use one of these discount codes at checkout:</b>
+- Nataliethenerd
+- B23N
+- Tito
+
+Note that the IPS kit I have listed is the *easiest* IPS kit to use that is compatible with this build. It includes an image centering feature, so you don't need to fiddle with centering it manually in the shell. Other kits likely would not center nicely in the DMG shell! <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-2-6-ips-high-brightness-drop-in-backlight-lcd-kit?variant=41398632251564">This kit works electrically, but requires you to center the image yourself.</a> If you end up making some sort of 3D-printed bracket to support this screen, feel free to share it here.
 
 ## Assembly Notes
 
