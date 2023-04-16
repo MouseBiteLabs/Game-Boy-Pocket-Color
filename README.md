@@ -79,6 +79,10 @@ The following is the high-level BOM for my specific build pictured above. Note t
 
 Note that the IPS kit I have listed is the *easiest* IPS kit to use that is compatible with this build. It includes an image centering feature, so you don't need to fiddle with centering it manually in the shell. Other kits likely would not center nicely in the DMG shell! <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-2-6-ips-high-brightness-drop-in-backlight-lcd-kit?variant=41398632251564">This kit works electrically, but requires you to center the image yourself.</a> If you end up making some sort of 3D-printed bracket to support this screen, feel free to share it here.
 
+### Circuit Boards
+  
+Blah. Mention U5.
+
 ## Assembly Notes
 
 ![image](https://user-images.githubusercontent.com/97127539/219990501-9b55efcf-ba02-4d8f-96f3-af7368b2cbde.png)
@@ -147,6 +151,51 @@ Remember, use code **CodyWick** or **JackV** at checkout for 10% off your order 
 
 ![image](https://user-images.githubusercontent.com/97127539/219914419-9598df9f-57f9-4181-9b5b-c7bccd6a1209.png)
 
+## Auxilliary Controls
+### Q5 XL IPS Backlight with OSD
+-	Select + A + B: Open the OSD menu
+-	Select + A: Enter
+-	Select + B: Exit
+-	A: Increase
+-	B: Decrease
+
+### Navigation Switch
+-	Rock up: Advance screen brightness setting
+-	Rock up/Hold: Toggle on-screen battery indicator
+-	Rock down: Advance screen color pallete setting
+-	Rock down/Hold: Toggle on-screen pixel grid
+-	Push in: System reset
+  
+## Power Draw Measurements
+For these estimates, battery life is calculated using two eneloop pro NiMH AAS batteries (total of ~1860 mWh). Keep in mind that these are very rough estimates. I tried to be conservative in the power draw measurements, so hopefully these numbers represent a *mostly* worst case. Actual playtime *will* vary due to a variety of factors - changes in efficiency and performance as the battery voltage changes, differences in game audio, etc.
+
+| Test Criteria | Power Draw | Estimated Battery Life |
+| ------------- | ------------- | ------------- |
+| IPS max brightness, speaker volume 100%, Everdrive X5	| mW | hr |
+| IPS max brightness, speaker volume 100%, original cartridge | mW | hr |
+| IPS med brightness, headphones, Everdrive X5	| mW	| hr |
+| IPS med brightness, speaker volume 100%, original cartridge | mW	| hr |
+| IPS min brightness, headphones, original cartridge	| mW	| hr |
+
+## Audio Recordings and Spectrum
+I mentioned the sound of the DMGC is "warmer" than an original GBC - it's bassier with less buzzing background noise (owing mostly to the modernized power supply). I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the DMGC. I also took some recordings of the pro-sound output as well - it's even cleaner than from the amplifier. I'm not an audiophile, but I'm pretty sure the DMGC all-around sounds nicer, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
+
+### Original GBC Audio
+
+https://user-images.githubusercontent.com/97127539/180215249-4b21aca1-a9fd-430a-a870-95bf4837e4da.mp4
+
+### MGBC Audio
+
+[audio]
+
+### Original GBC Audio Spectrum
+
+![image](https://user-images.githubusercontent.com/97127539/180213625-09bf0430-d7a2-47d9-acbe-a77910de87cb.png)
+
+### MGBC Audio Spectrum
+
+[image]
+  
 ## PCB Bill of Materials
 
 *These tables are provided above in an Excel format if it's easier to view. (Check the Board Assembly tab)*
