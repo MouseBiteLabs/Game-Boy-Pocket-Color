@@ -4,9 +4,7 @@ This write-up serves as a technical explainer document for the MGBC project. I w
 
 ## Power Supply
 
-![image](https://user-images.githubusercontent.com/97127539/229975519-7c683c2e-7e78-4ae7-a2a1-f52ae1a83fd0.png)
-
-^^^ UPDATE SCHEMATIC
+![image](https://user-images.githubusercontent.com/97127539/232262379-b7438268-40c1-4e26-ada2-07371bb3e060.png)
 
 (I know the symbols for the fuses and filters are incorrect. I needed an 0603 package for the board and was too lazy to assign the parts the correct symbols. But I guess technically… they are all resistors in some form.)
 
@@ -20,9 +18,7 @@ This write-up serves as a technical explainer document for the MGBC project. I w
 
 ## Power LED Indicator
 
-![image](https://user-images.githubusercontent.com/97127539/229975554-8678b3cf-0266-4adb-ac3a-21353d899c0b.png)
-
-^^ UPDATE SCHEMATIC, CHOOSE NEW R5/R8 VALUES
+![image](https://user-images.githubusercontent.com/97127539/232262578-89d663ab-6faa-4ef9-830f-36856ece43e9.png)
 
 - SW is the voltage coming from the power source (batteries, DC jack). The BATT test pad in the schematic is for connecting to the OSD display for battery level indication. Note that if you are using a LiPo, the OSD will not accurately read the battery voltage level. (I couldn't be bothered to include a scaling circuit to address this!)
 - R4 and C3 is a simple RC filter to keep the battery level reading steady during transient loads, such as when the audio is loud.
