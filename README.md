@@ -31,13 +31,25 @@ If you choose to build this project yourself, be warned - this is a considerably
 
 ## Bill of Materials (BOM)
 
-### Brand New Electronic Parts
+There are a handful of categories for the parts you need for this build. Please review all of them! The total BOM cost will come out to anywhere between $120 and $200 (NOT including the cost of a donor Game Boy Color console!) depending on the options you choose and potential deals you can get on certain parts.
+
+### I. Circuit Boards
+  
+First and foremost, you will need two circuit boards for this build:
+- <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#mgbc-mbl-01">the main MGBC circuit board</a>, and 
+- a power supply board that fits in the U5 socket on the MGBC board (like my <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a>)
+
+You can also use other power supply boards from other creators - check the "Compatibility with Other Mods" section below for more information.
+
+### II. Brand New Electronic Parts
 
 The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the link sprovided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates. Double check to see if any parts are missing, and ocnsider ordering multipels of some parts. Also, there are some parts you may want to remove (like the tactile switches).
 
 **If a part is backordered, or out of stock** - check the Excel file, or the BOMs listed at the bottom of each board's folder in this repo. There may be alternate part options. You can also check for stock at places like Digikey. And you can always use Octopart.com to help find in-stock parts at other websites. I can't maintain the cart for every out-of-stock part, so please do some research :)
 
-### Game Boy Electronic Parts
+Also note, this BOM does not include parts for the Pocket Mouse Power Board. <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Please review my github on that board</a> for the parts information if you wish to use it for your power supply!
+
+### III. Game Boy Electronic Parts
 
 There are a handful of parts that I have not located aftermarket substitutes for, and will therefore necessitate an original Game Boy console to salvage from.
 
@@ -57,9 +69,9 @@ The following parts can be salvaged from a Game Boy, but aftermarket options exi
   -	P3 - Link port
   -	P4 - DC jack
 
-### External Build Parts
+### IV. External Build Parts
 
-The following is the high-level BOM for my specific build pictured above. Note that parts that deviate from the ones listed here (like different shell designs) might necessitate different fitment modifications, or end up being incompatible. 
+The following is the high-level BOM - basically, the Game Boy part. Note that parts that deviate from the ones listed here (like different shell designs) might necessitate different fitment modifications, or end up being incompatible. 
 
 -	**Shell:** I generally recommend the Funnyplaying "IPS Ready" ones if you don't want to trim anything. If you don't use these, then you're on your own for how to prepare it - generally, you can follow guides for preparing a Pocket for an IPS screen kit.
     - RGRS: <a href="https://retrogamerepairshop.com/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut?pr_prod_strat=copurchase&pr_rec_id=d8b0186ad&pr_rec_pid=6280907751596&pr_ref_pid=6115075391660&pr_seq=uniform">FunnyPlaying Game Boy Pocket IPS Backlight Ready Shell Housing No Cut</a>
@@ -86,11 +98,18 @@ The following is the high-level BOM for my specific build pictured above. Note t
 - B23N
 - Tito
 
-Note that the IPS kit I have listed is the *easiest* IPS kit to use that is compatible with this build. It includes an image centering feature, so you don't need to fiddle with centering it manually in the shell. Other kits likely would not center nicely in the DMG shell! <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-2-6-ips-high-brightness-drop-in-backlight-lcd-kit?variant=41398632251564">This kit works electrically, but requires you to center the image yourself.</a> If you end up making some sort of 3D-printed bracket to support this screen, feel free to share it here.
-
-### Circuit Boards
+Note that the IPS kit I have listed is the *easiest* IPS kit to use that is compatible with this build. It includes an image centering feature, so you don't need to fiddle with centering it manually in the shell. Other kits likely would not center nicely in the DMG shell! <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-2-6-ips-high-brightness-drop-in-backlight-lcd-kit?variant=41398632251564">This kit works electrically, but requires you to center the image yourself.</a> If you end up making some sort of 3D-printed bracket to support this screen, feel free to share it here.  
   
-Blah. Mention U5.
+### V. Compatibility with Other Mods
+
+You don't need any extra mods to complete the MGBC build, but there are some options available. One of the goals for the MGBC was to provide compatibility with various mods by other makers. In general, I tried to make the board similar to the Game Boy Pocket PCB in terms of solder points for different kinds of mods. The MGBC will not benefit from any mods that include audio amplification/"cleaning" or tactile button mods, as I've included those improvements already. Check out the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#customization-options">Customization Options</a> section in the MGBC PCB folder for information on those.
+
+  - <a href="https://www.etsy.com/listing/1267252807/game-boy-color-battery-indicator-mod">Leggomyfroggo's Two-Stage Battery Indicator Mod</a>: goes in place of the power LED, changes color when battery gets low
+  - <a href="https://www.etsy.com/listing/1422095615/frogulator-game-boy-colorpocket-dc">Leggomyfroggo's Frogulator</a>: a power supply that slots into the U5 socket; eyes light up for battery power indication
+  - <a href="https://www.muramasaentertainment.com/product/pocket-power-pocket/">Muramasa's Pocket-Power Pocket</a>: an all-in-one LiPo charger including USB-C port; requires some shell cuts and **removal of EM7** [untested]
+  - <a href="https://github.com/marshallh/gbpp">marshallh's Game Boy Pocket Power</a>: a power supply that slots into the U5 socket; has LiPo support (solder wires through the DC and BT+ holes on the MGBC board, and **remove EM7** - requires USB-C board for charging and some shell cuts [untested]
+  - <a href="https://github.com/skimzor/SZ-REG">skimzor's SZ Regulator</a>: a power supply that slots into the U5 socket; customizable print on the front of the board through <a href="https://ko-fi.com/skimzor">skimzor's Ko-Fi page</a>
+  - <a href="https://www.nataliethenerd.com/product-page/gbp-led-boards">Natalie the Nerd's LED Boards</a>: button LED backlight board
 
 ## Assembly Notes
 
@@ -133,33 +152,6 @@ Here is an example image from the DMGC project to give you an idea.
 
 ![image](https://user-images.githubusercontent.com/97127539/220013209-31ed1b23-bfa9-404d-90dc-a969d6078904.png)
 
-## Compatibility with Other Mods
-
-[watch this space]
-
-## High Level Assembly Bill of Materials (BOM)
-
-You will need at least **one donor GBC** for this project. No Game Boy Pocket is required, unless you want to reuse OEM parts.
-
-Remember, use code **CodyWick** or **JackV** at checkout for 10% off your order at RGRS!
-
-- **Shell**: Get the Funnyplaying "IPS Ready" ones if you don't want to trim anything. If you don't, then you're on your own for how to prepare it - generally, you can follow guides for preparing a Pocket for an IPS screen kit.
-  - Example: https://retrogamerepairshop.com/collections/gbp-lenses/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut
-- **Buttons**: Funnyplaying models are generally OEM-like (IMO), but you can also use OEM ones.
-  - Example: https://retrogamerepairshop.com/collections/gbp-buttons-1
-- **Membranes**: Don’t forget the membranes! You will need them even if you install tactile switches.
-  - Example: https://retrogamerepairshop.com/collections/gbp-buttons-1/products/game-boy-pocket-high-quality-conductive-pads
-- **Lens**: Make sure you get an "IPS Lens" as the viewing area is larger than the OEM one.
-  - Example: https://retrogamerepairshop.com/collections/gbp-lenses-1
-- **Screen Kit**: This is the important one. You *NEED* this specific type of screen - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido (you cannot use the lens or any shell included in this kit). Image below of what to look for. Laminated ones are not compatible.
-  - https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228
-  - https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-osd-ips-kit-with-color-changing-logo?variant=41819042185388 (you can disable the colored logo, not like you can use it for this mod anyway)
-  - https://www.aliexpress.us/item/3256804561453158.html
-  - https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido
-  - Other AliExpress or eBay shops (watch out for scams)
-
-![image](https://user-images.githubusercontent.com/97127539/219914419-9598df9f-57f9-4181-9b5b-c7bccd6a1209.png)
-
 ## Auxilliary Controls
 ### Q5 XL IPS Backlight with OSD
 -	Select + A + B: Open the OSD menu
@@ -187,7 +179,7 @@ For these estimates, battery life is calculated using two eneloop pro NiMH AAS b
 | IPS min brightness, headphones, original cartridge	| mW	| hr |
 
 ## Audio Recordings and Spectrum
-I mentioned the sound of the DMGC is "warmer" than an original GBC - it's bassier with less buzzing background noise (owing mostly to the modernized power supply). I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the DMGC. I also took some recordings of the pro-sound output as well - it's even cleaner than from the amplifier. I'm not an audiophile, but I'm pretty sure the DMGC all-around sounds nicer, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
+For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
 
 ### Original GBC Audio
 
