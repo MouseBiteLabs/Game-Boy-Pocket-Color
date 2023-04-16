@@ -22,7 +22,7 @@ This write-up serves as a technical explainer document for the MGBC project. I w
 
 - SW is the voltage coming from the power source (batteries, DC jack). The BATT test pad in the schematic is for connecting to the OSD display for battery level indication. Note that if you are using a LiPo, the OSD will not accurately read the battery voltage level. (I couldn't be bothered to include a scaling circuit to address this!)
 - R4 and C3 is a simple RC filter to keep the battery level reading steady during transient loads, such as when the audio is loud.
-- U7, R2, R4, R5, and R8 set up a non-inverting Schmitt trigger. When the battery voltage is above [VALUE], the output of U7 (pin 4) is pulled up by R11 to 5 V. This drives the base of Q2 to short R10, reducing the resistance in series with LED1. When the battery value drops below [VALUE], pin 4 is pulled to GND. This turns off Q2, connecting R10 in series with and dimming LED1.
+- U7, R2, R4, R5, and R8 set up a non-inverting Schmitt trigger. When the battery voltage is above ~2.2 V, the output of U7 (pin 4) is pulled up by R11 to 5 V. This drives the base of Q2 to short R10, reducing the resistance in series with LED1. When the battery value drops below ~2.2 V, pin 4 is pulled to GND. This turns off Q2, connecting R10 in series with and dimming LED1.
 
 ## FFC Connector
 
