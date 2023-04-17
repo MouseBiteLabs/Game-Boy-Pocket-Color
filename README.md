@@ -1,6 +1,4 @@
-# Game Boy Pocket Color (MGBC-MBL-01)
-
-This repo is currently for the beta testers! Things are still generally unfinished here.
+# Game Boy Pocket Color
 
 ![image](https://user-images.githubusercontent.com/97127539/219991707-c83d69cf-715f-4326-8e82-952a977f087f.png)
 
