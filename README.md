@@ -27,6 +27,8 @@ If you choose to build this project yourself, be warned - this is a considerably
 
 ## Bill of Materials (BOM)
 
+**Please check out the downloadable BOM above for a complete list of parts you need. It will be much easier to keep track this way.**
+
 There are a handful of categories for the parts you need for this build. Please review all of them! The total BOM cost will come out to anywhere between $120 and $200 (NOT including the cost of a donor Game Boy Color console!) depending on the options you choose and potential deals you can get on certain parts.
 
 ### I. Circuit Boards
@@ -47,7 +49,7 @@ Also note, this BOM does not include parts for the Pocket Mouse Power Board. <a 
 
 ### III. Game Boy Electronic Parts
 
-There are a handful of parts that I have not located aftermarket substitutes for, and will therefore necessitate an original Game Boy console to salvage from.
+There are a handful of parts that I have not located aftermarket substitutes for, and will therefore necessitate an original Game Boy console to salvage from. Please note that removing these parts is not a trivial task, and **requires advanced soldering and desoldering skills to be successful.**
 
 - The following parts from an original Game Boy Color console
   -	U1 - CGB CPU (all revisions *except* REV E, which is *incompatible*)
@@ -58,8 +60,8 @@ There are a handful of parts that I have not located aftermarket substitutes for
 
 The following parts can be salvaged from a Game Boy, but aftermarket options exist:
 
-  - U2 - LH52256CVTXIZ; alternate: https://mou.sr/3f8G0Mi
-  - EM10; alternate: https://mou.sr/3FiMvXw
+  - U2 - LH52256CVTXIZ (SRAM); alternate: https://mou.sr/3f8G0Mi
+  - EM10 - input filter; alternate: https://mou.sr/3FiMvXw
   -	VR1 – Volume dial
   -	SW1 – Power switch
   -	P3 - Link port
@@ -113,11 +115,15 @@ Here are a sample of my favorite mods for the MGBC:
 
 ## Testing and Assembly
 
-I'm going to split this into a few separate sections. This is the general process I Follow when assembling an MGBC.
+I'm going to split this into a few separate sections. This is the general process I follow when assembling an MGBC.
 
 ### Circuit Board Assembly
 
-The general process I follow when assembling a board is to assemble all the non-Gameboy surface mount components first, not including C24, C29, and C45. After soldering these components, I solder the CPU in, then the three capacitors, and finally X1. This seems to be the easiest way to go about assembling the components, for me anyway. Here's a close-up view of the parts on the right hand side of the board - it's a bit cramped.
+Usually when I'm populating a board, I assemble all the non-Gameboy surface mount components first, not including C24, C29, and C45. After soldering these components, I solder the CPU in, then I use hot air and solder paste to reflow X1, C24, C29, and C45 onto the board. This seems to be the easiest way to go about assembling the components, for me anyway. 
+
+[image of board]
+
+For reference, here's a close-up view of the parts on the right hand side of the board - it's a bit cramped, I know, and the reference designators are not the easiest things to see.
 
 [image]
 
@@ -127,7 +133,7 @@ If you are using a LiPo mod on the MGBC, **DO NOT INCLDE EM7**. This component m
 
 After the surface mount components are taken care of, I go on to add most of the rest of the components - VR1, P3, P4, P5, SW1, SW2, LED1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
 
-The next step to test is the power board, or U5. I *highly* suggest making sure you've assembled the power board correctly before directly connecting it and powering it all on, cowboy style. If you're able to test your power board before installation, definitely do that, but if you're not sure how, or don't have the ability, then you can use the MGBC board to test it. Just solder the board in the socket *except* for pin 7. Pin 7 is the 5 V pin, which powers the rest of the Game Boy. Keeping pin 7 depopulated, you can connect up batteries or a power supply, and turn the power switch on. Use a multimeter to meausre the voltage from pin 7 (positive test probe) to GND (negative test probe). You should read approximately 5 V here - anything more than 5.1 V or less than 4.9 V means you've likely got something wrong on your power board. If you confirm you have 5 V on pin 7, you can go ahead and connect it up to the MGBC board (remove the batteries first, of course).
+The next step to test is the power board, or U5. I *highly* suggest making sure you've assembled the power board correctly before directly connecting it and powering it all on, cowboy style. If you're able to test your power board before installation, definitely do that, but if you're not sure how, or don't have the ability, then you can use the MGBC board to test it. Just solder the board in the socket *except* for pin 7. Pin 7 is the 5 V pin, which powers the rest of the Game Boy. Keeping pin 7 depopulated, you can connect up batteries or a power supply, and turn the power switch on. Use a multimeter to measure the voltage from pin 7 (positive test probe) to GND (negative test probe). You should read approximately 5 V here - anything more than 5.1 V or less than 4.9 V means you've likely got something wrong on your power board. If you confirm you have 5 V on pin 7, you can go ahead and connect it up to the MGBC board (remove the batteries first, of course).
 
 If you don't have 5 V out of pin 7 when testing this way, along with checking your power board assembly, you will also want to check to make sure the MGBC board doesn't have any issues. Read on...
 
@@ -137,7 +143,9 @@ I'm not going to delve into a lot of detail here, just some basic troubleshootin
 
 **Issue: No power to U5 pins 1 or 2**
 
-Are you getting voltage out of the batteries or DC jack? Measure the voltage across pin 2 of the U5 socket to GND. If you get zero volts, then check the following:
+Are you getting voltage out of the batteries or DC jack? Measure the voltage across pin 2 of the U5 socket to GND - this should read whatever voltage your batteries or DC jack is outputting. Measuring the voltage from pin 1 of U5 to GND will give you the same result as pin 2 when the power switch is on, or zero volts when the power switch is off. 
+
+If you get incorrect results, then check the following:
   - Make sure F1 or F2 are not blown. (Were you soldering when you had batteries installed? For shame!)
   - Check orientation of D1 - did you put it in backwards?
   - Check orientation of EM10 - is it 90 degrees rotated?
@@ -217,7 +225,7 @@ https://user-images.githubusercontent.com/97127539/180215249-4b21aca1-a9fd-430a-
   
 ## Frequently Asked Questions
   
-I'll update this section as more people begin to build these. Please refer to this before asking me any questions!
+I'll update this section as more people begin to build these. Please refer to this before asking me any questions! If you ask me a question, I'm going to automatically ask you if you read the FAQ and this entire repo first.
   
 **Q: Can you make one for me?**
   
@@ -254,7 +262,7 @@ A: I've found that sometimes the contact resistance from the alligator clips was
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
 
-This project is the culmination of nearly a full year of research, development, and testing. I have made this project completely open-source, and have put hundreds, if not *thousands* of hours of work into it, so that many people can enjoy it. **Please** give me appropriate credit where credit is due.
+This project is the culmination of over a full year of research, development, and testing. I have made this project completely open-source, and have put hundreds, if not *thousands* of hours of work (and dollars!) into it, so that many people can enjoy it. **Please** give me appropriate credit where credit is due.
 
 ©MouseBiteLabs 2023
 
