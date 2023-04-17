@@ -109,10 +109,65 @@ Here are a sample of my favorite mods for the MGBC:
   - <a href="https://github.com/skimzor/SZ-REG">skimzor's SZ Regulator</a>: a power supply that slots into the U5 socket; customizable print on the front of the board through <a href="https://ko-fi.com/skimzor">skimzor's Ko-Fi page</a>
   - <a href="https://www.nataliethenerd.com/product-page/gbp-led-boards">Natalie the Nerd's LED Boards</a>: button LED backlight board
 
-# Assembly
+## Testing and Assembly
 
-Take some pics and put them here.
+I'm going to split this into a few separate sections. This is the general process I Follow when assembling an MGBC.
+
+### Circuit Board Assembly
+
+The general process I follow when assembling a board is to assemble all the non-Gameboy surface mount components first, not including C24, C29, and C45. After soldering these components, I solder the CPU in, then the three capacitors, and finally X1. This seems to be the easiest way to go about assembling the components, for me anyway. Here's a close-up view of the parts on the right hand side of the board - it's a bit cramped.
+
+[image]
+
+If you are using a LiPo mod on the MGBC, **DO NOT INCLDE EM7**. This component must be removed from the final build.
+
+[EM7 picture]
+
+After the surface mount components are taken care of, I go on to add most of the rest of the components - VR1, P3, P4, P5, SW1, SW2, LED1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
+
+The next step to test is the power board, or U5. I *highly* suggest making sure you've assembled the power board correctly before directly connecting it and powering it all on, cowboy style. If you're able to test your power board before installation, definitely do that, but if you're not sure how, or don't have the ability, then you can use the MGBC board to test it. Just solder the board in the socket *except* for pin 7. Pin 7 is the 5 V pin, which powers the rest of the Game Boy. Keeping pin 7 depopulated, you can connect up batteries or a power supply, and turn the power switch on. Use a multimeter to meausre the voltage from pin 7 (positive test probe) to GND (negative test probe). You should read approximately 5 V here - anything more than 5.1 V or less than 4.9 V means you've likely got something wrong on your power board. If you confirm you have 5 V on pin 7, you can go ahead and connect it up to the MGBC board (remove the batteries first, of course).
+
+If you don't have 5 V out of pin 7 when testing this way, along with checking your power board assembly, you will also want to check to make sure the MGBC board doesn't have any issues. Read on...
+
+### Troubleshooting Common Electrical Issues
+
+I'm not going to delve into a lot of detail here, just some basic troubleshooting you can perform. Remember, this project is meant for those with experience in electronics assembly and troubleshooting, so you should be able to figure some of this out by yourself! These tips won't include simple things to check like "check for cold solder joints" or "make sure you have the right parts installed" and whatnot, but that doesn't mean that isn't your root cause!
+
+**Issue: No power to U5 pins 1 or 2**
+
+Are you getting voltage out of the batteries or DC jack? Measure the voltage across pin 2 of the U5 socket to GND. If you get zero volts, then check the following:
+  - Make sure F1 or F2 are not blown. (Were you soldering when you had batteries installed? For shame!)
+  - Check orientation of D1 - did you put it in backwards?
+  - Check orientation of EM10 - is it 90 degrees rotated?
+  - Check for a dirty DC jack (P4) - you should read nearly zero ohms with a resistance check across pins 2 and 3 when you don't have anything plugged in!
+  - Make sure the batteries completely touch the battery terminals in the battery bay. This frequently happens to me in aftermarket shells without the battery separator.
+  - Clean your power switch regardless of any issues, but if it's particularly dirty, you may not get any voltage reading on pin 1 even when it's turned on
   
+**Issue: No sound or bad quality sound**
+
+- Make sure C8, C26, and C27 are placed in the correct orientation. Remember, the stripe on tantalum capacitors indicates the POSITIVE side of the device.
+- Plug in headphones to check if the issue is related to the speaker or both speaker and headphones. If you get audio out of your headphones but not your speaker, then:
+  - Check for continuity from pin 5 on the headphone jack (top right corner when viewing from below) to GND. When headphones are not plugged in, this pin should be connected to ground. If it isn't, clean your headphone jack, or get another.
+  - Try another speaker, if you have one.
+- If your issue is both speaker *AND* headphones, then:
+  - Clean your volume dial by dripping IPA in it and spinning it back and forth. Consider replacing it with a new aftermarket version.
+  - Reflow components in the audio circuit and/or the CPU audio pins.
+  
+**Issue: White screen, glitchy display, miscolored display**
+
+- Reflow the SRAM (U2) and make sure all pins are well-connected to the board.
+- Reflow the FFC connector (P2) and make sure all pins are well-connected to the board.
+- Reflow the CPU (U1) and make sure all pins are well-connected to the board.
+- If miscolored, make sure the palette isn't being cycled on the IPS kit, as there is a touchpad that cycles through different color modes.
+
+### Final Assembly
+
+Before assembling the board into the shell, I prepared the Q5 board solder pads. I cut six 30 gauge wire segments and soldered them on the brightness, palette, battery, and OSD input pads. These will be soldered to the top of the board after the screen is installed.
+
+![image](https://user-images.githubusercontent.com/97127539/184281803-ea1ec2ce-f2cf-489f-90db-754a21dc3f10.jpg)
+
+Next, I finished the build. The end.
+
 ## Auxilliary Controls
 ### Q5 XL IPS Backlight with OSD
 -	Select + A + B: Open the OSD menu
