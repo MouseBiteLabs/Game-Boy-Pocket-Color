@@ -71,13 +71,13 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 
 -	**Shell:** I generally recommend the Funnyplaying "IPS Ready" ones if you don't want to trim anything. If you don't use these, then you're on your own for how to prepare it - generally, you can follow guides for preparing a Pocket for an IPS screen kit.
     - RGRS: <a href="https://retrogamerepairshop.com/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut?pr_prod_strat=copurchase&pr_rec_id=d8b0186ad&pr_rec_pid=6280907751596&pr_ref_pid=6115075391660&pr_seq=uniform">FunnyPlaying Game Boy Pocket IPS Backlight Ready Shell Housing No Cut</a>
--	**Screen Kit:** This is the important one. You need this specific type of kit - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido. Image below of what to look for. Laminated ones are *not* compatible, but kits that include a lit-up logo are fine to use. Make sure you DO NOT get the Game Boy Pocket version - it is not compatible!
+-	**Screen Kit:** This is the important one. You need this specific type of kit - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido. Laminated ones are *not* compatible, but kits that include a lit-up logo are fine to use. Make sure you DO NOT get the Game Boy Pocket version - it is not compatible!
     - RGRS: <a href="https://retrogamerepairshop.com/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228">GBC Q5 XL IPS Backlight with OSD</a>
     - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>
     - AliExpress: <a href="https://www.aliexpress.us/item/3256801650459088.html?spm=a2g0o.productlist.main.1.758e53f17WUFK2&algo_pvid=24ef67e3-d608-4269-a663-05eafed1bd17&algo_exp_id=24ef67e3-d608-4269-a663-05eafed1bd17-0&pdp_npi=3%40dis%21USD%2145.9%2145.9%21%21%21%21%21%4021224e9b16816641208271256d074d%2112000017802039303%21sea%21US%210&curPageLogUid=dCymHIE0cr4X">GBC Q5 IPS LCD Kit</a>
 -	**Lens:** I recommend you get an "IPS Lens" as the viewing area is slightly larger than the OEM one. 
     - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-lenses-1/products/funnyplaying-game-boy-pocket-ips-retro-pixel-mod-led-hole-glass-screen-lens?variant=37635319988396">FunnyPlaying Game Boy Pocket IPS Retro Pixel Mod LED Hole Glass Screen Lens</a>
-- **Buttons:** Funnyplaying models are generally OEM-like (IMO), but you can also use OEM ones. Or any other maker of buttons! (Make sure you get Game Boy *Pocket* buttons.)
+- **Buttons:** Funnyplaying models are generally OEM-like (IMO), but you can also use OEM ones. Or any other maker of buttons! (Make sure you get Game Boy *Pocket* buttons - Game Boy *Color* buttons will not fit.)
   - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-buttons-1/products/funnyplaying-game-boy-custom-pocket-buttons?variant=41432879169708">FunnyPlaying Game Boy Pocket Custom Buttons</a>
   - LabFifteen: <a href="https://labfifteenco.com/collections/game-boy-pocket-buttons">Custom buttons</a>
 - **Membranes:** Important, but very forgettable! You will need them even if you install tactile switches.
@@ -99,6 +99,8 @@ Note that the IPS kit I have listed is the *easiest* IPS kit to use that is comp
 ### V. Compatibility with Other Mods
 
 You don't need any extra mods to complete the MGBC build, but there are some options available. One of the goals for the MGBC was to provide compatibility with various mods by other makers. In general, I tried to make the board similar to the Game Boy Pocket PCB in terms of solder points for different kinds of mods. The MGBC will not benefit from any mods that include audio amplification/"cleaning" or tactile button mods, as I've included those improvements already. Check out the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#customization-options">Customization Options</a> section in the MGBC PCB folder for information on those.
+  
+Here are a sample of my favorite mods for the MGBC:
 
   - <a href="https://www.etsy.com/listing/1267252807/game-boy-color-battery-indicator-mod">Leggomyfroggo's Two-Stage Battery Indicator Mod</a>: goes in place of the power LED, changes color when battery gets low
   - <a href="https://www.etsy.com/listing/1422095615/frogulator-game-boy-colorpocket-dc">Leggomyfroggo's Frogulator</a>: a power supply that slots into the U5 socket; eyes light up for battery power indication
@@ -107,7 +109,99 @@ You don't need any extra mods to complete the MGBC build, but there are some opt
   - <a href="https://github.com/skimzor/SZ-REG">skimzor's SZ Regulator</a>: a power supply that slots into the U5 socket; customizable print on the front of the board through <a href="https://ko-fi.com/skimzor">skimzor's Ko-Fi page</a>
   - <a href="https://www.nataliethenerd.com/product-page/gbp-led-boards">Natalie the Nerd's LED Boards</a>: button LED backlight board
 
-## Assembly Notes
+# Assembly
+
+Take some pics and put them here.
+  
+## Auxilliary Controls
+### Q5 XL IPS Backlight with OSD
+-	Select + A + B: Open the OSD menu
+-	Select + A: Enter
+-	Select + B: Exit
+-	A: Increase
+-	B: Decrease
+
+### Navigation Switch
+-	Rock up: Advance screen brightness setting
+-	Rock up/Hold: Toggle on-screen battery indicator
+-	Rock down: Advance screen color pallete setting
+-	Rock down/Hold: Toggle on-screen pixel grid
+-	Push in: System reset
+  
+## Power Draw Measurements
+For these estimates, battery life is calculated using two eneloop pro NiMH AA batteries (total of ~1860 mWh). Keep in mind that these are very rough estimates. I tried to be conservative in the power draw measurements, so hopefully these numbers represent a *mostly* worst case. Actual playtime *will* vary due to a variety of factors - changes in efficiency and performance as the battery voltage changes, differences in game audio, etc.
+
+| Test Criteria | Power Draw | Estimated Battery Life |
+| ------------- | ------------- | ------------- |
+| IPS max brightness, speaker volume 100%, Everdrive X5	| mW | hr |
+| IPS max brightness, speaker volume 100%, original cartridge | mW | hr |
+| IPS med brightness, headphones, Everdrive X5	| mW	| hr |
+| IPS med brightness, speaker volume 100%, original cartridge | mW	| hr |
+| IPS min brightness, headphones, original cartridge	| mW	| hr |
+
+## Audio Recordings and Spectrum
+For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
+
+### Original GBC Audio
+
+https://user-images.githubusercontent.com/97127539/180215249-4b21aca1-a9fd-430a-a870-95bf4837e4da.mp4
+
+### MGBC Audio
+
+[audio]
+
+### Original GBC Audio Spectrum
+
+![image](https://user-images.githubusercontent.com/97127539/180213625-09bf0430-d7a2-47d9-acbe-a77910de87cb.png)
+
+### MGBC Audio Spectrum
+
+[image]
+  
+## Frequently Asked Questions
+  
+I'll update this section as more people begin to build these. Please refer to this before asking me any questions!
+  
+**Q: Can you make one for me?**
+  
+A: NO. Stop asking, please!
+  
+**Q: Why are you encouraging the destruction of Game Boys?**
+  
+A: If you can properly complete this mod, you will have destroyed zero Game Boys, as you get a working Game Boy when you finish.
+  
+**Q: Aren't you contributing to the rising prices of Game Boys by doing this?**
+  
+A: <a href="https://en.wikipedia.org/wiki/Game_Boy_Color#:~:text=The%20Game%20Boy%20and%20Game,game%20console%20of%20all%20time.">There were over 100,000,000 Game Boy Colors sold around the world.</a> So, no, not in any appreciable manner.
+
+**Q: My EM10 has an extra leg in-between two of the other ones. Can I use this part?**
+
+A: Yes, just bend up the extra pin so that it doesn't contact any of the nearby pads. It is an unused anchor pin.
+
+**Q: Sometimes the power switch is finnicky and the system won't power on consistently. Sometimes the IPS screen will turn on, but only the backlight, not the actual image. What gives?**
+
+A: <a href="https://www.youtube.com/watch?v=2_Pt_odHyzo">Clean your power switch.</a> This fixes most issues. Do it properly - if you're attempting this mod, you should be able to properly clean your power switch.
+
+**Q: I'm using a battery holder with alligator clips to test the system, and it's not turning on. Why?**
+  
+A: I've found that sometimes the contact resistance from the alligator clips was enough to prevent the system from powering up properly. Try putting the board in the shell and inserting the batteries in the back normally.
+  
+## Acknowledgements
+
+- <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color#acknowledgements">Thanks to everyone I already thanked for the technical support and resources for my DMGC project,</a> as most of the work I did on that was directly applicable to this one.
+- VERY special thanks to all the alpha and beta testers who took time and money to build boards and give me extremely useful feedback on the design. You made the final product better than I could have done on my own.
+- Thanks to the awesome members of the <a href="https://moddedgameboy.club/">Modded Gameboy Club</a> for their feedback and support during the entire project development.
+- Thank you to skimzor for support on the initial layout, providing me with reference measurements for all the external components, like the power switch and volume wheel. <a href="https://github.com/skimzor/SZ-POCO">Check out his own Pocket Color boards!</a>
+-	Of course, huge thank you to everyone who has <a href="https://ko-fi.com/bucketmouse">donated and supported me</a>, and to those who have built their own MGBC! I love seeing pictures of builds, so feel free to share them with me on Twitter, <a href="https://discord.gg/Y5aDvCcpbX">discord</a>, or via email!
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
+
+This project is the culmination of nearly a full year of research, development, and testing. I have made this project completely open-source, and have put hundreds, if not *thousands* of hours of work into it, so that many people can enjoy it. **Please** give me appropriate credit where credit is due.
+
+©MouseBiteLabs 2023
+
+## Beta Testers: Assembly Notes
 
 ![image](https://user-images.githubusercontent.com/97127539/219990501-9b55efcf-ba02-4d8f-96f3-af7368b2cbde.png)
 
@@ -148,52 +242,7 @@ Here is an example image from the DMGC project to give you an idea.
 
 ![image](https://user-images.githubusercontent.com/97127539/220013209-31ed1b23-bfa9-404d-90dc-a969d6078904.png)
 
-## Auxilliary Controls
-### Q5 XL IPS Backlight with OSD
--	Select + A + B: Open the OSD menu
--	Select + A: Enter
--	Select + B: Exit
--	A: Increase
--	B: Decrease
-
-### Navigation Switch
--	Rock up: Advance screen brightness setting
--	Rock up/Hold: Toggle on-screen battery indicator
--	Rock down: Advance screen color pallete setting
--	Rock down/Hold: Toggle on-screen pixel grid
--	Push in: System reset
-  
-## Power Draw Measurements
-For these estimates, battery life is calculated using two eneloop pro NiMH AAS batteries (total of ~1860 mWh). Keep in mind that these are very rough estimates. I tried to be conservative in the power draw measurements, so hopefully these numbers represent a *mostly* worst case. Actual playtime *will* vary due to a variety of factors - changes in efficiency and performance as the battery voltage changes, differences in game audio, etc.
-
-| Test Criteria | Power Draw | Estimated Battery Life |
-| ------------- | ------------- | ------------- |
-| IPS max brightness, speaker volume 100%, Everdrive X5	| mW | hr |
-| IPS max brightness, speaker volume 100%, original cartridge | mW | hr |
-| IPS med brightness, headphones, Everdrive X5	| mW	| hr |
-| IPS med brightness, speaker volume 100%, original cartridge | mW	| hr |
-| IPS min brightness, headphones, original cartridge	| mW	| hr |
-
-## Audio Recordings and Spectrum
-For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
-
-### Original GBC Audio
-
-https://user-images.githubusercontent.com/97127539/180215249-4b21aca1-a9fd-430a-a870-95bf4837e4da.mp4
-
-### MGBC Audio
-
-[audio]
-
-### Original GBC Audio Spectrum
-
-![image](https://user-images.githubusercontent.com/97127539/180213625-09bf0430-d7a2-47d9-acbe-a77910de87cb.png)
-
-### MGBC Audio Spectrum
-
-[image]
-  
-## PCB Bill of Materials
+## Beta Testers: PCB Bill of Materials
 
 *These tables are provided above in an Excel format if it's easier to view. (Check the Board Assembly tab)*
 
@@ -282,45 +331,3 @@ Note: You do not need parts for the power board if you are using a GBPP, or Frog
 | U5                    | 1             | TL331             | SOT23-5 | Comparator       |                                         | [https://www.mouser.com/ProductDetail/Texas-Instruments/TL331KDBVT?qs=XGzIaZb%2FFYIdafwjPOKAMg%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TL331KDBVT?qs=XGzIaZb%2FFYIdafwjPOKAMg%3D%3D)                                     |
 
   
-## Frequently Asked Questions
-  
-I'll update this section as more people begin to build these. Please refer to this before asking me any questions!
-  
-**Q: Can you make one for me?**
-  
-A: NO. Stop asking, please!
-  
-**Q: Why are you encouraging the destruction of Game Boys?**
-  
-A: If you can properly complete this mod, you will have destroyed zero Game Boys, as you get a working Game Boy when you finish.
-  
-**Q: Aren't you contributing to the rising prices of Game Boys by doing this?**
-  
-A: <a href="https://en.wikipedia.org/wiki/Game_Boy_Color#:~:text=The%20Game%20Boy%20and%20Game,game%20console%20of%20all%20time.">There were over 100,000,000 Game Boy Colors sold around the world.</a> So, no, not in any appreciable manner.
-
-**Q: My EM10 has an extra leg in-between two of the other ones. Can I use this part?**
-
-A: Yes, just bend up the extra pin so that it doesn't contact any of the nearby pads. It is an unused anchor pin.
-
-**Q: Sometimes the power switch is finnicky and the system won't power on consistently. Sometimes the IPS screen will turn on, but only the backlight, not the actual image. What gives?**
-
-A: <a href="https://www.youtube.com/watch?v=2_Pt_odHyzo">Clean your power switch.</a> This fixes most issues. Do it properly - if you're attempting this mod, you should be able to properly clean your power switch.
-
-**Q: I'm using a battery holder with alligator clips to test the system, and it's not turning on. Why?**
-  
-A: I've found that sometimes the contact resistance from the alligator clips was enough to prevent the system from powering up properly. Try putting the board in the shell and inserting the batteries in the back normally.
-  
-## Acknowledgements
-
-- <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color#acknowledgements">Thanks to everyone I already thanked for the technical support and resources for my DMGC project,</a> as most of the work I did on that was directly applicable to this one.
-- VERY special thanks to all the alpha and beta testers who took time and money to build boards and give me extremely useful feedback on the design. You made the final product better than I could have done on my own.
-- Thanks to the awesome members of the <a href="https://moddedgameboy.club/">Modded Gameboy Club</a> for their feedback and support during the entire project development.
-- Thank you to skimzor for support on the initial layout, providing me with reference measurements for all the external components, like the power switch and volume wheel. <a href="https://github.com/skimzor/SZ-POCO">Check out his own Pocket Color boards!</a>
--	Of course, huge thank you to everyone who has <a href="https://ko-fi.com/bucketmouse">donated and supported me</a>, and to those who have built their own MGBC! I love seeing pictures of builds, so feel free to share them with me on Twitter, <a href="https://discord.gg/Y5aDvCcpbX">discord</a>, or via email!
-
-## License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
-
-This project is the culmination of nearly a full year of research, development, and testing. I have made this project completely open-source, and have put hundreds, if not *thousands* of hours of work into it, so that many people can enjoy it. **Please** give me appropriate credit where credit is due.
-
-©MouseBiteLabs 2023
