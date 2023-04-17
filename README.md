@@ -13,9 +13,7 @@ My <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color">DMGC project</a
 - The option for tactile switches for the face buttons - like the GBA SP.
 - No externally viewable case modifications.
 
-The MGBC-MBL-01 requires a power board, located at the same bottom corner as the Game Boy Pocket. I have made the <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a> to accompany this project, though there are other boards out there that are compatible! Check the compatibility list further down.
-
-All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder.
+All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder. Please review the FAQ at the bottom of the README for answers to.... frequently asked questions.
 
 ## Disclaimer
 
@@ -35,15 +33,15 @@ There are a handful of categories for the parts you need for this build. Please 
 
 ### I. Circuit Boards
   
-First and foremost, you will need two circuit boards for this build:
+First and foremost, you will need two brand new circuit boards for this build:
 - <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#mgbc-mbl-01">the main MGBC circuit board</a>, and 
 - a power supply board that fits in the U5 socket on the MGBC board (like my <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a>)
 
-You can also use other power supply boards from other creators - check the "Compatibility with Other Mods" section below for more information.
+You can also use other power supply boards from other creators - check the "Compatibility with Other Mods" section below for more information. I don't recommend using an original power board from a Game Boy.
 
 ### II. Brand New Electronic Parts
 
-The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the link sprovided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates. Double check to see if any parts are missing, and ocnsider ordering multipels of some parts. Also, there are some parts you may want to remove (like the tactile switches).
+The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates. Double check to see if any parts are missing, and consider ordering multiples of some parts. Also, there are some parts you may want to remove (like the tactile switches).
 
 **If a part is backordered, or out of stock** - check the Excel file, or the BOMs listed at the bottom of each board's folder in this repo. There may be alternate part options. You can also check for stock at places like Digikey. And you can always use Octopart.com to help find in-stock parts at other websites. I can't maintain the cart for every out-of-stock part, so please do some research :)
 
@@ -284,3 +282,47 @@ Note: You do not need parts for the power board if you are using a GBPP, or Frog
 | R11                   | 1             | 1k                | 0603    | Resistor         |                                         | [https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-071KL?qs=VU8sRB4EgwApHsk4rF%2F3zg%3D%3D](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-071KL?qs=VU8sRB4EgwApHsk4rF%2F3zg%3D%3D)                                                     |
 | U2                    | 1             | TPS61202          | WSON-10 | Boost Converter  |                                         | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D)                                     |
 | U5                    | 1             | TL331             | SOT23-5 | Comparator       |                                         | [https://www.mouser.com/ProductDetail/Texas-Instruments/TL331KDBVT?qs=XGzIaZb%2FFYIdafwjPOKAMg%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TL331KDBVT?qs=XGzIaZb%2FFYIdafwjPOKAMg%3D%3D)                                     |
+
+  
+## Frequently Asked Questions
+  
+I'll update this section as more people begin to build these. Please refer to this before asking me any questions!
+  
+**Q: Can you make one for me?**
+  
+A: NO. Stop asking, please!
+  
+**Q: Why are you encouraging the destruction of Game Boys?**
+  
+A: If you can properly complete this mod, you will have destroyed zero Game Boys, as you get a working Game Boy when you finish.
+  
+**Q: Aren't you contributing to the rising prices of Game Boys by doing this?**
+  
+A: <a href="https://en.wikipedia.org/wiki/Game_Boy_Color#:~:text=The%20Game%20Boy%20and%20Game,game%20console%20of%20all%20time.">There were over 100,000,000 Game Boy Colors sold around the world.</a> So, no, not in any appreciable manner.
+
+**Q: My EM10 has an extra leg in-between two of the other ones. Can I use this part?**
+
+A: Yes, just bend up the extra pin so that it doesn't contact any of the nearby pads. It is an unused anchor pin.
+
+**Q: Sometimes the power switch is finnicky and the system won't power on consistently. Sometimes the IPS screen will turn on, but only the backlight, not the actual image. What gives?**
+
+A: <a href="https://www.youtube.com/watch?v=2_Pt_odHyzo">Clean your power switch.</a> This fixes most issues. Do it properly - if you're attempting this mod, you should be able to properly clean your power switch.
+
+**Q: I'm using a battery holder with alligator clips to test the system, and it's not turning on. Why?**
+  
+A: I've found that sometimes the contact resistance from the alligator clips was enough to prevent the system from powering up properly. Try putting the board in the shell and inserting the batteries in the back normally.
+  
+## Acknowledgements
+
+- <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color#acknowledgements">Thanks to everyone I already thanked for the technical support and resources for my DMGC project,</a> as most of the work I did on that was directly applicable to this one.
+- VERY special thanks to all the alpha and beta testers who took time and money to build boards and give me extremely useful feedback on the design. You made the final product better than I could have done on my own.
+- Thanks to the awesome members of the <a href="https://moddedgameboy.club/">Modded Gameboy Club</a> for their feedback and support during the entire project development.
+- Thank you to skimzor for support on the initial layout, providing me with reference measurements for all the external components, like the power switch and volume wheel. <a href="https://github.com/skimzor/SZ-POCO">Check out his own Pocket Color boards!</a>
+-	Of course, huge thank you to everyone who has <a href="https://ko-fi.com/bucketmouse">donated and supported me</a>, and to those who have built their own MGBC! I love seeing pictures of builds, so feel free to share them with me on Twitter, <a href="https://discord.gg/Y5aDvCcpbX">discord</a>, or via email!
+
+## License
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
+
+This project is the culmination of nearly a full year of research, development, and testing. I have made this project completely open-source, and have put hundreds, if not *thousands* of hours of work into it, so that many people can enjoy it. **Please** give me appropriate credit where credit is due.
+
+©MouseBiteLabs 2023
