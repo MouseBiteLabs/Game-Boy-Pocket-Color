@@ -213,7 +213,7 @@ https://user-images.githubusercontent.com/97127539/180215249-4b21aca1-a9fd-430a-
 
 ### MGBC Audio
 
-[audio]
+https://user-images.githubusercontent.com/97127539/232619867-ac0df1a6-45e1-47b4-a0c2-0df85b547195.mp4
 
 ### Original GBC Audio Spectrum
 
@@ -221,7 +221,7 @@ https://user-images.githubusercontent.com/97127539/180215249-4b21aca1-a9fd-430a-
 
 ### MGBC Audio Spectrum
 
-[image]
+![image](https://user-images.githubusercontent.com/97127539/232620578-6f7e4e28-bd64-4657-a0e6-ce16f42ecdb7.png)
   
 ## Frequently Asked Questions
   
