@@ -23,7 +23,7 @@ If you choose to build this project yourself, be warned - this is a considerably
 
 ![image](https://user-images.githubusercontent.com/97127539/230615632-93c3e6fc-b554-4ee2-8f35-8e44d3867af7.png)
 
-**DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! You will AT MINIMUM need to be proficient in drag soldering and hot air reflowing. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
+**DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! You will AT MINIMUM need to be proficient in <a href="https://youtu.be/5uiroWBkdFY?t=110">drag soldering</a> and <a href="https://youtu.be/X3Rc1s6EpSI">hot air reflowing</a>. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
 
 ## Bill of Materials (BOM)
 
@@ -96,7 +96,7 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 - B23N
 - Tito
 
-Note that the IPS kit I have listed is the *easiest* IPS kit to use that is compatible with this build. It includes an image centering feature, so you don't need to fiddle with centering it manually in the shell. Other kits likely would not center nicely in the DMG shell! <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-2-6-ips-high-brightness-drop-in-backlight-lcd-kit?variant=41398632251564">This kit works electrically, but requires you to center the image yourself.</a> If you end up making some sort of 3D-printed bracket to support this screen, feel free to share it here.  
+Note that the IPS kit I have listed is the *easiest* IPS kit to use that is compatible with this build. It includes an image centering feature, so you don't need to fiddle with centering it manually in the shell. Other kits likely would not center nicely in the Game Boy Pocket shell! <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-2-6-ips-high-brightness-drop-in-backlight-lcd-kit?variant=41398632251564">This kit works electrically, but requires you to center the image yourself.</a> If you end up making some sort of 3D-printed bracket to support this screen, feel free to share it here.  
   
 ### V. Compatibility with Other Mods
 
@@ -125,7 +125,7 @@ For reference, here's a close-up view of the parts on the right hand side of the
 
 [image]
 
-If you are using a LiPo mod on the MGBC, **DO NOT INCLDE EM7**. This component must be removed from the final build.
+If you are using a LiPo mod on the MGBC, **DO NOT INCLDE EM7**. This component must be removed from the final build. (That's why there's an asterisk on the board next to this part)
 
 [EM7 picture]
 
@@ -161,12 +161,13 @@ If you get incorrect results, then check the following:
   - Clean your volume dial by dripping IPA in it and spinning it back and forth. Consider replacing it with a new aftermarket version.
   - Reflow components in the audio circuit and/or the CPU audio pins.
   
-**Issue: White screen, glitchy display, miscolored display**
+**Issue: White screen, glitchy display, miscolored display, stuck on the boot logo**
 
 - Reflow the SRAM (U2) and make sure all pins are well-connected to the board.
 - Reflow the FFC connector (P2) and make sure all pins are well-connected to the board.
 - Reflow the CPU (U1) and make sure all pins are well-connected to the board.
 - If miscolored, make sure the palette isn't being cycled on the IPS kit, as there is a touchpad that cycles through different color modes.
+- If you're stuck on the boot screen, also check to make sure the cartridge and cartridge connector you're using is clean and making good contact.
 
 ### Final Assembly
 
