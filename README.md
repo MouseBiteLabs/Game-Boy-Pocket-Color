@@ -86,6 +86,9 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
   - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-audio/products/funnyplaying-clear-game-boy-color-speaker?variant=37728953761964">FunnyPlaying Clear Game Boy Color & Pocket Speaker</a>
 - **Battery Tabs:** This one is another part I commonly forget about. You *cannot* use Game Boy Color ones, you *must* use Game Boy Pocket battery terminals. Luckily, they're very easy to find.
   - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-power/products/gbp-game-boy-pocket-high-quality-replacement-battery-contact-terminals?variant=37893131305132">GBP Game Boy Pocket High Quality Replacement Battery Contact Terminals
+- **Stickers:** Completely optional, but they can really bring a build together. Especially if you have custom Pocket Color stickers!
+  - Nextstopplease: <a href="https://nextstopplease.square.site/product/gb-pocket-color-label/196?cp=true&sa=true&sbp=false&q=false">GB Pocket Color Label</a>
+  - 8bitlabels: <a href="https://www.etsy.com/shop/8bitlabels?ref=simple-shop-header-name&listing_id=1097537372">8bitlabels on Etsy</a>
 
 <b>Buying from RGRS? Consider helping out some cool people with these referral links:</b>
 - <a href="https://retrogamerepairshop.com/?ref=ltyD2rUX">CodyWick</a>
