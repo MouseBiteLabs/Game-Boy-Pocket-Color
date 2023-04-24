@@ -39,7 +39,7 @@ You can also use other power supply boards from other creators - check the "Comp
 
 ### II. Brand New Electronic Parts
 
-The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=bc22c05d94
+The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=2362d7198d
 
 Double check to see if any parts are missing, and consider ordering multiples of some parts. Also, there are some parts you may want to remove (like the tactile switches). **If a part is backordered, or out of stock** - check the Excel file, or the separate BOMs for each circuit board assembly page. There may be alternate part options. You can also check for stock at places like Digikey. And you can always use Octopart.com to help find in-stock parts at other websites. I can't maintain the cart for every out-of-stock part, so please do some research :)
 
