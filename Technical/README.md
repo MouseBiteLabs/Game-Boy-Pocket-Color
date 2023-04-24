@@ -18,11 +18,11 @@ This write-up serves as a technical explainer document for the MGBC project. I w
 
 ## Power LED Indicator
 
-![image](https://user-images.githubusercontent.com/97127539/232262578-89d663ab-6faa-4ef9-830f-36856ece43e9.png)
+![image](https://user-images.githubusercontent.com/97127539/233899221-f438ee8a-f05b-4d65-8bda-058cb92ac1ca.png)
 
 - SW is the voltage coming from the power source (batteries, DC jack). The BATT test pad in the schematic is for connecting to the OSD display for battery level indication. Note that if you are using a LiPo, the OSD will not accurately read the battery voltage level. (I couldn't be bothered to include a scaling circuit to address this!)
 - R4 and C3 is a simple RC filter to keep the battery level reading steady during transient loads, such as when the audio is loud.
-- U7, R2, R4, R5, and R8 set up a non-inverting Schmitt trigger. When the battery voltage is above ~2.2 V, the output of U7 (pin 4) is pulled up by R11 to 5 V. This drives the base of Q2 to short R10, reducing the resistance in series with LED1. When the battery value drops below ~2.2 V, pin 4 is pulled to GND. This turns off Q2, connecting R10 in series with and dimming LED1.
+- U7, R2, R4, R5, and R8 set up a non-inverting Schmitt trigger. When the battery voltage is above ~2.3 V, the output of U7 (pin 4) is pulled up by R11 to 5 V. This drives the base of Q2 to short R10, reducing the resistance in series with LED1. When the battery value drops below ~2.3 V, pin 4 is pulled to GND. This turns off Q2, connecting R10 in series with and dimming LED1.
 
 ## FFC Connector
 
@@ -73,6 +73,7 @@ There are six test points at the top of the MGBC for short wires to connect to t
 - <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board repo</a>
 -	<a href="https://console5.com/techwiki/images/e/e6/Nintendo_GBC_Schematic.png">GBC schematic</a>
 -	<a href="https://www.ti.com/lit/ds/symlink/lm4853.pdf?ts=1656384256966&ref_url=https%253A%252F%252Fwww.google.com%252F">LM4853 datasheet</a>
+-	<a href="https://www.ti.com/lit/ds/symlink/tps3840.pdf?ts=1682310123628">TPS3840 datasheet</a>
 
 # License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
