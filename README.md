@@ -196,15 +196,22 @@ Next, I finished the build. The end.
 -	Push in: System reset
   
 ## Power Draw Measurements
-For these estimates, battery life is calculated using two eneloop pro NiMH AA batteries (total of ~1860 mWh). Keep in mind that these are very rough estimates. I tried to be conservative in the power draw measurements, so hopefully these numbers represent a *mostly* worst case. Actual playtime *will* vary due to a variety of factors - changes in efficiency and performance as the battery voltage changes, differences in game audio, etc.
+For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers.
 
-| Test Criteria | Power Draw | Estimated Battery Life |
-| ------------- | ------------- | ------------- |
-| IPS max brightness, speaker volume 100%, Everdrive X5	| mW | hr |
-| IPS max brightness, speaker volume 100%, original cartridge | mW | hr |
-| IPS med brightness, headphones, Everdrive X5	| mW	| hr |
-| IPS med brightness, speaker volume 100%, original cartridge | mW	| hr |
-| IPS min brightness, headphones, original cartridge	| mW	| hr |
+| IPS Screen Brightness | Cartridge Type | Volume | Headphones? | Time to dim LED | Playtime       | Power Draw (mW) |
+| --------------------- | -------------- | ------ | ----------- | --------------- | -------------- | --------------- |
+| Max                   | Everdrive X5   | Max    | No          | 2 hrs, 15 mins  | 2 hrs, 55 mins | 765             |
+| Max                   | Everdrive X5   | Max    | Yes         | 3 hrs, 0 mins   | 3 hrs, 30 mins | 638             |
+| Max                   | Everdrive X5   | Min    | N/A         | ? hrs, ? mins   | 3 hrs, 47 mins | 590             |
+| Max                   | OEM Cart       | Max    | No          | ? hrs, ? mins   | 3 hrs, 10 mins | 705             |
+| Max                   | OEM Cart       | Max    | Yes         | 3 hrs, 31 mins  | 4 hrs, 0 mins  | 558             |
+| Max                   | OEM Cart       | Min    | N/A         | 3 hrs, 28 mins  |  hrs,  mins    | #DIV/0!         |
+| Min                   | Everdrive X5   | Max    | No          |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
+| Min                   | Everdrive X5   | Max    | Yes         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
+| Min                   | Everdrive X5   | Min    | N/A         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
+| Min                   | OEM Cart       | Max    | No          |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
+| Min                   | OEM Cart       | Max    | Yes         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
+| Min                   | OEM Cart       | Min    | N/A         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
 
 ## Audio Recordings and Spectrum
 For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
