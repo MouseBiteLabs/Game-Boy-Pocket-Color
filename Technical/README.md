@@ -56,11 +56,13 @@ R3 and C17 introduces a time delay on the /RESET pin during start-up, to allow t
 
 ## Navigation Switch
 
-This takes place where the contrast wheel used to be. On the Q5 board, there are two capacitive touch sensors - one for changing brightness, one for changing the color palette. Instead of using the touch sensors in the MGBC, the navigation switch will toggle these inputs by connecting a series capacitance to ground to simulate a touch. This also has the benefit of not having to modify the driver board in any way, and instead just requiring soldered wires to the board where capacitive sensors were connected.
+This takes place where the contrast wheel used to be. On the Q5 board, there are two capacitive touch sensors - one for changing brightness, one for changing the color palette. Instead of using the touch sensors in the MGBC, the navigation switch will toggle these inputs by connecting a series capacitance (C13 and C14) to ground to simulate a touch. This also has the benefit of not having to modify the driver board in any way, and instead just requiring soldered wires to the board where capacitive sensors were connected.
 
-![image](https://user-images.githubusercontent.com/97127539/229975981-64d72321-9d51-4f81-8900-453c6fdfeb54.png)
+![image](https://user-images.githubusercontent.com/97127539/234165807-e66dc724-aec9-429d-9565-c1d0a96ae011.png)
 
-Rocking up on the dial will toggle the brightness setting, rocking it down will toggle the color palette setting. Rocking up and holding it will toggle the battery level display on the screen, and rocking it down and holding it will toggle the pixel grid. Pushing in on the switch grounds the /RESET line on the CPU to act as a reset button, if the designated solder pads are bridged.
+C15 and C20 are provided to de-sensitize the touch sensors on the IPS kit, so that getting your fingers too close to the wires routed near the inside edge of the shell does not accidentally trigger a touch. Using the rocker switch doesn't *disable* the touch sensor, it just simulates a touch. So you can still accidentally trigger the touch sensors yourself.
+
+When wired properly, rocking up on the dial will toggle the brightness setting, rocking it down will toggle the color palette setting. Rocking up and holding it will toggle the battery level display on the screen, and rocking it down and holding it will toggle the pixel grid. Pushing in on the switch grounds the /RESET line on the CPU to act as a reset button, if the designated solder pads are bridged.
 
 ## OSD Pads
 
