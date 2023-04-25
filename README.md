@@ -47,6 +47,8 @@ Also note, this BOM does not include parts for the Pocket Mouse Power Board. <a 
 
 ### III. Game Boy Electronic Parts
 
+*Despite this being a **Pocket** Color, you don't actually need a Game Boy Pocket. However, this project **does require** a Game Boy Color.*
+
 There are a handful of parts that I have not located aftermarket substitutes for, and will therefore necessitate an original Game Boy console to salvage from. Please note that removing these parts is not a trivial task, and **requires advanced soldering and desoldering skills to be successful.**
 
 - The following parts from an original Game Boy Color console
@@ -56,10 +58,13 @@ There are a handful of parts that I have not located aftermarket substitutes for
   -	P1 – Cartridge connector
   -	P5 - Headphone jack
 
-The following parts can be salvaged from a Game Boy, but aftermarket options exist:
+The following parts can be salvaged from a Game Boy Color, but aftermarket options exist:
 
   - U2 - LH52256CVTXIZ (SRAM); alternate: https://mou.sr/3f8G0Mi
   - EM10 - input filter; alternate: https://mou.sr/3FiMvXw
+
+The following parts can be salvaged from a Game Boy Color *or* Game Boy Pocket, but aftermarket options exist:
+
   -	VR1 – Volume dial
   -	SW1 – Power switch
   -	P3 - Link port
@@ -72,7 +77,7 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 -	**Shell:** I generally recommend the Funnyplaying "IPS Ready" ones if you don't want to trim anything. If you don't use these, then you're on your own for how to prepare it - generally, you can follow guides for preparing a Pocket for an IPS screen kit.
     - RGRS: <a href="https://retrogamerepairshop.com/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut?pr_prod_strat=copurchase&pr_rec_id=d8b0186ad&pr_rec_pid=6280907751596&pr_ref_pid=6115075391660&pr_seq=uniform">FunnyPlaying Game Boy Pocket IPS Backlight Ready Shell Housing No Cut</a>
 -	**Screen Kit:** This is the important one. You need this specific type of kit - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido. Laminated ones are *not* compatible, but kits that include a lit-up logo are fine to use. Make sure you DO NOT get the Game Boy Pocket version - it is not compatible!
-    - RGRS: <a href="https://retrogamerepairshop.com/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228">GBC Q5 XL IPS Backlight with OSD</a>
+    - RGRS: <a href="https://retrogamerepairshop.com/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228">GBC Q5 XL IPS Backlight with OSD</a> OR <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-osd-ips-kit-with-color-changing-logo?variant=41819042185388">Game Boy Color Q5 OSD IPS Kit with Color Changing Logo 
     - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>
     - AliExpress: <a href="https://www.aliexpress.us/item/3256801650459088.html?spm=a2g0o.productlist.main.1.758e53f17WUFK2&algo_pvid=24ef67e3-d608-4269-a663-05eafed1bd17&algo_exp_id=24ef67e3-d608-4269-a663-05eafed1bd17-0&pdp_npi=3%40dis%21USD%2145.9%2145.9%21%21%21%21%21%4021224e9b16816641208271256d074d%2112000017802039303%21sea%21US%210&curPageLogUid=dCymHIE0cr4X">GBC Q5 IPS LCD Kit</a>
 -	**Lens:** I recommend you get an "IPS Lens" as the viewing area is slightly larger than the OEM one. 
@@ -98,8 +103,6 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 - Nataliethenerd
 - B23N
 - Tito
-
-Note that the IPS kit I have listed is the *easiest* IPS kit to use that is compatible with this build. It includes an image centering feature, so you don't need to fiddle with centering it manually in the shell. Other kits likely would not center nicely in the Game Boy Pocket shell! <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-2-6-ips-high-brightness-drop-in-backlight-lcd-kit?variant=41398632251564">This kit works electrically, but requires you to center the image yourself.</a> If you end up making some sort of 3D-printed bracket to support this screen, feel free to share it here.  
   
 ### V. Compatibility with Other Mods
 
@@ -136,7 +139,7 @@ After the surface mount components are taken care of, I go on to add most of the
 
 The next step to test is the power board, or U5. I *highly* suggest making sure you've assembled the power board correctly before directly connecting it and powering it all on, cowboy style. If you're able to test your power board before installation, definitely do that, but if you're not sure how, or don't have the ability, then you can use the MGBC board to test it. Just solder the board in the socket *except* for pin 7. Pin 7 is the 5 V pin, which powers the rest of the Game Boy. Keeping pin 7 depopulated, you can connect up batteries or a power supply, and turn the power switch on. Use a multimeter to measure the voltage from pin 7 (positive test probe) to GND (negative test probe). You should read approximately 5 V here - anything more than 5.1 V or less than 4.9 V means you've likely got something wrong on your power board. If you confirm you have 5 V on pin 7, you can go ahead and connect it up to the MGBC board (remove the batteries first, of course).
 
-If you don't have 5 V out of pin 7 when testing this way, along with checking your power board assembly, you will also want to check to make sure the MGBC board doesn't have any issues. Read on...
+If you don't have 5 V out of pin 7 when testing this way, along with checking your power board assembly, you will also want to check to make sure the MGBC board doesn't have any issues.
 
 ### Troubleshooting Common Electrical Issues
 
@@ -152,7 +155,7 @@ If you get incorrect results, then check the following:
   - Check orientation of EM10 - is it 90 degrees rotated?
   - Check for a dirty DC jack (P4) - you should read nearly zero ohms with a resistance check across pins 2 and 3 when you don't have anything plugged in!
   - Make sure the batteries completely touch the battery terminals in the battery bay. This frequently happens to me in aftermarket shells without the battery separator.
-  - Clean your power switch regardless of any issues, but if it's particularly dirty, you may not get any voltage reading on pin 1 even when it's turned on
+  - Clean your power switch regardless of any issues (it will improve the switch action reliability), but if it's particularly dirty, you may not get any voltage reading on pin 1 even when it's turned on
   
 **Issue: No sound or bad quality sound**
 
@@ -196,22 +199,24 @@ Next, I finished the build. The end.
 -	Push in: System reset
   
 ## Power Draw Measurements
-For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers.
+For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates - I rounded to the nearest 5 minute interval, and the nearest 10's of mW. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers.
 
 | IPS Screen Brightness | Cartridge Type | Volume | Headphones? | Time to dim LED | Playtime       | Power Draw (mW) |
 | --------------------- | -------------- | ------ | ----------- | --------------- | -------------- | --------------- |
-| Max                   | Everdrive X5   | Max    | No          | 2 hrs, 15 mins  | 2 hrs, 55 mins | 765             |
-| Max                   | Everdrive X5   | Max    | Yes         | 3 hrs, 0 mins   | 3 hrs, 30 mins | 638             |
-| Max                   | Everdrive X5   | Min    | N/A         | ? hrs, ? mins   | 3 hrs, 47 mins | 590             |
-| Max                   | OEM Cart       | Max    | No          | ? hrs, ? mins   | 3 hrs, 10 mins | 705             |
-| Max                   | OEM Cart       | Max    | Yes         | 3 hrs, 31 mins  | 4 hrs, 0 mins  | 558             |
-| Max                   | OEM Cart       | Min    | N/A         | 3 hrs, 28 mins  |  hrs,  mins    | #DIV/0!         |
+| Max                   | Everdrive X5   | Max    | No          | 2 hrs, 15 mins  | 2 hrs, 55 mins | 750             |
+| Max                   | Everdrive X5   | Max    | Yes         | 3 hrs, 0 mins   | 3 hrs, 30 mins | 620             |
+| Max                   | Everdrive X5   | Min    | N/A         | ? hrs, ? mins   | 3 hrs, 45 mins | 580             |
+| Max                   | OEM Cart       | Max    | No          | ? hrs, ? mins   | 3 hrs, 10 mins | 700             |
+| Max                   | OEM Cart       | Max    | Yes         | 3 hrs, 30 mins  | 4 hrs, 0 mins  | 560             |
+| Max                   | OEM Cart       | Min    | N/A         | 3 hrs, 45 mins  | 4 hrs, 5 mins  | 540             |
 | Min                   | Everdrive X5   | Max    | No          |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
 | Min                   | Everdrive X5   | Max    | Yes         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
 | Min                   | Everdrive X5   | Min    | N/A         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
 | Min                   | OEM Cart       | Max    | No          |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
 | Min                   | OEM Cart       | Max    | Yes         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
 | Min                   | OEM Cart       | Min    | N/A         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
+
+The variables that seem to affect the power draw the most are flash carts and using the speakers. I only own an Everdrive X5, which of the flash cart offerings is one of the most power efficient. So something like the EZ Flash Jr. is likely to drain batteries faster.
 
 ## Audio Recordings and Spectrum
 For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
