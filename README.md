@@ -123,19 +123,21 @@ I'm going to split this into a few separate sections. This is the general proces
 
 ### Circuit Board Assembly
 
-Usually when I'm populating a board, I assemble all the non-Gameboy surface mount components first, not including C24, C29, and C45. After soldering these components, I solder the CPU in, then I use hot air and solder paste to reflow X1, C24, C29, and C45 onto the board. This seems to be the easiest way to go about assembling the components, for me anyway. 
+Usually when I'm populating a board, I follow these steps:
+  
+1) Assemble all the non-Gameboy surface mount components first, not including P2, U2, C24, C29, and C45. 
+  
+2) After soldering these components, I solder the CPU and RAM in, then the FFC connector.
+  
+3) I use hot air and solder paste to reflow X1, C24, C29, and C45 onto the board. Be sure to either cover the FFC connector with kapton tape to avoid melting the plastic, or heat the board from the bottom.
 
-[image of board]
-
-For reference, here's a close-up view of the parts on the right hand side of the board - it's a bit cramped, I know, and the reference designators are not the easiest things to see.
-
-[image]
-
+![assemblysteps](https://user-images.githubusercontent.com/97127539/235049911-c1a1544d-e6bf-4002-8d76-e58140b73a33.png)
+  
 If you are using a LiPo mod on the MGBC, **DO NOT INCLDE EM7**. This component must be removed from the final build. (That's why there's an asterisk on the board next to this part)
 
 [EM7 picture]
 
-After the surface mount components are taken care of, I go on to add most of the rest of the components - VR1, P3, P4, P5, SW1, SW2, LED1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
+After the surface mount components are taken care of, I go on to add most of the rest of the components - VR1, P3, P4, P5, SW1, SW2, LED1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). The cart connector is a real pain to remove, and it gets really cramped around the audio circuit if there's something to troubleshoot there. So I only put the cart connector in at the very last step, after I've verified the system turns on, displays correctly on the screen, and gives me the little "ding" start-up noise.
 
 The next step to test is the power board, or U5. I *highly* suggest making sure you've assembled the power board correctly before directly connecting it and powering it all on, cowboy style. If you're able to test your power board before installation, definitely do that, but if you're not sure how, or don't have the ability, then you can use the MGBC board to test it. Just solder the board in the socket *except* for pin 7. Pin 7 is the 5 V pin, which powers the rest of the Game Boy. Keeping pin 7 depopulated, you can connect up batteries or a power supply, and turn the power switch on. Use a multimeter to measure the voltage from pin 7 (positive test probe) to GND (negative test probe). You should read approximately 5 V here - anything more than 5.1 V or less than 4.9 V means you've likely got something wrong on your power board. If you confirm you have 5 V on pin 7, you can go ahead and connect it up to the MGBC board (remove the batteries first, of course).
 
