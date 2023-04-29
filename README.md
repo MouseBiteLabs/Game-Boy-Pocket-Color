@@ -123,7 +123,7 @@ I'm going to split this into a few separate sections. This is the general proces
 
 ### Circuit Board Assembly
 
-Usually when I'm populating a board, I follow these steps:
+Usually when I'm populating a board, I follow this order:
   
 1) Assemble all the non-Gameboy surface mount components first, not including P2, U2, C24, C29, and C45. 
   
@@ -131,7 +131,7 @@ Usually when I'm populating a board, I follow these steps:
   
 3) I use hot air and solder paste to reflow X1, C24, C29, and C45 onto the board. Be sure to either cover the FFC connector with kapton tape to avoid melting the plastic, or heat the board from the bottom.
   
-4) Add most of the other external-facing components - VR1, P3, P4, P5, SW1, SW2, LD1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
+4) Finally, I add most of the other external-facing components - VR1, P3, P4, P5, SW1, SW2, LED1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
   
 ![assemblysteps](https://user-images.githubusercontent.com/97127539/235049911-c1a1544d-e6bf-4002-8d76-e58140b73a33.png)
   
@@ -151,7 +151,7 @@ Solder wires on pins 1, 2, and 3 from the MGBC board to the power board (the lef
   
 ![image](https://user-images.githubusercontent.com/97127539/235282279-d22b57a9-9a5a-4d9a-9d33-f8fa2a7b4e75.png)
 
-If you confirm you have 5 V on pin 7, then remove the wires and connect the board via header pins (if not, check the next section for some troubleshooting advice). Finally, you'll want to test the screen kit. Slide the FFC cable into P2 on the MGBC board, and let it hang over the front of the board. I recommend placing something insulative - like a piece of paper, or kapton tape - over the empty holes of the cart connector, to prevent the back of the display from shorting on the pins. If you have a power supply, you can use that to power it on the battery terminals (set it for 3 V, 1.5 A). If not, you can again put the Game Boy in the back half of a Game Boy Pocket shell to use batteries. (I have mixed results with using battery holders with alligator clips.)
+If you confirm you have 5 V on pin 7, then remove the wires and connect the board via header pins (if not, check the next section for some troubleshooting advice). Finally, you'll want to test the screen kit. Slide the FFC cable into P2 on the MGBC board, and make sure the cable is all the way in and the bale is pushed all the way down. Let the screen hang over the front of the board. I recommend placing something insulative - like a piece of paper, or kapton tape - over the empty holes of the cart connector, to prevent the back of the display from shorting on the pins. If you have a power supply, you can use that to power it on the battery terminals (set it for 3 V, 1.5 A). If not, you can again put the Game Boy in the back half of a Game Boy Pocket shell to use batteries. (I have mixed results with using battery holders with alligator clips.)
   
 ![image](https://user-images.githubusercontent.com/97127539/235283500-ccf2f536-ea98-42ce-b0f8-d0a40bca9275.png)
   
@@ -161,15 +161,21 @@ Turn it on, and check for these things:
 2) The speaker makes the start-up ding (use headphones to check both left and right channels, and check the volume)
 3) The screen shows the GBC splash logo
   
-*Note that with the Pocket Mouse Power Board, you will need to wait a few seconds for the capacitors to charge up after inserting batteries before being able to turn the system fully on.*
+Some quick troubleshooting tips - first, make sure the batteries are in all the way (or your power supply is set correctly) and the cable for the IPS kit is inserted fully and the bale is pushed all the way down. If only the LED isn't turning on, you might have the LED backwards. If you can hear the start-up noise, but nothing on the screen, then check the connections on the FFC connector and the top row of pins on the CPU - they probably need a reflow. If you get a blank screen, but no start-up jingle, then check the connections on the FFC, CPU, and RAM chips. And if you have the splash screen, but no audio, then check your speaker, headphone jack, and orientation of tantalum capacitors. If nothing is happening when you flip the switch, or you still cant figure out where your error is coming from, check out the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#troubleshooting-common-electrical-issues">Troubleshooting</a> section for a few more detailed troubleshooting tips.
+
+*Note: If you're using the Pocket Mouse Power Board, you have to wait a few seconds after inserting batteries the first time before it will operate normally. Once the batteries have been in the system for a few seconds, it will act completely normally.*
   
-Some quick troubleshooting tips - if only the LED isn't turning on, you might have the LED backwards. If you can hear the start-up noise, but nothing on the screen, then check the connections on the FFC connector and the top row of pins on the CPU - they probably need a reflow. If you get a blank screen, but no start-up jingle, then check the connections on the FFC, CPU, and RAM chips. And if you have the splash screen, but no audio, then check your speaker, headphone jack, and orientation of tantalum capacitors. If you still cant figure out where your error is coming from, check out the next section for a few more detailed troubleshooting tips.
-  
-Once you've verified the system boots up correctly, and you have acceptable sound coming out of the speakers and headphones with the start-up noise, you can go ahead and put the cart connector into the board. I save this for last, because there are a few components in the audio circuit close to the connector, and they're difficult to rework without melting the cart connector plastic.
+Once you've verified the system boots up correctly, and you have acceptable sound coming out of the speakers and headphones with the start-up noise, you can go ahead and put the cart connector into the board. I save this for last, because there are a few components in the audio circuit close to the connector, and they're difficult to rework without melting the cart connector plastic. Though, <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#adjusting-volume-range">if you want to adjust the volume range</a>, you may want to adjust these parts before soldering the cart connector in (though I think the range is perfectly acceptable as-is).
   
 When you install the cartridge connector, be sure to trim down the pins nearly flush to the PCB. Then, I usually cover the exposed solder with kapton tape. The Q5 screen sits right above these pins, and the back of it can short to the cart connector pins once the system is fully assembled.
   
 ![image](https://user-images.githubusercontent.com/97127539/235283082-a844ecf2-d0d5-4473-99e0-92a3c2a186fa.png)
+
+### Customization Options
+
+There are a number of options you have to customize your build. This includes, among other things: adding a reset button, adding tactile switches for the buttons, and changing the brightness of the LED. Review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#customization-options">Customization Options</a> section of the MGBC PCB folder for more information.
+
+This is also the point where I would install any desired mods discussed above in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Mod Compatibility</a> section. Though, there aren't too many mods out there that would be required to add.
 
 ### Troubleshooting Common Electrical Issues
 
@@ -212,7 +218,17 @@ Before assembling the board into the shell, I prepared the Q5 board solder pads.
 
 ![image](https://user-images.githubusercontent.com/97127539/184281803-ea1ec2ce-f2cf-489f-90db-754a21dc3f10.jpg)
 
-Next, I finished the build. The end.
+Then, I put the lens on the front half of the shell, take the screen protector off of the IPS screen, and carefully place it in the back half of the shell - be sure no dust or hair is between the lens and the screen!. Then I place the buttons and membranes down.
+
+[picture]
+
+Next is to put the assembled PCB into the shell. I put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff but be careful installing it. Also at this point, I *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!**
+
+[picture]
+
+Then all that's left is to put the power switch in its holder, and secure the back half of the shell on.
+
+[picture]
 
 ## Auxilliary Controls
 ### Q5 XL IPS Backlight with OSD
