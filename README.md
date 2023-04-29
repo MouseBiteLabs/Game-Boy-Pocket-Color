@@ -27,7 +27,7 @@ If you choose to build this project yourself, be warned - this is a considerably
 
 ## Bill of Materials (BOM)
 
-There are a handful of categories for the parts you need for this build. Please review all of them! The total BOM cost will come out to anywhere between $120 and $200 (NOT including the cost of a donor Game Boy Color console!) depending on the options you choose and potential deals you can get on certain parts.
+There are a handful of categories for the parts you need for this build. Please review all of them! The total BOM cost will come out to anywhere between $120 and $200 (NOT including the cost of a donor Game Boy Color console!) depending on the options you choose and potential deals you can get on certain parts. Note that with the exception of a few components from a donor Game Boy Color, *most* of the parts are brand new.
 
 ### I. Circuit Boards
   
