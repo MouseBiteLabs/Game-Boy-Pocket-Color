@@ -173,9 +173,9 @@ When you install the cartridge connector, be sure to trim down the pins nearly f
 
 You will also want to test out the cartridge connector! Put the screen back in, and power it up like you tested above, but with a game inserted this time. If you get a garbled Nintendo logo, or the game doesn't boot at all, make sure your cartridge and cartridge connector are cleaned. You may also want to reflow the cart connector or the bottom row of CPU pins in case one of those lines are not making proper connection.
 
-I suggest running the color tests in the <a href="https://github.com/pinobatch/240p-test-mini/releases/">240p test suite ROM</a>, if you have a flash cart to run it on. It will tell you if you have any poor connections on the FFC lines - the screen might work, but you might be missing a connection on one of the 15 RGB pins! If your colors look off, reflow the connections on the top row of pins on the CPU and/or the FFC connector.
+I suggest running the color tests in the <a href="https://github.com/pinobatch/240p-test-mini/releases/">240p test suite ROM</a>, if you have a flash cart to run it on. It will tell you if you have any poor connections on the FFC lines - the screen might work, but you might be missing a connection on one of the 15 RGB pins! If your colors look off, reflow the connections on the top row of pins on the CPU and/or the FFC connector. This picture (provided by <a href="https://retrogamerepairshop.com/?ref=HSj4v5OO">JackV</a>) shows a before and after pic for reflowing a few mis-soldered color pins.
 
-[image of failed color test]
+![image](https://user-images.githubusercontent.com/97127539/235316239-43251055-ed33-4d0a-b5b8-bf5c3a8b2e9e.png)
 
 ### Customization Options
 
@@ -224,11 +224,11 @@ Before assembling the board into the shell, I prepared the Q5 board solder pads.
 
 ![image](https://user-images.githubusercontent.com/97127539/184281803-ea1ec2ce-f2cf-489f-90db-754a21dc3f10.jpg)
 
-Then, I put the lens on the front half of the shell, take the screen protector off of the IPS screen, and carefully place it in the back half of the shell - be sure no dust or hair is between the lens and the screen!. Then I place the buttons and membranes down.
+Then, I put the lens on the front half of the shell, take the screen protector off of the IPS screen, and carefully place it in the back half of the shell - be sure no dust or hair is between the lens and the screen! Then I place the buttons and membranes down.
 
 [picture]
 
-Next is to put the assembled PCB into the shell. I put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff but be careful installing it. Also at this point, I *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!**
+Next is to put the assembled PCB into the shell. I put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff so be careful installing it. Also at this point, I *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!** Though if you're attempting this mod, I would hope you have a steady enough hand to keep the soldering iron away from the melty bits ;)
 
 [picture]
 
