@@ -15,15 +15,21 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 ## Disclaimer
 
-Before I go any further, please read this VERY important disclaimer, if you are thinking about making this yourself.
+Before I go any further, please read this VERY important disclaimer, **IN IT'S ENTIRETY,** if you are thinking about making this yourself.
 
 I made this project first and foremost for my own purposes. Nearly all of the features I have included are things I personally wanted. I have tried my hardest to make the project modular, if others would like to improve or change things easily, and I have also tried very hard to make the design somewhat less prone to potential errors during assembly. But in the end, every decision I made was for what I wanted the final product to be, with my skill level in mind.
 
-If you choose to build this project yourself, be warned - this is a considerably advanced, and expensive build. You must be comfortable with the fact that you may lose or damage expensive components. You are 100% liable for any damage done to your property or yourself. I am not responsible for any damage or loss of property incurred while attempting this project, or after completion of the project - you alone accept all risk. While I am confident in this design, I cannot claim full compatibility with every system configuration. And there may be latent issues that have yet to crop up. If you see anything I may have missed, or some dubious design choice, feel free to ask questions or comment as such - feedback is appreciated, corrections are welcome. You accept all risks and costs associated to this build if you choose to attempt it.
+So if you choose to build this project yourself, be warned - this is a considerably advanced, and expensive build. You must be comfortable with the fact that you may lose or damage expensive components. You are 100% liable for any damage done to your property or yourself. I am not responsible for any damage or loss of property incurred while attempting this project, or after completion of the project - you alone accept all risk. If you're *at all* questioning wether or not you can successfully attempt this project, please first practice with the <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a> - this requires no original Game Boy parts, and the total parts cost of the board is less than $10. And before you dismantle a Game Boy, solder the FFC connector on the top of the MGBC board to make sure you are comfortable with long rows of fine pitch pins, as it is the same pin pitch as the much more expensive and important CPU. **If you have any difficulty assembling either the power board or the FFC connector, I highly discourage attempting the rest of the build.**
+
+Furthermore, while I am confident in this design, I cannot claim full compatibility with every system configuration. And there may be latent issues that have yet to crop up. If you see anything I may have missed, or some dubious design choice, feel free to ask questions or comment as such - feedback is appreciated, corrections are welcome. You accept all risks and costs associated to this build if you choose to attempt it.
 
 ![image](https://user-images.githubusercontent.com/97127539/230615632-93c3e6fc-b554-4ee2-8f35-8e44d3867af7.png)
 
-**DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! You will AT MINIMUM need to be proficient in <a href="https://youtu.be/5uiroWBkdFY?t=110">drag soldering</a> and <a href="https://youtu.be/X3Rc1s6EpSI">hot air reflowing</a>. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
+In summation: **DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! This is in NO WAY a beginner's project. You will AT MINIMUM need to be proficient in <a href="https://youtu.be/5uiroWBkdFY?t=110">drag soldering</a> and <a href="https://youtu.be/X3Rc1s6EpSI">hot air reflowing</a>. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
+
+(These parts are *tiny*. Quarter for scale - do not install a quarter in your final build.)
+
+![image](https://user-images.githubusercontent.com/97127539/235316631-477d5fd4-df52-48bd-8271-00153829703f.png)
 
 ## Bill of Materials (BOM)
 
