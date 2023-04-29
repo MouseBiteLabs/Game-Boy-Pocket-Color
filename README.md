@@ -175,7 +175,7 @@ When you install the cartridge connector, be sure to trim down the pins nearly f
 
 There are a number of options you have to customize your build. This includes, among other things: adding a reset button, adding tactile switches for the buttons, and changing the brightness of the LED. Review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#customization-options">Customization Options</a> section of the MGBC PCB folder for more information.
 
-This is also the point where I would install any desired mods discussed above in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Mod Compatibility</a> section. Though, there aren't too many mods out there that would be required to add.
+This is also the point where I would install any desired mods discussed above in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Mod Compatibility</a> section (other than power boards, obviously). Though, there aren't too many mods out there that would be required to add. Again, there is absolutely no need for additional audio mods or power cleaner mods on this build.
 
 ### Troubleshooting Common Electrical Issues
 
