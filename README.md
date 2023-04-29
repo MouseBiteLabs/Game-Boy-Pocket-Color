@@ -171,6 +171,12 @@ When you install the cartridge connector, be sure to trim down the pins nearly f
   
 ![image](https://user-images.githubusercontent.com/97127539/235283082-a844ecf2-d0d5-4473-99e0-92a3c2a186fa.png)
 
+You will also want to test out the cartridge connector! Put the screen back in, and power it up like you tested above, but with a game inserted this time. If you get a garbled Nintendo logo, or the game doesn't boot at all, make sure your cartridge and cartridge connector are cleaned. You may also want to reflow the cart connector or the bottom row of CPU pins in case one of those lines are not making proper connection.
+
+I suggest running the color tests in the <a href="https://github.com/pinobatch/240p-test-mini/releases/">240p test suite ROM</a>, if you have a flash cart to run it on. It will tell you if you have any poor connections on the FFC lines - the screen might work, but you might be missing a connection on one of the 15 RGB pins! If your colors look off, reflow the connections on the top row of pins on the CPU and/or the FFC connector.
+
+[image of failed color test]
+
 ### Customization Options
 
 There are a number of options you have to customize your build. This includes, among other things: adding a reset button, adding tactile switches for the buttons, and changing the brightness of the LED. Review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#customization-options">Customization Options</a> section of the MGBC PCB folder for more information.
