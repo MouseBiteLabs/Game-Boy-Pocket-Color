@@ -11,7 +11,7 @@ My <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color">DMGC project</a
 - The option for tactile switches for the face buttons - like the GBA SP.
 - No externally viewable case modifications.
 
-All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the Technical folder. Please review the FAQ at the bottom of the README for answers to.... frequently asked questions.
+All gerbers and source files can be found in this repo, as this project is fully open source. Technical documentation of the board can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Technical">Technical folder</a>. Please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions.
 
 ## Disclaimer
 
@@ -41,7 +41,7 @@ First and foremost, you will need two brand new circuit boards for this build:
 - <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#mgbc-mbl-01">the main MGBC circuit board</a>, and 
 - a power supply board that fits in the U5 socket on the MGBC board (like my <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a>)
 
-You can also use other power supply boards from other creators - check the "Compatibility with Other Mods" section below for more information. I don't recommend using an original power board from a Game Boy.
+You can also use other power supply boards from other creators - check the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Compatibility</a> section below for more information. I don't recommend using an original power board from a Game Boy.
 
 ### II. Brand New Electronic Parts
 
@@ -145,6 +145,8 @@ Usually when I'm populating a board, I follow this order:
   
 **NOTE 2** - You may have to trim the pins on VR1, the volume dial, before soldering. I cut them down in half to make them fit nicer.
 
+**NOTE 3** - Keep VR1 and SW2 as far inside the board as the holes allow. This will reduce interference with the shell. You may need to file away a bit of the shell in order for the knobs to turn freely. It may be a good idea to do a quick fitment test in the shell before going farther into assembly.
+
 ![image](https://user-images.githubusercontent.com/97127539/235281962-d3de3158-d096-4479-8b11-8b610557d83b.png) ![image](https://user-images.githubusercontent.com/97127539/235283222-67c8e9a2-00a4-41b4-9448-10cceecbf2e5.png)
 
 ### Testing the Power Board and IPS Kit
@@ -169,7 +171,7 @@ Turn it on, and check for these things:
   
 Some quick troubleshooting tips - first, make sure the batteries are in all the way (or your power supply is set correctly) and the cable for the IPS kit is inserted fully and the bale is pushed all the way down. If only the LED isn't turning on, you might have the LED backwards. If you can hear the start-up noise, but nothing on the screen, then check the connections on the FFC connector and the top row of pins on the CPU - they probably need a reflow. If you get a blank screen, but no start-up jingle, then check the connections on the FFC, CPU, and RAM chips. And if you have the splash screen, but no audio, then check your speaker, headphone jack, and orientation of tantalum capacitors. If nothing is happening when you flip the switch, or you still cant figure out where your error is coming from, check out the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#troubleshooting-common-electrical-issues">Troubleshooting</a> section for a few more detailed troubleshooting tips.
 
-*Note: If you're using the Pocket Mouse Power Board, you have to wait a few seconds after inserting batteries the first time before it will operate normally. Once the batteries have been in the system for a few seconds, it will act completely normally.*
+*Note: If you're using the Pocket Mouse Power Board, you have to wait a few seconds after inserting batteries the first time before it will turn on with the power switch. Once the batteries have been in the system for a few seconds, it will act completely normally.*
   
 Once you've verified the system boots up correctly, and you have acceptable sound coming out of the speakers and headphones with the start-up noise, you can go ahead and put the cart connector into the board. I save this for last, because there are a few components in the audio circuit close to the connector, and they're difficult to rework without melting the cart connector plastic. Though, <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#adjusting-volume-range">if you want to adjust the volume range</a>, you may want to adjust these parts before soldering the cart connector in (though I think the range is perfectly acceptable as-is).
   
@@ -231,23 +233,25 @@ If you get incorrect results, then check the following:
 
 ### Final Assembly
 
-Before assembling the board into the shell, prepare the Q5 board solder pads. Cut six 30 gauge wire segments and solder them on the brightness, palette, battery, and OSD input pads. These will be soldered to the top of the board after the screen is installed.
-
-![image](https://user-images.githubusercontent.com/97127539/184281803-ea1ec2ce-f2cf-489f-90db-754a21dc3f10.jpg)
+Before assembling the board into the shell, it's a good idea to prepare the Q5 board solder pads. First, remove the touch sensor leads. Then cut six 30 gauge wire segments and solder them on the brightness, palette, battery, and OSD input pads. The one connected to the brightness touch sensor pad will be longer than the others, as it has to cut over to the other side of the board. These wires will be soldered to the top of the board after the screen is installed.
 
 Then, put the lens on the front half of the shell, take the screen protector off of the IPS screen, and carefully place it in the back half of the shell - be sure no dust or hair is between the lens and the screen! Then place the buttons and membranes down.
 
-[picture]
+![image](https://user-images.githubusercontent.com/97127539/235335579-8f236275-aaf2-4186-ab9b-87b1cbd5b1b0.png)
 
-Next is to put the assembled PCB into the shell. Put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff so be careful installing it. Also at this point, *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!** Though if you're attempting this mod, I would hope you have a steady enough hand to keep the soldering iron away from the melty bits ;)
+Next is to put the assembled PCB into the shell. Remember that you may need to lightly file away part of the shell around VR1 (volume dial) and/or SW2 (rocker switch) if the knobs interfere with the shell. Put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff so be careful installing it. Also at this point, *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!** Though if you're attempting this mod, I would hope you have a steady enough hand to keep the soldering iron away from the melty bits ;)
 
-[picture]
+![image](https://user-images.githubusercontent.com/97127539/235335793-c553a47c-2323-4034-8f37-74512b3923cf.png)
 
-Then all that's left is to put the power switch in its holder, and secure the back half of the shell on. Well, and center the image. It's going to be offset a bit. That's where the Q5 kit's OSD functionality comes into play. Open the menu by pressing Select, A, and B at the same time. Navigate up and down in the menu with A and B respectively, and hold select and press A to select the screen offset options (select+A again confirms your change, select+B backs out of it). Adjust the Y (and maybe X) coordinates so that the image is centered, for my build this was about [coordinates].
+Then all that's left is to put the power switch in its holder, and secure the back half of the shell on. Well, and center the image. It's going to be offset a bit. That's where the Q5 kit's image-centering functionality comes into play. Open the menu by pressing Select, A, and B at the same time. Navigate up and down in the menu with A and B respectively, and hold select and press A to select the screen offset options (select+A again confirms your change, select+B backs out of it). Adjust the V (and maybe H) coordinates so that the image is centered, for my build this was about 46 vertical, 37 horizontal.
 
-[picture before and after offset]
+*Also, if your screen kit includes the option for a backlit Game Boy Color lens logo, be sure to disable that in the OSD menu.*
+
+![image](https://user-images.githubusercontent.com/97127539/235335829-75f2d6c4-7cbb-4763-a4be-219cd9685b27.png)
 
 Add any stickers you want, and the MGBC is complete!
+
+![image](https://user-images.githubusercontent.com/97127539/235335874-ff820049-6666-4099-8ad0-025da20a4e00.png)
 
 ## Auxilliary Controls
 ### Q5 XL IPS Backlight with OSD
@@ -265,7 +269,7 @@ Add any stickers you want, and the MGBC is complete!
 -	Push in: System reset
   
 ## Power Draw Measurements
-For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates - I rounded to the nearest 5 minute interval, and the nearest 10's of mW. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers.
+For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates - I rounded to the nearest 5 minute interval, and the nearest 10's of mW. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers. (I will update this table as I get more data.)
 
 | IPS Screen Brightness | Cartridge Type | Volume | Headphones? | Time to dim LED | Playtime       | Power Draw (mW) |
 | --------------------- | -------------- | ------ | ----------- | --------------- | -------------- | --------------- |
@@ -275,12 +279,12 @@ For these estimates, battery life was measured using two eneloop pro NiMH AAA ba
 | Max                   | OEM Cart       | Max    | No          | ? hrs, ? mins   | 3 hrs, 10 mins | 700             |
 | Max                   | OEM Cart       | Max    | Yes         | 3 hrs, 30 mins  | 4 hrs, 0 mins  | 560             |
 | Max                   | OEM Cart       | Min    | N/A         | 3 hrs, 45 mins  | 4 hrs, 5 mins  | 540             |
-| Min                   | Everdrive X5   | Max    | No          |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
-| Min                   | Everdrive X5   | Max    | Yes         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
-| Min                   | Everdrive X5   | Min    | N/A         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
-| Min                   | OEM Cart       | Max    | No          |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
-| Min                   | OEM Cart       | Max    | Yes         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
-| Min                   | OEM Cart       | Min    | N/A         |  hrs,  mins     |  hrs,  mins    | #DIV/0!         |
+| Min                   | Everdrive X5   | Max    | No          | ? hrs, ? mins   | 3 hrs, 45 mins | 590             |
+| Min                   | Everdrive X5   | Max    | Yes         | ? hrs, ? mins   | 4 hrs, 55 mins | 440             |
+| Min                   | Everdrive X5   | Min    | N/A         | ? hrs, ? mins   | 5 hrs, 20 mins | 410             |
+| Min                   | OEM Cart       | Max    | No          | ? hrs, ? mins   | 4 hrs, 15 min  | 520             |
+| Min                   | OEM Cart       | Max    | Yes         | ? hrs, ? mins   | 5 hrs, 40 min  | 390             |
+| Min                   | OEM Cart       | Min    | N/A         | ? hrs, ? mins   | 6 hrs, 0 mins  | 370             |
 
 The variables that seem to affect the power draw the most are flash carts and using the speakers. I only own an Everdrive X5, which of the flash cart offerings is one of the most power efficient. So something like the EZ Flash Jr. is likely to drain batteries faster.
 
