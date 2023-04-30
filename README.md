@@ -231,15 +231,15 @@ If you get incorrect results, then check the following:
 
 ### Final Assembly
 
-Before assembling the board into the shell, I prepared the Q5 board solder pads. I cut six 30 gauge wire segments and soldered them on the brightness, palette, battery, and OSD input pads. These will be soldered to the top of the board after the screen is installed.
+Before assembling the board into the shell, prepare the Q5 board solder pads. Cut six 30 gauge wire segments and solder them on the brightness, palette, battery, and OSD input pads. These will be soldered to the top of the board after the screen is installed.
 
 ![image](https://user-images.githubusercontent.com/97127539/184281803-ea1ec2ce-f2cf-489f-90db-754a21dc3f10.jpg)
 
-Then, I put the lens on the front half of the shell, take the screen protector off of the IPS screen, and carefully place it in the back half of the shell - be sure no dust or hair is between the lens and the screen! Then I place the buttons and membranes down.
+Then, put the lens on the front half of the shell, take the screen protector off of the IPS screen, and carefully place it in the back half of the shell - be sure no dust or hair is between the lens and the screen! Then place the buttons and membranes down.
 
 [picture]
 
-Next is to put the assembled PCB into the shell. I put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff so be careful installing it. Also at this point, I *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!** Though if you're attempting this mod, I would hope you have a steady enough hand to keep the soldering iron away from the melty bits ;)
+Next is to put the assembled PCB into the shell. Put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff so be careful installing it. Also at this point, *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!** Though if you're attempting this mod, I would hope you have a steady enough hand to keep the soldering iron away from the melty bits ;)
 
 [picture]
 
@@ -247,7 +247,7 @@ Then all that's left is to put the power switch in its holder, and secure the ba
 
 [picture before and after offset]
 
-Now, the MGBC is complete!
+Add any stickers you want, and the MGBC is complete!
 
 ## Auxilliary Controls
 ### Q5 XL IPS Backlight with OSD
