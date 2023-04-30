@@ -205,9 +205,14 @@ If you get incorrect results, then check the following:
   - Make sure the batteries completely touch the battery terminals in the battery bay. This frequently happens to me in aftermarket shells without the battery separator.
   - Clean your power switch regardless of any issues (it will improve the switch action reliability), but if it's particularly dirty, you may not get any voltage reading on pin 1 even when it's turned on
   
+**Issue: Severe power glitches during start-up; plugging in headphones sometimes resets system**
+  
+  - Make sure C8, C26, and C27 are placed in the correct orientation. Remember, the stripe on tantalum capacitors indicates the POSITIVE side of the device.
+  - Ensure R22/R23 are 1 kΩ resistors.
+  
 **Issue: No sound or bad quality sound**
 
-- Make sure C8, C26, and C27 are placed in the correct orientation. Remember, the stripe on tantalum capacitors indicates the POSITIVE side of the device.
+- Make sure C8, C26, and C27 are placed in the correct orientation.
 - Plug in headphones to check if the issue is related to the speaker or both speaker and headphones. If you get audio out of your headphones but not your speaker, then:
   - Check for continuity from pin 5 on the headphone jack (top right corner when viewing from below) to GND. When headphones are not plugged in, this pin should be connected to ground. If it isn't, clean your headphone jack, or get another.
   - Try another speaker, if you have one.
@@ -238,9 +243,11 @@ Next is to put the assembled PCB into the shell. I put screws down into the prop
 
 [picture]
 
-Then all that's left is to put the power switch in its holder, and secure the back half of the shell on.
+Then all that's left is to put the power switch in its holder, and secure the back half of the shell on. Well, and center the image. It's going to be offset a bit. That's where the Q5 kit's OSD functionality comes into play. Open the menu by pressing Select, A, and B at the same time. Navigate up and down in the menu with A and B respectively, and hold select and press A to select the screen offset options (select+A again confirms your change, select+B backs out of it). Adjust the Y (and maybe X) coordinates so that the image is centered, for my build this was about [coordinates].
 
-[picture]
+[picture before and after offset]
+
+Now, the MGBC is complete!
 
 ## Auxilliary Controls
 ### Q5 XL IPS Backlight with OSD
