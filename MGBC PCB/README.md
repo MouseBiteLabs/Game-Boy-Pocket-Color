@@ -11,11 +11,8 @@ The zipped folder contains all the gerber files for this board, if you wish to o
 
 -	Layers: 2
 -	Thickness: 1 mm
--	Surface Finish: ENIG or HASL
+-	Surface Finish: ENIG (or HASL, which is only acceptable if you are installing tactile buttons)
 -   **NOTE: When ordering PCBs, add this note to the order: "The file milling.gbr contains outlines for plated slots. Please add plated slots on the PCB according to this layer."**
-
-*HASL will work, but will potentially be more difficult for soldering fine-pitch parts like the CPU and FFC connector. 
-ENIG is required for reliable button press detection; you can use HASL if you are using tactile switches.*
 
 I sell this board on Etsy, so you don't have to buy multiples from board fabricators.
 
