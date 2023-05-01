@@ -138,6 +138,12 @@ This should be for reference only. This can be found in the main folder in Excel
 
 ## Revision History
 
+### v1.5 - Full Open Source Release (planned)
+
+- Nudge SW2 to better fit in the shell, extend solder pads for easier assembly
+- Flip locations of the up and down pads for the rocker switch
+- Modify battery terminal contacts to match OEM style
+
 ### v1.4 - Release
 
 - Adjust hole and part placement for better shell fitment
