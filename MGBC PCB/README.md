@@ -1,13 +1,15 @@
 # MGBC-MBL-01
 
+Version 1.4:
+![image](https://user-images.githubusercontent.com/97127539/235451668-f54230a5-8303-46f6-8453-fe5080dfdbc3.png)
+Version 1.4S:
 ![image](https://user-images.githubusercontent.com/97127539/235395330-059e9334-d244-4df9-a113-023d8dffeb3a.png)
-![image](https://user-images.githubusercontent.com/97127539/235395592-352d759b-6bfb-4bd1-af96-1895b0cbc1f8.png)
 
 This is the main circuit board in the MGBC build. This README will provide instructions for how to customize the build to your liking, as well as attempt to clear up any questions you may have about the build process.
 
 ## Board Characteristics
 
-The zipped folder contains all the gerber files for this board, if you wish to order it from a board manufacturer yourself.
+The zipped folder contains all the gerber files for this board, if you wish to order it from a board manufacturer yourself. Version 1.x refers to the PCB that is one solid color with little-to-no visible silkscreen on the front after assembly; Version 1.xS refers to the PCB that has the bottom half filled with slikscreen, to make it look like OEM Pocket boards.
 
 -	Layers: 2
 -	Thickness: 1 mm
