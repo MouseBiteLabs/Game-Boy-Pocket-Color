@@ -78,7 +78,7 @@ This is a bit of a mess, but depending on the problem you're encountering, it co
 - For *glitchy* screens, or frozen/all-white screens, reflow the SRAM pins.
 - If you're missing button inputs, reflow the bottom left corner button pins.
 - If you have games that don't start up properly and hang at the Nintendo logo during start-up, display a glitchy Nintendo logo, or randomly freeze during gameplay, reflow the cartridge pins. (And clean your cartridge connector)
-- Three link port pins are on the bottom right, but there is one lone one at the top as well.
+- Three link port pins are on the bottom right, but there is one lone one at the top.
 - In general, reflowing the clock and power pins (colored red, pink, and black) can solve problems as well.
 
 ![image](https://user-images.githubusercontent.com/97127539/235403819-e2aaaf66-5f18-482f-b601-76027f41c5d1.png)
