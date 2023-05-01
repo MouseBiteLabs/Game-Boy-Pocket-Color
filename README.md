@@ -21,11 +21,11 @@ I made this project first and foremost for my own purposes. Nearly all of the fe
 
 So if you choose to build this project yourself, be warned - this is a considerably advanced, and expensive build. You must be comfortable with the fact that you may lose or damage expensive components. You are 100% liable for any damage done to your property or yourself. I am not responsible for any damage or loss of property incurred while attempting this project, or after completion of the project - you alone accept all risk. If you're *at all* questioning wether or not you can successfully attempt this project, please first practice with the <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a> - this requires no original Game Boy parts, and the total parts cost of the board is less than $10. And before you dismantle a Game Boy, solder the FFC connector on the top of the MGBC board to make sure you are comfortable with long rows of fine pitch pins, as it is the same pin pitch as the much more expensive and important CPU. **If you have any difficulty assembling either the power board or the FFC connector, I highly discourage attempting the rest of the build.**
 
-Furthermore, while I am confident in this design, I cannot claim full compatibility with every system configuration. And there may be latent issues that have yet to crop up. If you see anything I may have missed, or some dubious design choice, feel free to ask questions or comment as such - feedback is appreciated, corrections are welcome. You accept all risks and costs associated to this build if you choose to attempt it.
+Furthermore, while I am confident in this design, I cannot claim full compatibility with every system configuration. And there may be latent issues that have yet to crop up. If you see anything I may have missed, or some dubious design choice, feel free to ask questions or comment as such - feedback is appreciated, corrections are welcome.
 
 ![image](https://user-images.githubusercontent.com/97127539/230615632-93c3e6fc-b554-4ee2-8f35-8e44d3867af7.png)
 
-In summation: **DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! This is in NO WAY a beginner's project. You will AT MINIMUM need to be proficient in <a href="https://youtu.be/5uiroWBkdFY?t=110">drag soldering</a> and <a href="https://youtu.be/X3Rc1s6EpSI">hot air reflowing</a>. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT.**
+In summation: **DO NOT attempt this project if you are uncomfortable or inexperienced with detailed electronics troubleshooting, or are not proficient in soldering! This is in NO WAY a beginner's project. You will AT MINIMUM need to be proficient in <a href="https://youtu.be/5uiroWBkdFY?t=110">drag soldering</a> and <a href="https://youtu.be/X3Rc1s6EpSI">hot air reflowing</a>. If you have not gained proficiency in these soldering skills, DO NOT ATTEMPT THIS PROJECT. You accept all risks and costs associated to this build if you choose to attempt it.**
 
 (These parts are *tiny*. Quarter for scale - do not install a quarter in your final build.)
 
@@ -33,7 +33,7 @@ In summation: **DO NOT attempt this project if you are uncomfortable or inexperi
 
 ## Bill of Materials (BOM)
 
-There are a handful of categories for the parts you need for this build. Please review all of them! The total BOM cost will come out to anywhere between $120 and $200 (NOT including the cost of a donor Game Boy Color console!) depending on the options you choose and potential deals you can get on certain parts. Note that with the exception of a few components from a donor Game Boy Color, *most* of the parts are brand new.
+There are a handful of categories for the parts you need for this build. Please review all of them! The total BOM cost will come out to anywhere between $100 and $200 (NOT including the cost of a donor Game Boy Color console!) depending on the options you choose, which OEM parts you re-use, and any potential deals you can get on certain parts. Note that with the exception of a few components from a donor Game Boy Color, *most* of the electronic parts are brand new.
 
 ### I. Circuit Boards
   
@@ -45,36 +45,36 @@ You can also use other power supply boards from other creators - check the <a hr
 
 ### II. Brand New Electronic Parts
 
-The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=2362d7198d
+The MGBC board uses mostly all-new components. This is not a direct-transfer board. The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=2362d7198d
 
-Double check to see if any parts are missing, and consider ordering multiples of some parts. Also, there are some parts you may want to remove (like the tactile switches). **If a part is backordered, or out of stock** - check the Excel file, or the separate BOMs for each circuit board assembly page. There may be alternate part options. You can also check for stock at places like Digikey. And you can always use Octopart.com to help find in-stock parts at other websites. I can't maintain the cart for every out-of-stock part, so please do some research :)
+Double check to see if any parts are missing, and consider ordering multiples of some parts. Also, there are some parts you may want to remove (like the tactile switches). **If a part is backordered, or out of stock** - check the Excel file, or the BOM listed at the bottom of the MGBC PCB folder. There may be alternate part options listed. You can also check for stock at places like Digikey, Newark, or LCSC. And you can always use Octopart.com to help find in-stock parts at other websites. Please understand that I can't maintain the cart for every out-of-stock part, so please do some research :)
 
-Also note, this BOM does not include parts for the Pocket Mouse Power Board. <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Please review my github on that board</a> for more information if you wish to use it for your power supply! The link to the saved cart for the power board can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=39b200294d
+Also note, while I do recommend the board, this BOM does not include parts for the Pocket Mouse Power Board. <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Please review my github on that board</a> for more information if you wish to use it for your power supply! The link to the saved cart for the power board can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=39b200294d
 
 ### III. Game Boy Electronic Parts
 
-*Despite this being a **Pocket** Color, you don't actually need a Game Boy Pocket. However, this project **does require** a Game Boy Color.*
+*Despite this being a **Pocket** Color, you don't actually need a Game Boy Pocket. However, this project **does require** at minimum a Game Boy Color.*
 
 There are a handful of parts that I have not located aftermarket substitutes for, and will therefore necessitate an original Game Boy console to salvage from. Please note that removing these parts is not a trivial task, and **requires advanced soldering and desoldering skills to be successful.**
 
 - The following parts from an original Game Boy Color console
-  -	U1 - CGB CPU (all revisions *except* REV E, which is *incompatible*)
+  -	U1 – CGB CPU (all revisions *except* REV E, which is *incompatible*)
   - X1 – 8.388 MHz crystal oscillator
 - The following parts from an original Game Boy Color **OR** Game Boy Pocket console
   -	P1 – Cartridge connector
-  -	P5 - Headphone jack
+  -	P5 – Headphone jack
 
 The following parts can be salvaged from a Game Boy Color, but aftermarket options exist:
 
-  - U2 - LH52256CVTXIZ (SRAM); alternate: https://mou.sr/3f8G0Mi
-  - EM10 - input filter; alternate: https://mou.sr/3FiMvXw
+  - U2 – LH52256CVTXIZ (SRAM); alternate: https://mou.sr/3f8G0Mi
+  - EM10 – input filter; alternate: https://mou.sr/3FiMvXw
 
 The following parts can be salvaged from a Game Boy Color *or* Game Boy Pocket, but aftermarket options exist:
 
   -	VR1 – Volume dial
   -	SW1 – Power switch
-  -	P3 - Link port
-  -	P4 - DC jack
+  -	P3 – Link port
+  -	P4 – DC jack
 
 ### IV. External Build Parts
 
@@ -82,19 +82,24 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 
 -	**Shell:** I generally recommend the Funnyplaying "IPS Ready" ones if you don't want to trim anything. If you don't use these, then you're on your own for how to prepare it - generally, you can follow guides for preparing a Pocket for an IPS screen kit.
     - RGRS: <a href="https://retrogamerepairshop.com/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut?pr_prod_strat=copurchase&pr_rec_id=d8b0186ad&pr_rec_pid=6280907751596&pr_ref_pid=6115075391660&pr_seq=uniform">FunnyPlaying Game Boy Pocket IPS Backlight Ready Shell Housing No Cut</a>
--	**Screen Kit:** This is the important one. You need this specific type of kit - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido. Laminated ones are *not* compatible, but kits that include a lit-up logo are fine to use. Make sure you DO NOT get the Game Boy Pocket version - it is not compatible!
+    - FunnyPlaying: <a href="https://funnyplaying.com/collections/product/products/gbp-retro-pixel-ips-coustom-shell?variant=33054643060797">GBP RETRO PIXEL IPS CUSTOM SHELL</a>
+-	**Screen Kit:** This is the important one. You need this specific type of kit - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido (*not* FunnyPlaying). Laminated ones are *not* compatible, but kits that include a lit-up logo are fine to use. Make sure you DO NOT get the Game Boy Pocket version - it is not compatible! Also, be sure to test this screen kit before installing it, preferrably with an original Game Boy Color. Sometimes they arrive damaged, and once you've installed, it may not be possible to get a refund.
     - RGRS: <a href="https://retrogamerepairshop.com/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228">GBC Q5 XL IPS Backlight with OSD</a> OR <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-osd-ips-kit-with-color-changing-logo?variant=41819042185388">Game Boy Color Q5 OSD IPS Kit with Color Changing Logo 
-    - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>
     - AliExpress: <a href="https://www.aliexpress.us/item/3256801650459088.html?spm=a2g0o.productlist.main.1.758e53f17WUFK2&algo_pvid=24ef67e3-d608-4269-a663-05eafed1bd17&algo_exp_id=24ef67e3-d608-4269-a663-05eafed1bd17-0&pdp_npi=3%40dis%21USD%2145.9%2145.9%21%21%21%21%21%4021224e9b16816641208271256d074d%2112000017802039303%21sea%21US%210&curPageLogUid=dCymHIE0cr4X">GBC Q5 IPS LCD Kit</a>
+    - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>
 -	**Lens:** I recommend you get an "IPS Lens" as the viewing area is slightly larger than the OEM one. 
     - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-lenses-1/products/funnyplaying-game-boy-pocket-ips-retro-pixel-mod-led-hole-glass-screen-lens?variant=37635319988396">FunnyPlaying Game Boy Pocket IPS Retro Pixel Mod LED Hole Glass Screen Lens</a>
+    - FunnyPlaying: <a href="https://funnyplaying.com/products/gbp-retro-pixel-ips-glass-lens?_pos=1&_sid=ec7345577&_ss=r&variant=31969857437757">GBP RETRO PIXEL IPS GLASS LENS</a>
 - **Buttons:** Funnyplaying models are generally OEM-like (IMO), but you can also use OEM ones. Or any other maker of buttons! (Make sure you get Game Boy *Pocket* buttons - Game Boy *Color* buttons will not fit.)
   - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-buttons-1/products/funnyplaying-game-boy-custom-pocket-buttons?variant=41432879169708">FunnyPlaying Game Boy Pocket Custom Buttons</a>
   - LabFifteen: <a href="https://labfifteenco.com/collections/game-boy-pocket-buttons">Custom buttons</a>
+  - FunnyPlaying: <a href="https://funnyplaying.com/products/gbp-custom-buttons?_pos=2&_sid=1bdf0ccb6&_ss=r&variant=33054652039229">GBP CUSTOM BUTTONS</a>
 - **Membranes:** Important, but very forgettable! You will need them even if you install tactile switches.
   - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-buttons-1/products/funnyplaying-game-boy-pocket-silicone-button-contact-pad-membranes?variant=40593166401708">FunnyPlaying Game Boy Pocket Silicone Button Contact Pad Membranes
-- **Speaker:** There are lots of options for this as well, including using the OEM one.
+  - FunnyPlaying: <a href="https://funnyplaying.com/products/replacement-silicone-pads-for-gbp-mgb?_pos=3&_sid=1bdf0ccb6&_ss=r&variant=39378004705341">GBP/MGB REPLACEMENT SILICONE PADS</a>
+- **Speaker:** There are tons of options for this as well, including using the OEM one. Game Boy Color *and* Game Boy Pocket speakers are compatible, since they are the same part.
   - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-audio/products/funnyplaying-clear-game-boy-color-speaker?variant=37728953761964">FunnyPlaying Clear Game Boy Color & Pocket Speaker</a>
+  - FunnyPlaying: <a href="https://funnyplaying.com/products/clear-gbc-mgb-speaker?_pos=1&_sid=2cc6157b6&_ss=r">CLEAR GBC/MGB SPEAKER</a>
 - **Battery Tabs:** This one is another part I commonly forget about. You *cannot* use Game Boy Color ones, you *must* use Game Boy Pocket battery terminals. Luckily, they're very easy to find.
   - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-power/products/gbp-game-boy-pocket-high-quality-replacement-battery-contact-terminals?variant=37893131305132">GBP Game Boy Pocket High Quality Replacement Battery Contact Terminals
 - **Stickers:** Completely optional, but they can really bring a build together. Especially if you have custom Pocket Color stickers!
@@ -105,7 +110,7 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 - <a href="https://retrogamerepairshop.com/?ref=ltyD2rUX">CodyWick</a>
 - <a href="https://retrogamerepairshop.com/?ref=HSj4v5OO">JackV</a>
 
-<b>Or use one of these discount codes at checkout:</b>
+<b>Or use one of these other discount codes at checkout:</b>
 - Nataliethenerd
 - B23N
 - Tito
@@ -169,7 +174,7 @@ Turn it on, and check for these things:
 2) The speaker makes the start-up ding (use headphones to check both left and right channels, and check the volume)
 3) The screen shows the GBC splash logo
   
-Some quick troubleshooting tips - first, make sure the batteries are in all the way (or your power supply is set correctly) and the cable for the IPS kit is inserted fully and the bale is pushed all the way down. If only the LED isn't turning on, you might have the LED backwards. If you can hear the start-up noise, but nothing on the screen, then check the connections on the FFC connector and the top row of pins on the CPU - they probably need a reflow. If you get a blank screen, but no start-up jingle, then check the connections on the FFC, CPU, and RAM chips. And if you have the splash screen, but no audio, then check your speaker, headphone jack, and orientation of tantalum capacitors. If nothing is happening when you flip the switch, or you still cant figure out where your error is coming from, check out the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#troubleshooting-common-electrical-issues">Troubleshooting</a> section for a few more detailed troubleshooting tips.
+Some quick troubleshooting tips - first, make sure the batteries are in all the way (or your power supply is set correctly) and the cable for the IPS kit is inserted fully and the bale is pushed all the way down. If only the LED isn't turning on, you might have the LED backwards. If you can hear the start-up noise, but nothing on the screen, then check the connections on the FFC connector and the top row of pins on the CPU - they probably need a reflow. If you get a blank screen, but no start-up jingle, then check the connections on the FFC, CPU, and RAM chips. And if you have the splash screen, but no audio, then check your speaker, headphone jack, and orientation of tantalum capacitors. If nothing is happening when you flip the switch, or you still cant figure out where your error is coming from, check out the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#troubleshooting-common-electrical-issues">Troubleshooting</a> section for a few more detailed troubleshooting tips, and the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">CPU Pin Function diagram</a> in the PCB folder.
 
 *Note: If you're using the Pocket Mouse Power Board, you have to wait a few seconds after inserting batteries the first time before it will turn on with the power switch. Once the batteries have been in the system for a few seconds, it will act completely normally.*
   
@@ -211,6 +216,7 @@ If you get incorrect results, then check the following:
   
   - Make sure C8, C26, and C27 are placed in the correct orientation. Remember, the stripe on tantalum capacitors indicates the POSITIVE side of the device.
   - Ensure R22/R23 are 1 kΩ resistors.
+  - Clean your power switch properly.
   
 **Issue: No sound or bad quality sound**
 
@@ -245,7 +251,7 @@ Next is to put the assembled PCB into the shell. Remember that you may need to l
 
 Then all that's left is to put the power switch in its holder, and secure the back half of the shell on. Well, and center the image. It's going to be offset a bit. That's where the Q5 kit's image-centering functionality comes into play. Open the menu by pressing Select, A, and B at the same time. Navigate up and down in the menu with A and B respectively, and hold select and press A to select the screen offset options (select+A again confirms your change, select+B backs out of it). Adjust the V (and maybe H) coordinates so that the image is centered, for my build this was about 46 vertical, 37 horizontal.
 
-*Also, if your screen kit includes the option for a backlit Game Boy Color lens logo, be sure to disable that in the OSD menu.*
+*Also, if your screen kit includes the option for a backlit Game Boy Color lens logo, be sure to disable that in the OSD menu. On the left picture you can see the blue bar at the bottom, that's the backlit logo option before disabling it.*
 
 ![image](https://user-images.githubusercontent.com/97127539/235335829-75f2d6c4-7cbb-4763-a4be-219cd9685b27.png)
 
@@ -269,7 +275,9 @@ Add any stickers you want, and the MGBC is complete!
 -	Push in: System reset
   
 ## Power Draw Measurements
-For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates - I rounded to the nearest 5 minute interval, and the nearest 10's of mW. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers. (I will update this table as I get more data.)
+For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates. I rounded to the nearest 5 minute interval, and the nearest 10's of mW. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers. (I will update this table as I get more data.)
+  
+In general, you can expect to get between 3 and 6 hours of gameplay. The power LED will dim with about 30 minutes left of playtime.
 
 | IPS Screen Brightness | Cartridge Type | Volume | Headphones? | Time to dim LED | Playtime       | Power Draw (mW) |
 | --------------------- | -------------- | ------ | ----------- | --------------- | -------------- | --------------- |
@@ -286,7 +294,7 @@ For these estimates, battery life was measured using two eneloop pro NiMH AAA ba
 | Min                   | OEM Cart       | Max    | Yes         | ? hrs, ? mins   | 5 hrs, 40 min  | 390             |
 | Min                   | OEM Cart       | Min    | N/A         | ? hrs, ? mins   | 6 hrs, 0 mins  | 370             |
 
-The variables that seem to affect the power draw the most are flash carts and using the speakers. I only own an Everdrive X5, which of the flash cart offerings is one of the most power efficient. So something like the EZ Flash Jr. is likely to drain batteries faster.
+The variables that seem to affect the power draw the most are flash carts and using the speakers (especially at max volume). I only own an Everdrive X5, which of the flash cart offerings is one of the most power efficient. So something like the EZ Flash Jr. is likely to drain batteries even faster.
 
 ## Audio Recordings and Spectrum
 For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
@@ -309,7 +317,7 @@ https://user-images.githubusercontent.com/97127539/232619867-ac0df1a6-45e1-47b4-
   
 ## Frequently Asked Questions
   
-I'll update this section as more people begin to build these. Please refer to this before asking me any questions! If you ask me a question, I'm going to automatically ask you if you read the FAQ and this entire repo first.
+Please refer to this before asking me any questions! If you ask me a question, I'm going to automatically ask you if you read the FAQ and this entire repo first.
   
 **Q: Can you make one for me?**
   
@@ -317,7 +325,7 @@ A: NO. Stop asking, please!
   
 **Q: Why are you encouraging the destruction of Game Boys?**
   
-A: If you can properly complete this mod, you will have destroyed zero Game Boys, as you get a working Game Boy when you finish.
+A: If you can properly complete this mod, you will have destroyed net-zero Game Boys, as you get a working Game Boy when you finish. It's also a great way to rehabilitate an otherwise damaged Game Boy, as you only need a few working parts to construct an entirely new working one. Let's refurbish those damaged Game Boys!
   
 **Q: Aren't you contributing to the rising prices of Game Boys by doing this?**
   
@@ -334,6 +342,10 @@ A: <a href="https://www.youtube.com/watch?v=2_Pt_odHyzo">Clean your power switch
 **Q: I'm using a battery holder with alligator clips to test the system, and it's not turning on. Why?**
   
 A: I've found that sometimes the contact resistance from the alligator clips was enough to prevent the system from powering up properly. Try putting the board in the shell and inserting the batteries in the back normally.
+  
+**Q: Can you make a [brand new Game Boy circuit board that combines x and y]?**
+  
+A: I dunno man, maybe, but I don't want to right now. Can I go to sleep yet?
   
 ## Acknowledgements
 
