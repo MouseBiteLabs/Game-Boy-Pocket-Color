@@ -1,8 +1,9 @@
 # MGBC-MBL-01
 
-[board scans]
+![image](https://user-images.githubusercontent.com/97127539/235395330-059e9334-d244-4df9-a113-023d8dffeb3a.png)
+![image](https://user-images.githubusercontent.com/97127539/235395592-352d759b-6bfb-4bd1-af96-1895b0cbc1f8.png)
 
-This is the main circuit board in the MGBC build. It houses everything except the main power supply (referred to as U5). This README will provide instructions for how to customize the build to your liking, as well as attempt to clear up any questions you may have about the build process.
+This is the main circuit board in the MGBC build. This README will provide instructions for how to customize the build to your liking, as well as attempt to clear up any questions you may have about the build process.
 
 ## Board Characteristics
 
@@ -34,29 +35,53 @@ You can adjust the maximum volume coming out of the speakers and headphones by m
 - Using 47 kΩ seemed to hit a sweet spot for my tastes for a gain of ~0.38 - not too loud, not too quiet. If I'm playing at max volume, you can hear it between floors in my house, so being any louder is likely not necessary.
 - The lowest value I tried out was 33 kΩ, but this was considerably loud. It also began to have an actual impact in the battery voltage. I suspect values lower than about 20 kΩ will greatly reduce battery life.
 
+![image](https://user-images.githubusercontent.com/97127539/235404925-43ea18f5-89dc-4755-ad6b-a9f0dff53e54.png)
+
 ### Enabling Reset Button Functionality
 
 Bridge the pads labelled "RST" with solder to turn the navigation switch into a reset button whenever you push it in. It's not particularly easy to push the button in, so accidental resets shouldn't be a concern. But if you find yourself accidentally resetting the system, you can remove the solder from the pads to disable it.
 
-[IMAGE]
+![image](https://user-images.githubusercontent.com/97127539/235404437-c3ce6e13-eaac-4a32-95bc-a18a6ef214d2.png)
 
 ### Power LED Brightness
 
-Increase the value of R1 to decrease the brightness of the power LED during normal battery levels. Increase the value of R2 to decrease the brightness of the power LED during low battery levels. It is suggested to try changing resistances in ~5 kΩ increments.
+Increase the value of R1 to decrease the brightness of the power LED during normal battery levels. Increase the value of R2 to decrease the brightness of the power LED during low battery levels. It is suggested to try changing resistances in ~10 kΩ increments.
 
-[IMAGE]
+![image](https://user-images.githubusercontent.com/97127539/235404599-46a0dd64-a8e6-485e-ace7-022baa46350d.png)
 
 ### Tactile Switches
 
 If you want clicky buttons, like the GBA SP has, then you can install tactile switches onto the button contacts. These are listed as B1-B8 on the BOM. There are three levels of clickiness to choose from, depending on the part number you select - SKRRAAE010 is the "least clicky" with 1 N operating force, SKRRABE010 has 1.6 N of operating force, and SKRRACE010 is the "most clicky" with 2 N of operating force. Note when installing the switches to make sure the little "wings" are oriented correctly as indicated on the board!
 
-[IMAGE]
+![image](https://user-images.githubusercontent.com/97127539/235406753-a694bea7-ffcf-4bec-903d-00f39ec4b2d9.png)
 
 ### LiPo Support
 
 Are you using the Game Boy Pocket Power regulator for U5 for LiPo support? If so, solder wires or headers from the DC and BT+ holes into the GBPP, thread the wires from the battery through the hole in the board to the GBPP connections, and remember to **REMOVE EM7**. You'll also need a USB-C adapter PCB to go in place of DC jack.
 
-[IMAGE]
+![image](https://user-images.githubusercontent.com/97127539/235404692-459eaaf9-e352-4ebe-bb32-7ae6a3937a24.png)
+
+## Assembly References
+
+Here are a few images that should help clarify the build process, as well as provide some brief technical explanations to guide you in troubleshooting any errors you might have.
+
+### Part Placement
+
+Some of the parts are a bit cramped, and it can be a bit difficult to decipher which part is which. Hopefully this image helps you clarify.
+
+![image](https://user-images.githubusercontent.com/97127539/235396199-3f610782-8782-44d2-b0a4-8c2cef4e248b.png)
+
+### CPU Pin Functions
+
+This is a bit of a mess, but depending on the problem you're encountering, it could be worth reflowing the pins on the CPU that correspond to the aspect you're having problems with.
+- For miscolored screens, reflow the top display pins.
+- For *glitchy* screens, or frozen/all-white screens, reflow the SRAM pins.
+- If you're missing button inputs, reflow the bottom left corner button pins.
+- If you have games that don't start up properly and hang at the Nintendo logo during start-up, display a glitchy Nintendo logo, or randomly freeze during gameplay, reflow the cartridge pins. (And clean your cartridge connector)
+- Three link port pins are on the bottom right, but there is one lone one at the top as well.
+- In general, reflowing the clock and power pins (colored red, pink, and black) can solve problems as well.
+
+![image](https://user-images.githubusercontent.com/97127539/235403819-e2aaaf66-5f18-482f-b601-76027f41c5d1.png)
 
 ## Bill of Materials
 
