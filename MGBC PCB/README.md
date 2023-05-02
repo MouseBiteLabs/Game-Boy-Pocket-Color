@@ -140,11 +140,12 @@ This should be for reference only. This can be found in the main folder in Excel
 
 ### v1.5 - Full Open Source Release (planned)
 
+- Modify button contacts to feel more OEM-like
 - Nudge SW2 to better fit in the shell, extend solder pads for easier assembly
 - Flip locations of the up and down pads for the rocker switch
 - Modify battery terminal contacts to match OEM style
 
-### v1.4 - Release
+### v1.4 - Beta III
 
 - Adjust hole and part placement for better shell fitment
 - Revert button contacts to Beta I design for better actuation
