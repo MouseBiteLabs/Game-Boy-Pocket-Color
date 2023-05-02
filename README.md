@@ -143,6 +143,8 @@ Usually when I'm populating a board, I follow this order:
 2) After soldering these components, I solder the CPU and RAM in, then the FFC connector.
   
 3) I use hot air and solder paste to reflow X1, C24, C29, and C45 onto the board. Be sure to either cover the FFC connector with kapton tape to avoid melting the plastic, or heat the board from the bottom.
+ 
+3.5) If the build is going to utilize tactile buttons (the ones that are clicky, like on the GBA SP) I install *at least* the start and select ones now. After the headphone jack and DC jack are in, it's tricky to get the start and select tactiles in.
   
 4) Finally, I add most of the other external-facing components - VR1, P3, P4, P5, SW1, SW2, LED1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
   
