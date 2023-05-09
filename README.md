@@ -151,6 +151,8 @@ Usually when I'm populating a board, I follow this order:
 ![assemblysteps](https://user-images.githubusercontent.com/97127539/235049911-c1a1544d-e6bf-4002-8d76-e58140b73a33.png)
   
 **NOTE 1** - If you are using a LiPo mod on the MGBC, **DO NOT INCLDE EM7**. This component must be removed from the final build. (That's why there's an asterisk on the board next to this part)
+
+Also important to note, **LITHIUM-ION BATTERIES ARE DANGEROUS. USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR YOUR HOUSE BURNING DOWN. YOU ARE RESPONSIBLE FOR FIGURING OUT HOW TO USE A LIPO ON THIS BOARD.**
   
 **NOTE 2** - You may have to trim the pins on VR1, the volume dial, before soldering. I cut them down in half to make them fit nicer.
 
@@ -366,6 +368,6 @@ A: I dunno man, maybe, but I don't want to right now. Can I go to sleep yet?
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
 
-This project is the culmination of over a full year of research, development, and testing. I have made this project completely open-source, and have put hundreds, if not *thousands* of hours of work (and dollars!) into it, so that many people can enjoy it. **Please** give me appropriate credit where credit is due.
+This project is the culmination of over a full year of research, development, and testing. I have made this project completely open-source, and have put hundreds of hours of work (and dollars!) into it, so that many people can enjoy it. **Please** give me appropriate credit where credit is due.
 
 ©MouseBiteLabs 2023
