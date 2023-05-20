@@ -13,6 +13,8 @@ My <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color">DMGC project</a
 
 All gerbers and source files can be found in this repo, as this project is fully open source. These PCB files and notes about the board, including customizations, can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">PCB folder</a>. Technical documentation of the board can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Technical">Technical folder</a>. For those who still have Beta boards, please check out the information in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Beta%20Testers">Beta Testers folder</a>. 
 
+I sell the main <a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01">MGBC board</a> as well as the <a href="https://www.etsy.com/listing/1473483915/pocket-mouse-power-board">Pocket Mouse Power Board</a> on my Etsy store in a variety of colors.
+
 Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions.
 
 ## Disclaimer
@@ -23,7 +25,7 @@ I made this project first and foremost for my own purposes. Nearly all of the fe
 
 So if you choose to build this project yourself, be warned - this is a considerably advanced, and expensive build. You must be comfortable with the fact that you may lose or damage expensive components. You are 100% liable for any damage done to your property or yourself. I am not responsible for any damage or loss of property incurred while attempting this project, or after completion of the project - you alone accept all risk. If you're *at all* questioning wether or not you can successfully attempt this project, please first practice with the <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a> - this requires no original Game Boy parts, and the total parts cost of the board is less than $10. And before you dismantle a Game Boy, solder the FFC connector on the top of the MGBC board to make sure you are comfortable with long rows of fine pitch pins, as it is the same pin pitch as the much more expensive and important CPU. **If you have any difficulty assembling either the power board or the FFC connector, I highly discourage attempting the rest of the build.**
 
-Furthermore, while I am confident in this design, I cannot claim full compatibility with every system configuration. And there may be latent issues that have yet to crop up. If you see anything I may have missed, or some dubious design choice, feel free to ask questions or comment as such - feedback is appreciated, corrections are welcome.
+Furthermore, while I am confident in this design, I cannot claim full compatibility with every system configuration. **Especially if you decide to add a lithium-ion battery.** And there may be latent issues that have yet to crop up. If you see anything I may have missed, or some dubious design choice, feel free to ask questions or comment as such - feedback is appreciated, corrections are welcome.
 
 ![image](https://user-images.githubusercontent.com/97127539/230615632-93c3e6fc-b554-4ee2-8f35-8e44d3867af7.png)
 
@@ -42,6 +44,8 @@ There are a handful of categories for the parts you need for this build. Please 
 First and foremost, you will need two brand new circuit boards for this build:
 - <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#mgbc-mbl-01">the main MGBC circuit board</a>, and 
 - a power supply board that fits in the U5 socket on the MGBC board (like my <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a>)
+
+Again, I sell <a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01">the MGBC board</a> and <a href="https://www.etsy.com/listing/1473483915/pocket-mouse-power-board">my regulator board</a> on my Etsy store. You can alternatively use the files in the MGBC PCB folder to order it yourself. Please see the MGBC PCB folder for more info.
 
 You can also use other power supply boards from other creators - check the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Compatibility</a> section below for more information. I don't recommend using an original power board from a Game Boy.
 
