@@ -16,7 +16,7 @@ The zipped folder contains all the gerber files for this board, if you wish to o
 -	Surface Finish: ENIG (or HASL, which is only acceptable if you are installing tactile buttons)
 -   **NOTE: When ordering PCBs, add this note to the order: "The file milling.gbr contains outlines for plated slots. Please add plated slots on the PCB according to this layer."**
 
-I sell this board on Etsy, so you don't have to buy multiples from board fabricators.
+<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01">I sell this board on Etsy, so you don't have to buy multiples from board fabricators.</a>
 
 You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders):
 
