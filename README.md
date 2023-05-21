@@ -47,6 +47,8 @@ First and foremost, you will need two brand new circuit boards for this build:
 
 Again, I sell <a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01">the MGBC board</a> and <a href="https://www.etsy.com/listing/1473483915/pocket-mouse-power-board">my regulator board</a> on my Etsy store. You can alternatively use the files in the MGBC PCB folder to order it yourself. Please see the MGBC PCB folder for more info.
 
+<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
+
 You can also use other power supply boards from other creators - check the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Compatibility</a> section below for more information. I don't recommend using an original power board from a Game Boy.
 
 ### II. Brand New Electronic Parts
