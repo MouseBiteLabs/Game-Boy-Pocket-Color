@@ -7730,7 +7730,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="SPICEPREFIX" value="R" x="54.399" y="105.156" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="55.034" y="107.061" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="C3" library="rcl" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="1u" x="58.101" y="105.156" smashed="yes">
+<element name="C3" library="rcl" package="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n" x="58.101" y="105.156" smashed="yes">
 <attribute name="NAME" x="57.45975" y="105.9435" size="1" layer="25" font="vector" ratio="15"/>
 <attribute name="POPULARITY" value="37" x="58.101" y="105.156" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="58.101" y="105.156" size="1.778" layer="27" display="off"/>
