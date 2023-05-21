@@ -148,7 +148,7 @@ This should be for reference only. This can be found in the main folder in Excel
 
 ## Revision History
 
-### v1.5 - Full Open Source Release (planned)
+### v1.5 - Release
 
 - Modify button contacts to feel more OEM-like
 - Nudge SW2 to better fit in the shell, extend solder pads for easier assembly
