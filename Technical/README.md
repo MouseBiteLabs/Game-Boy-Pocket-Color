@@ -18,7 +18,7 @@ This write-up serves as a technical explainer document for the MGBC project. I w
 
 ## Power LED Indicator
 
-![image](https://user-images.githubusercontent.com/97127539/233899221-f438ee8a-f05b-4d65-8bda-058cb92ac1ca.png)
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/4b636739-d8bf-42fa-a720-c9bfa0be0f87)
 
 - SW is the voltage coming from the power source (batteries, DC jack). The BATT test pad in the schematic is for connecting to the OSD display for battery level indication. Note that if you are using a LiPo, the OSD will not accurately read the battery voltage level. (I couldn't be bothered to include a scaling circuit to address this!)
 - R4 and C3 is a simple RC filter to keep the battery level reading steady during transient loads, such as when the audio is loud.
