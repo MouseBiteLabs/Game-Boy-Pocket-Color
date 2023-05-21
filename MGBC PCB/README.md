@@ -1,13 +1,13 @@
 # MGBC-MBL-01
 
-Version 1.4:
-![image](https://user-images.githubusercontent.com/97127539/235451668-f54230a5-8303-46f6-8453-fe5080dfdbc3.png)
-Version 1.4S:
-![image](https://user-images.githubusercontent.com/97127539/235395330-059e9334-d244-4df9-a113-023d8dffeb3a.png)
+Version 1.5:
+![black_1_5L](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/49cc158d-e750-4b16-8370-3573edd994f7)
+Version 1.5S:
+![purple_1_5L](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/fbcc6129-eaa4-4a74-abba-918811e4f10d)
 
 This is the main circuit board in the MGBC build. This README will provide instructions for how to customize the build to your liking, as well as attempt to clear up any questions you may have about the build process.
 
-## Board Characteristics
+## Board Characteristics and Order Information
 
 The zipped folder contains all the gerber files for this board, if you wish to order it from a board manufacturer yourself. Version 1.x refers to the PCB that is one solid color with little-to-no visible silkscreen on the front after assembly; Version 1.xS refers to the PCB that has the bottom half filled with slikscreen, to make it look like OEM Pocket boards.
 
@@ -20,7 +20,7 @@ The zipped folder contains all the gerber files for this board, if you wish to o
 
 <a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
-You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using these links (disclosure: I receive 10% of the sale value to go towards future PCB orders):
+You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using these links (disclosure: I receive 10% of the sale value to go towards future PCB orders).
 
 **Solid color version:**
 
