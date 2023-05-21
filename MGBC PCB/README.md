@@ -16,11 +16,19 @@ The zipped folder contains all the gerber files for this board, if you wish to o
 -	Surface Finish: ENIG (or HASL, which is only acceptable if you are installing tactile buttons)
 -   **NOTE: When ordering PCBs, add this note to the order: "The file milling.gbr contains outlines for plated slots. Please add plated slots on the PCB according to this layer."**
 
-<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01">I sell this board on Etsy, so you don't have to buy multiples from board fabricators.</a>
+**I sell this board on Etsy, so you don't have to buy multiples from board fabricators:**
 
-You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders):
+<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/5c9aefe3-0628-4434-b8d8-55ff80ac3bbc" alt="PCB from Etsy" /></a> 
 
-[link]
+You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using these links (disclosure: I receive 10% of the sale value to go towards future PCB orders):
+
+**Solid color version:**
+
+<a href="https://www.pcbway.com/project/shareproject/Game_Boy_Pocket_Color_MGBC_MBL_01_4c3c8d11.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a> 
+
+**Half-silkscreen version:**
+
+<a href="https://www.pcbway.com/project/shareproject/Game_Boy_Pocket_Color_MGBC_MBL_01_Half_silkscreen_version_7490e384.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a> 
 
 ## Customization Options
 
