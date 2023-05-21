@@ -18,7 +18,7 @@ The zipped folder contains all the gerber files for this board, if you wish to o
 
 **I sell this board on Etsy, so you don't have to buy multiples from board fabricators:**
 
-<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/5c9aefe3-0628-4434-b8d8-55ff80ac3bbc" alt="PCB from Etsy" /></a> 
+<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using these links (disclosure: I receive 10% of the sale value to go towards future PCB orders):
 
