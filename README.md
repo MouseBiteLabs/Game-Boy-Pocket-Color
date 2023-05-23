@@ -92,8 +92,8 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 -	**Screen Kit:** This is the important one. You need this specific type of kit - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido (*not* FunnyPlaying). Laminated ones are *not* compatible, but kits that include a lit-up logo are fine to use. Make sure you DO NOT get the Game Boy Pocket version - it is not compatible! Also, be sure to test this screen kit before installing it, preferrably with an original Game Boy Color. Sometimes they arrive damaged, and once you've installed, it may not be possible to get a refund.
     - RGRS: <a href="https://retrogamerepairshop.com/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228">GBC Q5 XL IPS Backlight with OSD</a> OR <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-osd-ips-kit-with-color-changing-logo?variant=41819042185388">Game Boy Color Q5 OSD IPS Kit with Color Changing Logo 
     - AliExpress: <a href="https://www.aliexpress.us/item/3256801650459088.html?spm=a2g0o.productlist.main.1.758e53f17WUFK2&algo_pvid=24ef67e3-d608-4269-a663-05eafed1bd17&algo_exp_id=24ef67e3-d608-4269-a663-05eafed1bd17-0&pdp_npi=3%40dis%21USD%2145.9%2145.9%21%21%21%21%21%4021224e9b16816641208271256d074d%2112000017802039303%21sea%21US%210&curPageLogUid=dCymHIE0cr4X">GBC Q5 IPS LCD Kit</a>
-    - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>
--	**Lens:** I recommend you get an "IPS Lens" as the viewing area is slightly larger than the OEM one. 
+    - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>  
+  -	**Lens:** I recommend you get an "IPS Lens" as the viewing area is slightly larger than the OEM one. 
     - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-lenses-1/products/funnyplaying-game-boy-pocket-ips-retro-pixel-mod-led-hole-glass-screen-lens?variant=37635319988396">FunnyPlaying Game Boy Pocket IPS Retro Pixel Mod LED Hole Glass Screen Lens</a>
     - FunnyPlaying: <a href="https://funnyplaying.com/products/gbp-retro-pixel-ips-glass-lens?_pos=1&_sid=ec7345577&_ss=r&variant=31969857437757">GBP RETRO PIXEL IPS GLASS LENS</a>
 - **Buttons:** Funnyplaying models are generally OEM-like (IMO), but you can also use OEM ones. Or any other maker of buttons! (Make sure you get Game Boy *Pocket* buttons - Game Boy *Color* buttons will not fit.)
@@ -255,6 +255,8 @@ Then, put the lens on the front half of the shell, take the screen protector off
 
 ![image](https://user-images.githubusercontent.com/97127539/235335579-8f236275-aaf2-4186-ab9b-87b1cbd5b1b0.png)
 
+**Note: Be extremely careful with the screen. It is fragile. If you break it, you can sometimes buy one separately. They're just screens that were used in Blackberry Q5 phones. <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/funnyplaying-lg-gba-gbc-replacement-ips-lcd?variant=32483070083146">Here's a link to one sold separately on RGRS.</a>**
+  
 Next is to put the assembled PCB into the shell. Remember that you may need to lightly file away part of the shell around VR1 (volume dial) and/or SW2 (rocker switch) if the knobs interfere with the shell. Put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff so be careful installing it. Also at this point, *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!** Though if you're attempting this mod, I would hope you have a steady enough hand to keep the soldering iron away from the melty bits ;)
 
 ![image](https://user-images.githubusercontent.com/97127539/235335793-c553a47c-2323-4034-8f37-74512b3923cf.png)
