@@ -255,7 +255,7 @@ Then, put the lens on the front half of the shell, take the screen protector off
 
 ![image](https://user-images.githubusercontent.com/97127539/235335579-8f236275-aaf2-4186-ab9b-87b1cbd5b1b0.png)
 
-**Note: Be extremely careful with the screen. It is fragile. If you break it, you can sometimes buy one separately. They're just screens that were used in Blackberry Q5 phones. <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/funnyplaying-lg-gba-gbc-replacement-ips-lcd?variant=32483070083146">Here's a link to one sold separately on RGRS.</a>**
+**Note: Be extremely careful with the screen. It is fragile. If you break it, you can sometimes buy one separately. They're just screens that were used in Blackberry Q5 phones.**
   
 Next is to put the assembled PCB into the shell. Remember that you may need to lightly file away part of the shell around VR1 (volume dial) and/or SW2 (rocker switch) if the knobs interfere with the shell. Put screws down into the proper holes, and feed the IPS kit cable into P2 and secure the bale. The cable is a bit stiff so be careful installing it. Also at this point, *very carefully* solder the six wires from the IPS kit onto the main MGBC PCB. **Be extremely cautious not to melt any plastic on the shell!** Though if you're attempting this mod, I would hope you have a steady enough hand to keep the soldering iron away from the melty bits ;)
 
