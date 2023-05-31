@@ -188,7 +188,7 @@ Some quick troubleshooting tips - first, make sure the batteries are in all the 
 
 *Note: If you're using the Pocket Mouse Power Board, you have to wait a few seconds after inserting batteries the first time before it will turn on with the power switch. Once the batteries have been in the system for a few seconds, it will act completely normally.*
   
-Once you've verified the system boots up correctly, and you have acceptable sound coming out of the speakers and headphones with the start-up noise, you can go ahead and put the cart connector into the board. I save this for last, because there are a few components in the audio circuit close to the connector, and they're difficult to rework without melting the cart connector plastic. Though, <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#adjusting-volume-range">if you want to adjust the volume range</a>, you may want to adjust these parts before soldering the cart connector in (though I think the range is perfectly acceptable as-is).
+Once you've verified the system boots up correctly, and you have acceptable sound coming out of the speakers and headphones with the start-up noise, you can go ahead and put the cart connector into the board. I save this for last, because there are a few components in the audio circuit close to the connector, and they're difficult to rework without melting the cart connector plastic.
   
 When you install the cartridge connector, be sure to trim down the pins nearly flush to the PCB. Then, I usually cover the exposed solder with kapton tape. The Q5 screen sits right above these pins, and the back of it can short to the cart connector pins once the system is fully assembled.
   
