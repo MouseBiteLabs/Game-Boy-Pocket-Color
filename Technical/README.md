@@ -34,12 +34,12 @@ For this build, as mentioned, I'm using the GBC Q5 XL IPS Backlight with OSD kit
 
 The new audio circuit on the MGBC is powered by the LM4853, the same as my DMGC project. This TI chip is perfectly suited for the Game Boy - it has stereo inputs and headphone outputs, and mono speaker output. Makes it quite easy to implement without extra circuitry shenanigans.
 
-![image](https://user-images.githubusercontent.com/97127539/229975808-5cc1704a-90c0-4aee-af4d-3559ff87c255.png)
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/43743822-f382-4841-a2b0-bc03ca62bf98)
 
 - C18/C19 are DC blocking capacitors and RA1A/RA1B are current limiting resistors, so when the volume is turned all the way down, the S01 and S02 pins aren’t overloaded.
 - C52/C53 are DC blocking capacitors so only the AC audio signal passes to the amplifier.
 - The ratio of R30/R31 and R32/R33 set the amplification of the audio amp - increase R30 and R32 to decrease the output volume.
-  - The audio gain has quite a large effect on the power draw of the system when using the speaker. I did not do any tests with an audio gain greater than ~0.5. A sufficiently larger gain than this will drain batteries faster if the volume is turned up.
+  - The audio gain has quite a large effect on the power draw and power quality of the system when using the speaker. I do not recommend using an amplification of greater than 0.2.
 - The shutdown pin should be tied to GND to allow the amp to work. The output on the headphones will sound really quiet and the speaker won't work if the chip is shutdown.
 - The headphone detect pin (HP_SWITCH) is connected to GND when the headphone jack is empty, and is pulled up to 5 V via R36 when headphones are inserted. This switches the output on the audio amplifier between the speakers and headphones. C51 is for debouncing the headphone detection.
 - C26/C27 are DC blocking capacitors so only the AC audio signal passes to the headphones.
