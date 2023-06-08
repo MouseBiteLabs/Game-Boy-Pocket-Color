@@ -137,26 +137,35 @@ This should be for reference only. This can be found in the main folder in Excel
 
 ## Revision History
 
-### v1.5 - Release
+### v1.6 - Release II (Planned)
 
-- Modify button contacts to feel more OEM-like
-- Nudge SW2 to better fit in the shell, extend solder pads for easier assembly
-- Flip locations of the up and down pads for the rocker switch
-- Modify battery terminal contacts to match OEM style
+- Added 100 uF capacitor across 5V rail to reduce voltage ripple
+- Lowered default maximum volume
+- Changed the low battery detection circuit for easier threshold calculations
+- Expanded bottom hole for DC jack for compatibility with aftermarket parts
+- Shifted some components for easier solderability
+- Renamed LED1 to D2
+
+### v1.5 - Release I
+
+- Modified button contacts to feel more OEM-like
+- Nudged SW2 to better fit in the shell, extend solder pads for easier assembly
+- Flipped locations of the up and down pads for the rocker switch
+- Modified battery terminal contacts to match OEM style
 
 ### v1.4 - Beta III
 
-- Adjust hole and part placement for better shell fitment
-- Revert button contacts to Beta I design for better actuation
+- Adjusted hole and part placement for better shell fitment
+- Reverted button contacts to Beta I design for better actuation
 - Renamed some parts to match OEM descriptions
 - Created separate v1.4S version
 
 ### v1.3 - Beta II
 
-- Adjust hole and part placement for better shell fitment
+- Adjusted hole and part placement for better shell fitment
 - Changed button pads to mimic OEM
 - Modified silkscreen to mimic OEM Game Boy PCBs better
-- Change DC jack round holes to slots
+- Changed DC jack round holes to slots
 
 ### v1.2 - Beta I
 
