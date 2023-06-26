@@ -149,6 +149,8 @@ Here are a sample of my favorite mods for the MGBC:
   - <a href="https://github.com/skimzor/SZ-REG">skimzor's SZ Regulator</a>: a power supply that slots into the U5 socket; customizable print on the front of the board through <a href="https://ko-fi.com/skimzor">skimzor's Ko-Fi page</a>
   - <a href="https://www.nataliethenerd.com/product-page/gbp-led-boards">Natalie the Nerd's LED Boards</a>: button LED backlight board
 
+Important note for using external mods: you must be aware that the voltage on the SW net (the output of the power switch, connected to pin 1 on the power board socket) will remain connected to the batteries as long as the power switch is on. If your mod connects to the power switch output, then be aware there *will* be a condition where the 5 V on-board is at zero volts, and the battery voltage will still be above 2 V. This may cause issues, such as power draw through resistors even when the power is off, or leakage through protection diodes in certain devices. Please use accordingly.
+
 ## Testing and Assembly
 
 I'm going to split this into a few separate sections. This is the general process I follow when assembling an MGBC.
