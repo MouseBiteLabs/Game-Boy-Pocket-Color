@@ -88,6 +88,7 @@ This is a bit of a mess, but depending on the problem you're encountering, it co
 - The up/down text for the rocker switch functions is flipped
 ### v1.5 and earlier
 - The rocker switch can sometimes interfere with the shell. Light trimming on the shell may be required for smooth rocking.
+- The BOM for builds v1.5 and earlier is different than the one currently in this repo. Please view the differences in the Excel or .csv file in the root directory.
 ### v1.4
 - The button contacts are too responsive compared to Nintendo's button style. Use of tactile switches is recommended.
 
