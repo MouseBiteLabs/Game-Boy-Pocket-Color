@@ -1,10 +1,10 @@
-﻿Name Changes,,,,,Cart link:,https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=79af12f511
+﻿Name Changes from v1.5 to v1.6,,,,,Cart link for v1.5 and earlier:,https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=79af12f511
 D2 >> LED1,,,,,,
 ,,,,,,
 Removals from v1.6+ BOM,,,,,,
 "Q1, C21",,,,,,
 ,,,,,,
-BOM Changes/Additions,,,,,,
+BOM Changes/Additions for v1.5 and earlier,,,,,,
 Reference Designators,Qty,Value/Part Number,Package,Description,Comment,Source
 C11,1,1uF,0603,Capacitor (MLCC),"Should be X5R (or better), at least 16V",https://www.mouser.com/ProductDetail/KEMET/C0603C105K3PACTU?qs=STjISULpmtalQKXy67%252B4Cg%3D%3D
 Q2,1,MMBT3904,SOT23,NPN BJT,,https://www.mouser.com/ProductDetail/Nexperia/MMBT3904VL?qs=cnAQGvEIVkKbCwIpHJoHxQ%3D%3D
