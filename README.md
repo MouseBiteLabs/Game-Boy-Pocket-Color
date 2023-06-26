@@ -49,9 +49,24 @@ Again, I sell <a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-c
 
 You can also use other power supply boards from other creators - check the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Compatibility</a> section below for more information. I don't recommend using an original power board from a Game Boy.
 
+### Information on Older Revisions
+
+The current revision is v1.6, but you may have an earlier board (if you bought one from me, rest assured it will work perfectly fine - most of the changes between for-sale revisions are inconsequential to the end user). The BOM has changed slightly for v1.6 and later boards. Please view the Excel and/or .csv file above for BOM information (or contact me). Here's a short list of information about the older boards, and what is required/recommended when using them:
+
+| Revision | Recommendations |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------- |
+| v1.0 | You are a masochist. You're on your own for this one.                                                                        |
+| v1.1 | Are you me? No? Then did you rob my house?                                                                                   |
+| v1.2 | You're one of the beloved beta testers. You didn't build it yet? For shame. Contact me.                                      |
+| v1.3 | These should be practice boards only.                                                                                        |
+| v1.4 | Use tactile buttons. Minor shell trimming may be required for volume dial and rocker switch. |
+| v1.5 | Minor shell trimming may be required for volume dial and rocker switch.                      |
+
 ### II. Brand New Electronic Parts
 
-The MGBC board uses mostly all-new components. This is not a direct-transfer board. The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=79af12f511
+The MGBC board uses mostly all-new components. This is not a direct-transfer board. The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=dcb5fa1d47
+
+*Note: This cart link is for v1.6 boards and later. Please check out the BOM Excel or .csv file above for information about v1.5 and earlier.*
 
 Double check to see if any parts are missing, and consider ordering multiples of some parts. Also, there are some parts you may want to remove (like the tactile switches). **If a part is backordered, or out of stock** - check the Excel file, or the BOM listed at the bottom of the MGBC PCB folder. There may be alternate part options listed. You can also check for stock at places like Digikey, Newark, or LCSC. And you can always use Octopart.com to help find in-stock parts at other websites. Please understand that I can't maintain the cart for every out-of-stock part, so please do some research :)
 
@@ -150,7 +165,7 @@ Usually when I'm populating a board, I follow this order:
  
 If the build is going to utilize tactile buttons (the ones that are clicky, like on the GBA SP) I install *at least* the start and select ones now. After the headphone jack and DC jack are in, it's tricky to get the start and select tactiles in.
   
-4) Finally, I add most of the other external-facing components - VR1, P3, P4, P5, SW1, SW2, LED1, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
+4) Finally, I add most of the other external-facing components - VR1, P3, P4, P5, SW1, SW2, D2, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
   
 ![assemblysteps](https://user-images.githubusercontent.com/97127539/235049911-c1a1544d-e6bf-4002-8d76-e58140b73a33.png)
   
