@@ -11,7 +11,7 @@ My <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color">DMGC project</a
 - The option for tactile switches for the face buttons - like the GBA SP.
 - No major externally viewable case modifications, to keep the OEM look and feel, outside of the screen, as much as possible.
 
-All gerbers and source files can be found in this repo, as this project is fully open source. These PCB files and notes about the board, including customizations, can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">PCB folder</a>. Technical documentation of the board can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Technical">Technical folder</a>. For those who still have Beta boards, please check out the information in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Beta%20Testers">Beta Testers folder</a>. 
+All gerbers and source files can be found in this repo, as this project is fully open source. These PCB files and notes about the board, including customizations, can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">PCB folder</a>. Technical documentation of the board can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Technical">Technical folder</a>.
 
 Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions.
 
