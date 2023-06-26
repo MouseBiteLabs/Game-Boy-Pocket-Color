@@ -239,13 +239,13 @@ If you get incorrect results, then check the following:
   
 **Issue: Severe power glitches during start-up; plugging in headphones sometimes resets system**
   
-  - Make sure C8, C26, and C27 are placed in the correct orientation. Remember, the stripe on tantalum capacitors indicates the POSITIVE side of the device.
+  - Make sure C8, C21, C26, and C27 are placed in the correct orientation. Remember, the stripe on tantalum capacitors indicates the POSITIVE side of the device.
   - Ensure R22/R23 are 1 kΩ resistors.
   - Clean your power switch properly.
   
 **Issue: No sound or bad quality sound**
 
-- Make sure C8, C26, and C27 are placed in the correct orientation.
+- Make sure C8, C21, C26, and C27 are placed in the correct orientation.
 - Plug in headphones to check if the issue is related to the speaker or both speaker and headphones. If you get audio out of your headphones but not your speaker, then:
   - Check for continuity from pin 5 on the headphone jack (top right corner when viewing from below) to GND. When headphones are not plugged in, this pin should be connected to ground. If it isn't, clean your headphone jack, or get another.
   - Try another speaker, if you have one.
