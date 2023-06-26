@@ -1,7 +1,7 @@
 ﻿Name Changes from v1.5 to v1.6,,,,,Cart link for v1.5 and earlier:,https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=79af12f511
-D2 >> LED1,,,,,,
+LED1 >> D2,,,,,,
 ,,,,,,
-Removals from v1.6+ BOM,,,,,,
+Parts not on v1.5 and earlier,,,,,,
 "Q1, C21",,,,,,
 ,,,,,,
 BOM Changes/Additions for v1.5 and earlier,,,,,,
