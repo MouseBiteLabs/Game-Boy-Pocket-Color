@@ -18,11 +18,13 @@ This write-up serves as a technical explainer document for the MGBC project. I w
 
 ## Power LED Indicator
 
-![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/4b636739-d8bf-42fa-a720-c9bfa0be0f87)
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/13ec2f1e-fb18-4ef3-9efe-21e8137c2119)
 
-- SW is the voltage coming from the power source (batteries, DC jack). The BATT test pad in the schematic is for connecting to the OSD display for battery level indication. Note that if you are using a LiPo, the OSD will not accurately read the battery voltage level. (I couldn't be bothered to include a scaling circuit to address this!)
+- SW is the voltage coming from the power source (batteries, DC jack). The BATT test pad in the schematic is for connecting to the OSD display for battery level indication. Note that if you are using a LiPo, the OSD will not accurately read the battery voltage level. It is recommended to not solder a wire to the BAT pad if you are using a LiPo battery.
 - R4 and C3 is a simple RC filter to keep the battery level reading steady during transient loads, such as when the audio is loud.
-- U7, R2, R4, R5, and R8 set up a non-inverting Schmitt trigger. When the battery voltage is above ~2.3 V, the output of U7 (pin 4) is pulled up by R11 to 5 V. This drives the base of Q2 to short R10, reducing the resistance in series with LED1. When the battery value drops below ~2.3 V, pin 4 is pulled to GND. This turns off Q2, connecting R10 in series with and dimming LED1.
+- U7, R2, R4, R5, R6, and R8 set up an inverting Schmitt trigger. When the battery voltage is above ~2.24 V, the output of U7 (pin 4) is pulled down to GND. This drives the gate of the P-channel FET Q1 to short R10, reducing the resistance in series with D2. When the battery value drops below ~2.24 V, pin 4 is pulled up by R11 to 5 V. This turns off Q1, connecting R10 in series with and dimming D2.
+- If you remove R6, the threshold changes to ~3.4 V, which is suitable for LiPo batteries.
+- C11 keeps the input to the non-inverting pin of U7 lower than the inverting input during start-up, so that the LED defaults to being bright. Once C11 charges up, the proper threshold for LED dimming is used. Without this, the LED would likely be dim for a moment every time you turned on the system, until the battery voltage equalizes.
 
 ## FFC Connector
 
