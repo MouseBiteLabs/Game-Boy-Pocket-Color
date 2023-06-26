@@ -1,0 +1,13 @@
+﻿Name Changes,,,,,Cart link:,https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=79af12f511
+D2 >> LED1,,,,,,
+,,,,,,
+Removals from v1.6+ BOM,,,,,,
+"Q1, C21",,,,,,
+,,,,,,
+BOM Changes/Additions,,,,,,
+Reference Designators,Qty,Value/Part Number,Package,Description,Comment,Source
+C11,1,1uF,0603,Capacitor (MLCC),"Should be X5R (or better), at least 16V",https://www.mouser.com/ProductDetail/KEMET/C0603C105K3PACTU?qs=STjISULpmtalQKXy67%252B4Cg%3D%3D
+Q2,1,MMBT3904,SOT23,NPN BJT,,https://www.mouser.com/ProductDetail/Nexperia/MMBT3904VL?qs=cnAQGvEIVkKbCwIpHJoHxQ%3D%3D
+R4,1,200k,0603,Resistor,,https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-10200KL?qs=x6vGwhDZZUbWpD4Ucl8tsQ%3D%3D
+R5,1,140k,0603,Resistor,,https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07140KL?qs=IuGqVx9wL0ITcCE98xJS3Q%3D%3D
+R8,1,100k,0603,Resistor,,https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D
