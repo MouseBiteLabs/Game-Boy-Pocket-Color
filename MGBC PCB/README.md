@@ -155,6 +155,8 @@ This should be for reference only. This can be found in the main folder in Excel
 - Fixed up/down text for rocker switch functionality.
 - Changed EM7 connection so it is required for power boards using AAAs *and* power boards using Lipo batteries.
   - Use of the DC jack with AAA batteries requires shorting the DC and BT+ holes.
+- Added 3.3V to pin 37 on the FFC for compatibility with newer CGS screen kits.
+- Reduced hole diameter for volume dial mounting
 
 ### v1.6 - Release II
 
