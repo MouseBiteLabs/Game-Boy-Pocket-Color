@@ -304,26 +304,28 @@ Add any stickers you want, and the MGBC is complete!
 -	Push in: System reset
   
 ## Power Draw Measurements
-For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Oracle of Seasons intro on loop. Keep in mind, these are rough estimates. I rounded to the nearest 5 minute interval, and the nearest 10's of mW. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers. (I will update this table as I get more data.)
-  
-In general, you can expect to get between 3 and 6 hours of gameplay. The power LED will dim with about 30 minutes left of playtime.
+For these estimates, battery life was measured using two eneloop pro NiMH AAA batteries (total of ~2232 mWh) while playing the Legend of Zelda: Link's Awakening intro on loop. Keep in mind, these are rough estimates. I rounded to the nearest 5 minute interval, and the nearest 5 mW interval. Actual playtime *will* vary due to a variety of factors, but these should be good ballpark numbers. 
 
-| IPS Screen Brightness | Cartridge Type | Volume | Headphones? | Time to dim LED | Playtime       | Power Draw (mW) |
-| --------------------- | -------------- | ------ | ----------- | --------------- | -------------- | --------------- |
-| Max                   | Everdrive X5   | Max    | No          | 2 hrs, 15 mins  | 2 hrs, 55 mins | 750             |
-| Max                   | Everdrive X5   | Max    | Yes         | 3 hrs, 0 mins   | 3 hrs, 30 mins | 620             |
-| Max                   | Everdrive X5   | Min    | N/A         | ? hrs, ? mins   | 3 hrs, 45 mins | 580             |
-| Max                   | OEM Cart       | Max    | No          | ? hrs, ? mins   | 3 hrs, 10 mins | 700             |
-| Max                   | OEM Cart       | Max    | Yes         | 3 hrs, 30 mins  | 4 hrs, 0 mins  | 560             |
-| Max                   | OEM Cart       | Min    | N/A         | 3 hrs, 45 mins  | 4 hrs, 5 mins  | 540             |
-| Min                   | Everdrive X5   | Max    | No          | ? hrs, ? mins   | 3 hrs, 45 mins | 590             |
-| Min                   | Everdrive X5   | Max    | Yes         | ? hrs, ? mins   | 4 hrs, 55 mins | 440             |
-| Min                   | Everdrive X5   | Min    | N/A         | ? hrs, ? mins   | 5 hrs, 20 mins | 410             |
-| Min                   | OEM Cart       | Max    | No          | ? hrs, ? mins   | 4 hrs, 15 min  | 520             |
-| Min                   | OEM Cart       | Max    | Yes         | ? hrs, ? mins   | 5 hrs, 40 min  | 390             |
-| Min                   | OEM Cart       | Min    | N/A         | ? hrs, ? mins   | 6 hrs, 0 mins  | 370             |
+In general, you can expect to get between 3 and 6 hours of gameplay depending on the game, your play settings, and the batteries you're using. The power LED will dim with about 10 to 20 minutes left of playtime.
 
-The variables that seem to affect the power draw the most are flash carts and using the speakers (especially at max volume). I only own an Everdrive X5, which of the flash cart offerings is one of the most power efficient. So something like the EZ Flash Jr. is likely to drain batteries even faster.
+| IPS Screen Brightness | Cartridge Type | Volume | Headphones? | Playtime       | Power Draw (mW) |
+| --------------------- | -------------- | ------ | ----------- | -------------- | --------------- |
+| Max                   | Everdrive X5   | Max    | No          | 3 hrs, 15 mins | 680             |
+| Max                   | Everdrive X5   | Max    | Yes         | 3 hrs, 30 mins | 635             |
+| Max                   | Everdrive X5   | Min    | N/A         | 3 hrs, 30 mins | 630             |
+| Max                   | OEM Cart       | Max    | No          | 3 hrs, 30 mins | 630             |
+| Max                   | OEM Cart       | Max    | Yes         | 3 hrs, 45 mins | 590             |
+| Max                   | OEM Cart       | Min    | N/A         | 3 hrs, 50 mins | 585             |
+| Min                   | Everdrive X5   | Max    | No          | 4 hrs, 25 mins | 500             |
+| Min                   | Everdrive X5   | Max    | Yes         | 4 hrs, 45 mins | 465             |
+| Min                   | Everdrive X5   | Min    | N/A         | 4 hrs, 50 mins | 460             |
+| Min                   | OEM Cart       | Max    | No          | 4 hrs, 50 mins | 460             |
+| Min                   | OEM Cart       | Max    | Yes         | 5 hrs, 20 mins | 420             |
+| Min                   | OEM Cart       | Min    | N/A         | 5 hrs, 25 mins | 415             |
+
+The variable that affects battery life the most is the screen brightness. I have found that the power drop from full to half brightness is much larger than the drop from half to minimum brightness, so I recommend playing at half brightness to maximize playtime without sacrificing a vibrant screen. As for cart type, I only own an Everdrive X5, which of the flash cart offerings is one of the most power efficient. So something like the EZ Flash Jr. is likely to drain batteries even faster. 
+
+The difference in power draw between max and min screen brightness is about 170 mW, between an OEM cart and an Everdrive X5 is about 45 mW, between max and min volume on speakers is about 45 mW, and between headphones and speakers is about 40 mW.
 
 ## Audio Recordings and Spectrum
 For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
