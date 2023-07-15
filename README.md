@@ -327,6 +327,12 @@ The variable that affects battery life the most is the screen brightness. I have
 
 The difference in power draw between max and min screen brightness is about 170 mW, between an OEM cart and an Everdrive X5 is about 45 mW, between max and min volume on speakers is about 45 mW, and between headphones and speakers is about 40 mW.
 
+### Battery Discharge Curves
+
+These are six curves generated from data used to populate the table above, with the x-axis being depth of discharge.
+
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/691c74dd-b451-4a08-8384-6c45a36ec084)
+
 ## Audio Recordings and Spectrum
 For these results, I connected the headphone jack to my computer's microphone input, and used Audacity to obtain line out recordings. Then I graphed the spectrum using Audacity's "plot spectrum" analysis tool. You can see the larger gain at the lower frequencies in the spectrum plot of the MGBC, similar to the results from my DMGC project. I'm pretty sure the MGBC all-around sounds nicer than a stock system, at least through headphones. Listen for yourself! (GitHub only allows for video files to be embedded, MP3 files are provided above)
 
