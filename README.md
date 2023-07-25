@@ -15,6 +15,8 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions.
 
+I recommend using NiMH batteries in your final build. This entire project was developed with eneloop Pro AAA batteries, so I designed to that specification. I suspect other NiMH batteries should perform similarly. Some have noted odd behavior with alkaline AAA batteries at low charge, and I believe this is due to the generally higher internal resistance of alkaline batteries (a quick sampling of popular battery brands show approximately 50 mOhms internal resistance for NiMH chemistry, but 150+ mOhms internal resistance for alkaline chemistry).
+
 ## Disclaimer
 
 Before I go any further, please read this VERY important disclaimer, **IN IT'S ENTIRETY,** if you are thinking about making this yourself.
