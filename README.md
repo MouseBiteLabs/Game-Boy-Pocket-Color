@@ -147,8 +147,8 @@ Here are a sample of my favorite mods for the MGBC:
 
   - <a href="https://www.etsy.com/listing/1267252807/game-boy-color-battery-indicator-mod">Leggomyfroggo's Two-Stage Battery Indicator Mod</a>: goes in place of the power LED, changes color when battery gets low
   - <a href="https://www.etsy.com/listing/1422095615/frogulator-game-boy-colorpocket-dc">Leggomyfroggo's Frogulator</a>: a power supply that slots into the U5 socket; eyes light up for battery power indication
-  - <a href="https://www.muramasaentertainment.com/product/pocket-power-pocket/">Muramasa's Pocket-Power Pocket</a>: an all-in-one LiPo charger including USB-C port; requires some shell cuts and **removal of EM7** [untested]
-  - <a href="https://github.com/marshallh/gbpp">marshallh's Game Boy Pocket Power</a>: a power supply that slots into the U5 socket; has LiPo support (solder wires through the DC and BT+ holes on the MGBC board, and **remove EM7** - requires USB-C board for charging and some shell cuts [untested]
+  - <a href="https://www.muramasaentertainment.com/product/pocket-power-pocket/">Muramasa's Pocket-Power Pocket</a>: an all-in-one LiPo charger including USB-C port; requires some shell cuts and **removal of EM7 for v1.6 and earlier** [untested]
+  - <a href="https://github.com/marshallh/gbpp">marshallh's Game Boy Pocket Power</a>: a power supply that slots into the U5 socket; has LiPo support (solder wires through the DC and BT+ holes on the MGBC board, and **remove EM7 on v1.6 and earlier** - requires USB-C board for charging and some shell cuts [untested]
   - <a href="https://github.com/skimzor/SZ-REG">skimzor's SZ Regulator</a>: a power supply that slots into the U5 socket; customizable print on the front of the board through <a href="https://ko-fi.com/skimzor">skimzor's Ko-Fi page</a>
   - <a href="https://www.nataliethenerd.com/product-page/gbp-led-boards">Natalie the Nerd's LED Boards</a>: button LED backlight board
 
@@ -173,16 +173,24 @@ If the build is going to utilize tactile buttons (the ones that are clicky, like
 4) Finally, I add most of the other external-facing components - VR1, P3, P4, P5, SW1, SW2, D2, the speaker, and the battery terminals. The only parts that I don't populate at this point are the cartridge connector (P1) and the power board (U5). 
   
 ![assemblysteps](https://user-images.githubusercontent.com/97127539/235049911-c1a1544d-e6bf-4002-8d76-e58140b73a33.png)
-  
-**NOTE 1** - If you are using a LiPo mod on the MGBC, **DO NOT INCLDE EM7**. This component must be removed from the final build. (That's why there's an asterisk on the board next to this part)
 
-Also important to note, **LITHIUM-ION BATTERIES ARE DANGEROUS. USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR YOUR HOUSE BURNING DOWN. YOU ARE RESPONSIBLE FOR FIGURING OUT HOW TO USE A LIPO ON THIS BOARD.**
-  
+**NOTE 1** - Keep VR1 and SW2 as far inside the board as the holes allow. This will reduce interference with the shell. You may need to file away a bit of the shell in order for the knobs to turn freely. It may be a good idea to do a quick fitment test in the shell before going farther into assembly.
+
 **NOTE 2** - You may have to trim the pins on VR1, the volume dial, before soldering. I cut them down in half to make them fit nicer.
 
-**NOTE 3** - Keep VR1 and SW2 as far inside the board as the holes allow. This will reduce interference with the shell. You may need to file away a bit of the shell in order for the knobs to turn freely. It may be a good idea to do a quick fitment test in the shell before going farther into assembly.
+![image](https://user-images.githubusercontent.com/97127539/235283222-67c8e9a2-00a4-41b4-9448-10cceecbf2e5.png)
+  
+### Setting up for AAA vs LiPo
 
-![image](https://user-images.githubusercontent.com/97127539/235281962-d3de3158-d096-4479-8b11-8b610557d83b.png) ![image](https://user-images.githubusercontent.com/97127539/235283222-67c8e9a2-00a4-41b4-9448-10cceecbf2e5.png)
+I generally recommend using NiMH AAAs in builds, because they are easier and safer to deal with, they can be swapped in quickly as opposed to waiting for the battery to charge up, and don't require any shell modifications to use (LiPos require a shell cut to fit a USB port, which isn't fun). The only thing you need to do if you're going to use AAAs, which the MGBC is set up for natively, is connect the two holes labelled BT+ and DC together with a wire or 0 ohm resistor. This is also only required on v2.0 and later boards - v1.6 and earlier do not require this. Shorting these holes together connects the DC jack to the input of the regulator. So if you forget to add it, then your DC jack won't work (which may or may not matter to you anyway). **DO NOT SHORT THESE TOGETHER IF USING A LITHIUM-ION BATTERY.**
+
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/f868dfd0-655a-4517-a6ca-ef92e4695432)
+
+If you really want to add LiPo support to your build, you're on your own for figuring out how to set it up. The important thing to note on the MGBC board is, for boards v1.6 and earlier, **DO NOT INCLDE EM7**. This component must be removed from the final build. Make absolutely sure you do this - failure to do so may damage your battery and/or system. In version 2.0, you must include EM7 on every build.
+  
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/7d463a96-67b7-4514-8e9a-4d1b59431016)
+
+And, as a mandatory disclaimer, **LITHIUM-ION BATTERIES ARE DANGEROUS. USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR YOUR HOUSE BURNING DOWN. YOU ARE RESPONSIBLE FOR FIGURING OUT HOW TO USE A LIPO ON THIS BOARD.**
 
 ### Testing the Power Board and IPS Kit
   
@@ -206,7 +214,7 @@ Turn it on, and check for these things:
   
 Some quick troubleshooting tips - first, make sure the batteries are in all the way (or your power supply is set correctly) and the cable for the IPS kit is inserted fully and the bale is pushed all the way down. If only the LED isn't turning on, you might have the LED backwards. If you can hear the start-up noise, but nothing on the screen, then check the connections on the FFC connector and the top row of pins on the CPU - they probably need a reflow. If you get a blank screen, but no start-up jingle, then check the connections on the FFC, CPU, and RAM chips. And if you have the splash screen, but no audio, then check your speaker, headphone jack, and orientation of tantalum capacitors. If nothing is happening when you flip the switch, or you still cant figure out where your error is coming from, check out the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#troubleshooting-common-electrical-issues">Troubleshooting</a> section for a few more detailed troubleshooting tips, and the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">CPU Pin Function diagram</a> in the PCB folder.
 
-*Note: If you're using the Pocket Mouse Power Board, you have to wait a few seconds after inserting batteries the first time before it will turn on with the power switch. Once the batteries have been in the system for a few seconds, it will act completely normally.*
+*Note: If you're using the Pocket Mouse Power Board, you may have to wait a few seconds after inserting batteries the first time before it will turn on with the power switch. Once the batteries have been in the system for a few seconds, it will act completely normally.*
   
 Once you've verified the system boots up correctly, and you have acceptable sound coming out of the speakers and headphones with the start-up noise, you can go ahead and put the cart connector into the board. I save this for last, because there are a few components in the audio circuit close to the connector, and they're difficult to rework without melting the cart connector plastic.
   
