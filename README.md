@@ -53,7 +53,7 @@ You can also use other power supply boards from other creators - check the <a hr
 
 ### Information on Older Revisions
 
-The current revision is v1.6, but you may have an earlier board (if you bought one from me, rest assured it will work perfectly fine - most of the changes between for-sale revisions are inconsequential to the end user). The BOM has changed slightly for v1.6 and later boards. Please view the Excel and/or .csv file above for BOM information (or contact me). Here's a short list of information about the older boards, and what is required/recommended when using them:
+The current revision is v2.0, but you may have an earlier board (if you bought one from me, rest assured it will work perfectly fine - most of the changes between for-sale revisions are inconsequential to the end user). The BOM has changed slightly for v1.6 and later boards, compared to previous revisions. Please view the Excel and/or .csv file above for BOM information (or contact me). Here's a short list of information about the older boards, and what is required/recommended when using them:
 
 | Revision | Recommendations |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -61,8 +61,9 @@ The current revision is v1.6, but you may have an earlier board (if you bought o
 | v1.1 | Are you me? No? Then did you rob my house?                                                                                   |
 | v1.2 | You're one of the beloved beta testers. You didn't build it yet? For shame. Contact me.                                      |
 | v1.3 | These should be practice boards only.                                                                                        |
-| v1.4 | Use tactile buttons. Minor shell trimming may be required for volume dial and rocker switch. |
-| v1.5 | Minor shell trimming may be required for volume dial and rocker switch.                      |
+| v1.4 | Use tactile buttons. Minor shell trimming may be required for volume dial and rocker switch.                                 |
+| v1.5 | Minor shell trimming may be required for volume dial and rocker switch.                                                      |
+| v1.6 | No important differences.                                                                                                    |
 
 ### II. Brand New Electronic Parts
 
