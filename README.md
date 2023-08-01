@@ -15,8 +15,6 @@ All gerbers and source files can be found in this repo, as this project is fully
 
 Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions.
 
-I recommend using NiMH batteries in your final build. As mentioned earlier, this entire project was developed with eneloop Pro AAA batteries, so I designed to that specification. I suspect other NiMH batteries should perform similarly. I and others have noted odd behavior with alkaline AAA batteries at low charge, and I believe this is due to the generally higher internal resistance of alkaline batteries (a quick sampling of popular battery brands show approximately 50 mOhms internal resistance for NiMH chemistry, but 150+ mOhms internal resistance for alkaline chemistry).
-
 ## Disclaimer
 
 Before I go any further, please read this VERY important disclaimer, **IN IT'S ENTIRETY,** if you are thinking about making this yourself.
@@ -143,9 +141,9 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 
 I developed this system almost exclusively with rechargeable eneloop Pro NiMH AAA batteries. After finishing up development, I tried out regular alkaline AAAs. What I found, and some others have found, is that they are less reliable to use than NiMH batteries, particularly during start-up. When using alkaline batteries, after they have been discharged for an hour or two, sometimes the screen and power LED will flicker for a bit before fully coming on. This also varies between brands - I found Energizer Max batteries to perform much better than Duracell Coppertop batteries, for example. Duracells caused much more stuttering during the start-up sequence. Other brands or types may perform better, but I'm not about to buy a bunch of disposable alkalines to find out which.
 
-However, the rechargeable NiMH AAA batteries I tested *do not* have any of these issues. And I tested these a lot during development, at many different states of charge. They are seemingly better suited for power delivery, and I never experience any kind of stuttering during start-up. They give you 3 to 6 hours of gameplay based on your settings and game selection, and as long as you have more than one set, you can easily charge one set while you play with another set.
+However, the rechargeable NiMH AAA batteries I tested *do not* have any of these issues. And I tested these a lot during development, at many different states of charge. They are seemingly better suited for power delivery, and I never experience any kind of stuttering during start-up. I believe this is due to the generally higher internal resistance of alkaline batteries (a quick sampling of popular battery brands show approximately 50 mOhms internal resistance for NiMH chemistry, but 150+ mOhms internal resistance for alkaline chemistry). 
 
-<A href="https://www.amazon.com/Panasonic-BK-4HCCA8BA-eneloop-Pre-Charged-Rechargeable/dp/B00JHKSL0A/ref=sr_1_1_pp?keywords=eneloop%2BAAA&qid=1690853200&sr=8-1&th=1">Here's a listing for the eneloop pro batteries I use in all of my Game Boys.</a> Other brands of rechargeable batteries I have seen used are Ikea LADDA batteries, and Jugee batteries.
+Rechargeable NiMH batteries give you about 3 to 6 hours of gameplay based on your settings and game selection, and as long as you have more than one set, you can easily charge one set while you play with another set. <A href="https://www.amazon.com/Panasonic-BK-4HCCA8BA-eneloop-Pre-Charged-Rechargeable/dp/B00JHKSL0A/ref=sr_1_1_pp?keywords=eneloop%2BAAA&qid=1690853200&sr=8-1&th=1">Here's a listing for the eneloop pro batteries I use in all of my Game Boys.</a> Other brands of rechargeable batteries I have seen used are Ikea LADDA batteries, and Jugee batteries.
 
 Lithium-ion batteries (or LiPos) are another option, but I do not fully detail how to use them in this repository. You must be knowledgeable enough on your own to utilize them. Please review the entire repo for crucial information if you *do* decide to use them, though.
   
