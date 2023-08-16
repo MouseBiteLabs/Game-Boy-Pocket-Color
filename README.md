@@ -79,10 +79,13 @@ Also note, while I do recommend the board, this BOM does not include parts for t
 
 There are a handful of parts that I have not located aftermarket substitutes for, and will therefore necessitate an original Game Boy console to salvage from. Please note that removing these parts is not a trivial task, and **requires advanced soldering and desoldering skills to be successful.**
 
-- The following parts from an original Game Boy Color console
+The following parts are required from an original Game Boy Color console:
+
   -	U1 – CGB CPU (all revisions *except* REV E, which is *incompatible*)
   - X1 – 8.388 MHz crystal oscillator
-- The following parts from an original Game Boy Color **OR** Game Boy Pocket console
+
+The following parts are required from an original Game Boy Color **OR** Game Boy Pocket console:
+
   -	P1 – Cartridge connector
   -	P5 – Headphone jack
 
@@ -100,7 +103,7 @@ The following parts can be salvaged from a Game Boy Color *or* Game Boy Pocket, 
 
 ### IV. External Build Parts
 
-The following is the high-level BOM - basically, the Game Boy part. Note that parts that deviate from the ones listed here (like different shell designs) might necessitate different fitment modifications, or end up being incompatible. 
+The following is the high-level BOM - basically, the Game Boy part. Note that parts that deviate from the ones listed here (like different shell designs) might necessitate different fitment modifications, or end up being incompatible. Note that this list is not a comprehensive list of all the places you can get these parts. I encourage you to search around if you can't find what you want here. 
 
 -	**Shell:** I generally recommend the Funnyplaying "IPS Ready" ones if you don't want to trim anything. If you don't use these, then you're on your own for how to prepare it - generally, you can follow guides for preparing a Pocket for an IPS screen kit.
     - RGRS: <a href="https://retrogamerepairshop.com/products/funnyplaying-game-boy-pocket-q5-ips-ready-shell-housing-no-cut?pr_prod_strat=copurchase&pr_rec_id=d8b0186ad&pr_rec_pid=6280907751596&pr_ref_pid=6115075391660&pr_seq=uniform">FunnyPlaying Game Boy Pocket IPS Backlight Ready Shell Housing No Cut</a>
