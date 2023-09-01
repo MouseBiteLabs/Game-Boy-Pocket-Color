@@ -11,9 +11,9 @@ My <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color">DMGC project</a
 - The option for tactile switches for the face buttons - like the GBA SP.
 - No major externally viewable case modifications, to keep the OEM look and feel, outside of the screen, as much as possible.
 
-All gerbers and source files can be found in this repo, as this project is fully open source. These PCB files and notes about the board, including customizations, can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">PCB folder</a>. Technical documentation of the board can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Technical">Technical folder</a>.
+All gerbers and source files can be found in this repo, as this project is fully open source. These PCB files and notes about the board, including customizations **and some troubleshooting tips**, can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">PCB folder</a>. Technical documentation of the board can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Technical">Technical folder</a>.
 
-Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions.
+Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions. Please try to find your answer in this repository - 95% of the time someone asks me something it's answered here already.
 
 ## Disclaimer
 
@@ -61,13 +61,13 @@ The current revision is v2.0, but you may have an earlier board (if you bought o
 | v1.3 | These should be practice boards only.                                                                                        |
 | v1.4 | Use tactile buttons. Minor shell trimming may be required for volume dial and rocker switch.                                 |
 | v1.5 | Minor shell trimming may be required for volume dial and rocker switch.                                                      |
-| v1.6 | No important differences.                                                                                                    |
+| v1.6 | No important differences compared to v2.0.                                                                                   |
 
 ### II. Brand New Electronic Parts
 
 The MGBC board uses mostly all-new components. This is not a direct-transfer board. The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=dcb5fa1d47
 
-*Note: This cart link is for v1.6 boards and later. Please check out the BOM Excel or .csv file above for information about v1.5 and earlier.*
+*Note: This cart link is for v1.6 and v2.0 boards. Please check out the BOM Excel or .csv file above for information about v1.5 and earlier.*
 
 Double check to see if any parts are missing, and consider ordering multiples of some parts. Also, there are some parts you may want to remove (like the tactile switches). **If a part is backordered, or out of stock** - check the Excel file, or the BOM listed at the bottom of the MGBC PCB folder. There may be alternate part options listed. You can also check for stock at places like Digikey, Newark, or LCSC. And you can always use Octopart.com to help find in-stock parts at other websites. Please understand that I can't maintain the cart for every out-of-stock part, so please do some research :)
 
@@ -89,7 +89,7 @@ The following parts are required from an original Game Boy Color **OR** Game Boy
   -	P1 – Cartridge connector
   -	P5 – Headphone jack
 
-The following parts can be salvaged from a Game Boy Color, but aftermarket options exist:
+The following parts can be salvaged from a Game Boy Color, but newly manufactured commercial off-the-shelf options exist:
 
   - U2 – LH52256CVTXIZ (SRAM); alternate: https://mou.sr/3f8G0Mi
   - EM10 – input filter; alternate: https://mou.sr/3FiMvXw
@@ -111,7 +111,8 @@ The following is the high-level BOM - basically, the Game Boy part. Note that pa
 -	**Screen Kit:** This is the important one. You need this specific type of kit - the Q5 IPS with OSD. It goes by many names, the maker is Hispeedido (*not* FunnyPlaying). Kits that have the screen laminated to a GBC lens are *not* compatible, but kits that include a lit-up logo on the bottom part of the screen are fine to use. Make sure you DO NOT get the Game Boy Pocket version - it is not compatible! Also, be sure to test this screen kit before installing it, preferrably with an original Game Boy Color. Sometimes they arrive damaged, and once you've installed, it may not be possible to get a refund.
     - RGRS: <a href="https://retrogamerepairshop.com/products/game-boy-color-q5-ips-backlight-with-osd?variant=37646279213228">GBC Q5 XL IPS Backlight with OSD</a> OR <a href="https://retrogamerepairshop.com/collections/gbc-displays/products/game-boy-color-q5-osd-ips-kit-with-color-changing-logo?variant=41819042185388">Game Boy Color Q5 OSD IPS Kit with Color Changing Logo 
     - AliExpress: <a href="https://www.aliexpress.us/item/3256801650459088.html?spm=a2g0o.productlist.main.1.758e53f17WUFK2&algo_pvid=24ef67e3-d608-4269-a663-05eafed1bd17&algo_exp_id=24ef67e3-d608-4269-a663-05eafed1bd17-0&pdp_npi=3%40dis%21USD%2145.9%2145.9%21%21%21%21%21%4021224e9b16816641208271256d074d%2112000017802039303%21sea%21US%210&curPageLogUid=dCymHIE0cr4X">GBC Q5 IPS LCD Kit</a>
-    - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>  
+    - HHL: <a href="https://handheldlegend.com/products/game-boy-color-ips-lcd-q5-hispeedido">Game Boy Color IPS LCD Q5 - Hispeedido</a>
+I have not thoroughly tested it, but the CGS (Cloud Game Store) display should be electrically compatible as of v2.0. It will need some kind of method of centering the image if you choose to use it, though. (At the time of writing, I have heard there is a seller on Taobao selling laminated CGS kits...)
   -	**Lens:** I recommend you get an "IPS Lens" as the viewing area is slightly larger than the OEM one. 
     - RGRS: <a href="https://retrogamerepairshop.com/collections/gbp-lenses-1/products/funnyplaying-game-boy-pocket-ips-retro-pixel-mod-led-hole-glass-screen-lens?variant=37635319988396">FunnyPlaying Game Boy Pocket IPS Retro Pixel Mod LED Hole Glass Screen Lens</a>
     - FunnyPlaying: <a href="https://funnyplaying.com/products/gbp-retro-pixel-ips-glass-lens?_pos=1&_sid=ec7345577&_ss=r&variant=31969857437757">GBP RETRO PIXEL IPS GLASS LENS</a>
@@ -148,7 +149,7 @@ However, the rechargeable NiMH AAA batteries I tested *do not* have any of these
 
 Rechargeable NiMH batteries give you about 3 to 6 hours of gameplay based on your settings and game selection, and as long as you have more than one set, you can easily charge one set while you play with another set. <A href="https://www.amazon.com/Panasonic-BK-4HCCA8BA-eneloop-Pre-Charged-Rechargeable/dp/B00JHKSL0A/ref=sr_1_1_pp?keywords=eneloop%2BAAA&qid=1690853200&sr=8-1&th=1">Here's a listing for the eneloop pro batteries I use in all of my Game Boys.</a> Other brands of rechargeable batteries I have seen used are Ikea LADDA batteries, and Jugee batteries.
 
-Lithium-ion batteries (or LiPos) are another option, but I do not fully detail how to use them in this repository. You must be knowledgeable enough on your own to utilize them. Please review the entire repo for crucial information if you *do* decide to use them, though.
+Lithium-ion batteries (or LiPos) are another option, but I do not fully detail how to use them in this repository. You must be knowledgeable enough on your own to utilize them. Please review the entire repo for crucial information if you *do* decide to go with a LiPo.
   
 ### VI. Compatibility with Other Mods
 
@@ -284,7 +285,7 @@ If you get incorrect results, then check the following:
 - Reflow the FFC connector (P2) and make sure all pins are well-connected to the board.
 - Reflow the CPU (U1) and make sure all pins are well-connected to the board.
 - If miscolored, make sure the palette isn't being cycled on the IPS kit, as there is a touchpad that cycles through different color modes.
-- If you're stuck on the boot screen, also check to make sure the cartridge and cartridge connector you're using is clean and making good contact.
+- If you're stuck on the boot screen *only* with a game inserted, check to make sure the cartridge and cartridge connector you're using is clean and making good contact.
 
 ### Final Assembly
 
@@ -380,11 +381,7 @@ Please refer to this before asking me any questions! If you ask me a question, I
   
 **Q: Can you make one for me?**
   
-A: NO. Stop asking, please!
-  
-**Q: Are you going to restock them?**
-
-A: YES. Stop asking, please!
+A: NO. Stop asking, please! There are makers out there who you can commission a build from, but I am not one of them.
   
 **Q: Why are you encouraging the destruction of Game Boys?**
   
