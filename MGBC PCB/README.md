@@ -5,11 +5,13 @@ Version 1.6:
 Version 1.6S:
 ![green1-6](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/fd73a8d5-107f-48d9-b630-45dfe71a6a18)
 
+*Note: The v1.6 boards are nearly identical to v2.0 boards. New photos will be uploaded... eventually.*
+
 This is the main circuit board in the MGBC build. This README will provide instructions for how to customize the build to your liking, as well as attempt to clear up any questions you may have about the build process.
 
 ## Board Characteristics and Order Information
 
-The zipped folder contains all the gerber files for this board, if you wish to order it from a board manufacturer yourself. Version 1.x refers to the PCB that is one solid color with little-to-no visible silkscreen on the front after assembly; Version 1.xS refers to the PCB that has the bottom half filled with slikscreen, to make it look like OEM Pocket boards.
+The zipped folder contains all the gerber files for this board, if you wish to order it from a board manufacturer yourself. Version 2.x refers to the PCB that is one solid color with little-to-no visible silkscreen on the front after assembly; Version 2.xS refers to the PCB that has the bottom half filled with slikscreen, to make it look like OEM Pocket boards.
 
 -	Layers: 2
 -	Thickness: 1 mm
@@ -52,6 +54,12 @@ If you want clicky buttons, like the GBA SP has, then you can install tactile sw
 
 ![image](https://user-images.githubusercontent.com/97127539/235406753-a694bea7-ffcf-4bec-903d-00f39ec4b2d9.png)
 
+### Enabling the DC Jack (v2.0 only)
+
+When making the system for use with AAAs, you must connect the two holes labelled BT+ and DC together with a wire or 0 ohm resistor. This is only required on v2.0 and later boards - v1.6 and earlier do not require this. Shorting these holes together connects the DC jack to the input of the regulator. So if you forget to add it, then your DC jack won't work (which may or may not matter to you anyway). DO NOT SHORT THESE TOGETHER IF USING A LITHIUM-ION BATTERY.
+
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/f1c1c4ce-321b-474d-b5af-78a6aec5b99e)
+
 ### LiPo Support
 
 Are you using the Game Boy Pocket Power regulator for U5 for LiPo support? Are you sure you want to? Lithium-ion batteries are **dangerous** so if you're going to be using one... you're on your own. You're responsible for using it safely. 
@@ -66,7 +74,7 @@ Here are a few images that should help clarify the build process, as well as pro
 
 ### Part Placement
 
-Some of the parts are a bit cramped, and it can be a bit difficult to decipher which part is which. Hopefully this image helps you clarify.
+Some of the parts are a bit cramped, and it can be a bit difficult to decipher which part is which. Hopefully this image helps you clarify. (This is a photo from a previous version of the board, so the parts on your board may be slightly nudged from where they are in this image.)
 
 ![image](https://user-images.githubusercontent.com/97127539/235396199-3f610782-8782-44d2-b0a4-8c2cef4e248b.png)
 
@@ -76,7 +84,7 @@ This is a bit of a mess, but depending on the problem you're encountering, it co
 - For miscolored screens, reflow the top display pins.
 - For *glitchy* screens, or frozen/all-white screens, reflow the SRAM pins.
 - If you're missing button inputs, reflow the bottom left corner button pins.
-- If you have games that don't start up properly and hang at the Nintendo logo during start-up, display a glitchy Nintendo logo, or randomly freeze during gameplay, reflow the cartridge pins. (And clean your cartridge connector)
+- If you have games that don't start up properly and hang at the Nintendo logo during start-up, display a glitchy Nintendo logo, or randomly freeze during gameplay, reflow the cartridge pins and clean your cartridge connector. The freezing may also be caused by poorly connected SRAM as well.
 - Three link port pins are on the bottom right, but there is one lone one at the top.
 - In general, reflowing the clock and power pins (colored red, pink, and black) can solve problems as well.
 
@@ -150,7 +158,7 @@ This should be for reference only. This can be found in the main folder in Excel
 | X1                               | 1   | 8.388608MHz       | 7.5X5-4-PAD | Crystal oscillator |                                                                                                                   | Salvaged (GBC)                                                                                                                                                                                                                                                                                                               |
 ## Revision History
 
-### v2.0 - Final Release (PLANNED)
+### v2.0 - Final Release
 
 - Fixed up/down text for rocker switch functionality.
 - Changed EM7 connection so it is required for power boards using AAAs *and* power boards using Lipo batteries.
