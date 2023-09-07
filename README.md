@@ -43,9 +43,9 @@ First and foremost, you will need two brand new circuit boards for this build:
 - <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#mgbc-mbl-01">the main MGBC circuit board</a>, and 
 - a power supply board that fits in the U5 socket on the MGBC board (like my <a href="https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board">Pocket Mouse Power Board</a>)
 
-Again, I sell <a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01">the MGBC board</a> and <a href="https://www.etsy.com/listing/1473483915/pocket-mouse-power-board">my regulator board</a> on my Etsy store. You can alternatively use the files in the MGBC PCB folder to order it yourself. Please see the MGBC PCB folder for more info.
+Again, I sell <a href="https://mousebitelabs.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694127166906">the MGBC board</a> and <a href="https://mousebitelabs.etsy.com/listing/1473483915/pocket-mouse-power-board?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694127201480">my regulator board</a> on my Etsy store. You can alternatively use the files in the MGBC PCB folder to order it yourself. Please see the MGBC PCB folder for more info.
 
-<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
+<a href="https://mousebitelabs.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694127166906"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 You can also use other power supply boards from other creators - check the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Compatibility</a> section below for more information. I don't recommend using an original power board from a Game Boy.
 
