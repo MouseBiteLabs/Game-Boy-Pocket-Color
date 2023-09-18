@@ -44,9 +44,10 @@ Bridge the pads labelled "RST" with solder to turn the navigation switch into a 
 
 ### Power LED Brightness
 
-Increase the value of R1 to decrease the brightness of the power LED during normal battery levels. Increase the value of R2 to decrease the brightness of the power LED during low battery levels. It is suggested to try changing resistances in ~10 kΩ increments.
+Increase the value of R9 to decrease the brightness of the power LED during normal battery levels. Increase the value of R10 to decrease the brightness of the power LED during low battery levels. It is suggested to try changing resistances in ~10 kΩ increments.
 
-![image](https://user-images.githubusercontent.com/97127539/235404599-46a0dd64-a8e6-485e-ace7-022baa46350d.png)
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/154e9a42-ec53-411a-9719-5fb1265d85e6)
+
 
 ### Tactile Switches
 
