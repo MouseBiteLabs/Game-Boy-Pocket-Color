@@ -17,7 +17,9 @@ Before asking a question, please review the <a href="https://github.com/MouseBit
 
 ## Disclaimer
 
-Before I go any further, please read this VERY important disclaimer, **IN IT'S ENTIRETY,** if you are thinking about making this yourself.
+Before I go any further, please read this VERY important disclaimer, **IN IT'S ENTIRETY,** if you are thinking about making this yourself. **Don't let this picture happen to you!**
+
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/a5462f7a-fef0-465b-abce-b6d332485d08)
 
 I made this project first and foremost for my own purposes. Nearly all of the features I have included are things I personally wanted. I have tried my hardest to make the project modular, if others would like to improve or change things easily, and I have also tried very hard to make the design somewhat less prone to potential errors during assembly. But in the end, every decision I made was for what I wanted the final product to be, with my skill level in mind.
 
@@ -289,7 +291,7 @@ If you get incorrect results, then check the following:
 
 ### Final Assembly
 
-Before assembling the board into the shell, it's a good idea to prepare the Q5 board solder pads. First, remove the touch sensor leads. Then cut six 30 gauge wire segments and solder them on the brightness, palette, battery, and OSD input pads. The one connected to the brightness touch sensor pad will be longer than the others, as it has to cut over to the other side of the board. These wires will be soldered to the top of the board after the screen is installed.
+Before assembling the board into the shell, it's a good idea to prepare the Q5 board solder pads. First, remove the touch sensor leads. Then cut six 30 gauge wire segments and solder them on the brightness, palette, battery, and OSD input pads. You do not need to solder a wire to the GND pad. The one connected to the brightness touch sensor pad will be longer than the others, as it has to cut over to the other side of the board. These wires will be soldered to the top of the board after the screen is installed.
 
 Then, put the lens on the front half of the shell, take the screen protector off of the IPS screen, and carefully place it in the back half of the shell - be sure no dust or hair is between the lens and the screen! Then place the buttons and membranes down.
 
