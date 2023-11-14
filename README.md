@@ -13,7 +13,7 @@ My <a href="https://github.com/MouseBiteLabs/Game-Boy-DMG-Color">DMGC project</a
 
 All gerbers and source files can be found in this repo, as this project is fully open source. These PCB files and notes about the board, including customizations **and some troubleshooting tips**, can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/MGBC%20PCB#cpu-pin-functions">PCB folder</a>. Technical documentation of the board can be found in the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/tree/main/Technical">Technical folder</a>.
 
-Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions. Please try to find your answer in this repository - 95% of the time someone asks me something it's answered here already.
+**Do you want to make one?** Then you NEED TO READ this entire page. Seriously. Before asking a question, please review the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#frequently-asked-questions">FAQ</a> at the bottom of the README for answers to.... frequently asked questions. Please try to find your answer in this repository - 95% of the time someone asks me something it's answered here already.
 
 ## Disclaimer
 
