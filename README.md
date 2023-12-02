@@ -49,7 +49,9 @@ Again, I sell <a href="https://mousebitelabs.etsy.com/listing/1459241814/game-bo
 
 <a href="https://mousebitelabs.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694127166906"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
-You can also use other power supply boards from other creators - check the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Compatibility</a> section below for more information. I don't recommend using an original power board from a Game Boy.
+You can also use other power supply boards from other creators - check the <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color#v-compatibility-with-other-mods">Compatibility</a> section below for more information. 
+
+**I don't recommend using an original power board from a Game Boy!**
 
 ### Information on Older Revisions
 
@@ -151,7 +153,13 @@ However, the rechargeable NiMH AAA batteries I tested *do not* have any of these
 
 Rechargeable NiMH batteries give you about 3 to 6 hours of gameplay based on your settings and game selection, and as long as you have more than one set, you can easily charge one set while you play with another set. <A href="https://www.amazon.com/Panasonic-BK-4HCCA8BA-eneloop-Pre-Charged-Rechargeable/dp/B00JHKSL0A/ref=sr_1_1_pp?keywords=eneloop%2BAAA&qid=1690853200&sr=8-1&th=1">Here's a listing for the eneloop pro batteries I use in all of my Game Boys.</a> Other brands of rechargeable batteries I have seen used are Ikea LADDA batteries, and Jugee batteries.
 
+#### Lithium Ion Batteries
+
 Lithium-ion batteries (or LiPos) are another option, but I do not fully detail how to use them in this repository. You must be knowledgeable enough on your own to utilize them. Please review the entire repo for crucial information if you *do* decide to go with a LiPo.
+
+I have created <a href="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board">my own LiPo board</a> to fit in the U5 socket, but I really recommend using AAAs. It will make the assembly easier and safer.
+
+Nataliethenerd's <a href="https://www.nataliethenerd.com/product-page/safer-charge-dc">Safer Charge DC</a> board is also compatible with the MGBC. Instructions for how to use it is in the Testing and Assembly section.
   
 ### VI. Compatibility with Other Mods
 
@@ -204,11 +212,19 @@ If you really want to add LiPo support to your build, you're on your own for fig
   
 ![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/7d463a96-67b7-4514-8e9a-4d1b59431016)
 
+Also, to get the power LED to dim at the correct time, remove R6 from the main MGBC board.
+
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/850de545-a5db-4b9c-8bde-c738271bcfe5)
+
+If you're using Nataliethenerd's <a href="https://www.nataliethenerd.com/product-page/safer-charge-dc">Safer Charge DC</a>, connect a wire from the "To F1" pad on the back of the board to the BT+ hole on the MGBC, and a wire from the "To 5V" pad on the back of the board to the pad on the USB-C breakout board. Then install the board into the U5 socket as normal.
+
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/469336df-84e2-4dd5-8900-eac6d3844ded)
+
 And, as a mandatory disclaimer, **LITHIUM-ION BATTERIES ARE DANGEROUS. USE AT YOUR OWN RISK. I AM NOT RESPONSIBLE FOR YOUR HOUSE BURNING DOWN. YOU ARE RESPONSIBLE FOR FIGURING OUT HOW TO USE A LIPO ON THIS BOARD.**
 
 ### Testing the Power Board and IPS Kit
   
-The next step to test is the power board, or U5. I *highly* suggest making sure you've assembled the power board correctly before directly connecting it and powering it all on, cowboy style. If you're able to test your power board before installation, definitely do that, but if you're not sure how, or don't have the ability, then you can actually use your mostly-assembled MGBC board to test it. 
+The next step to test is the power board, or U5. If you are using my LiPo power board, the steps to test that board are detailed <a href="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board">in the repository.</a> I *highly* suggest making sure you've assembled the power board correctly before directly connecting it and powering it all on, cowboy style. If you're able to test your power board before installation, definitely do that, but if you're not sure how, or don't have the ability, then you can actually use your mostly-assembled MGBC board to test it. 
   
 Solder wires on pins 1, 2, and 3 from the MGBC board to the power board (the left three holes of the power board). Don't connect the other side of four pins just yet - pin 7 is the 5 V pin, which powers the rest of the Game Boy. Keeping pin 7 depopulated, you can place the Game Boy in the back half of the shell to connect up batteries, or use a power supply clipped to the battery terminals. Turn the power switch on. Use a multimeter to measure the voltage from pin 7 (positive test probe) to GND (negative test probe). You should read approximately 5 V here - anything more than 5.1 V or less than 4.9 V means you've likely got something wrong on your power board.
   
