@@ -65,7 +65,7 @@ When making the system for use with AAAs, you must connect the two holes labelle
 
 Are you using the Game Boy Pocket Power regulator for U5 for LiPo support? Are you sure you want to? Lithium-ion batteries are **dangerous** so if you're going to be using one... you're on your own. You're responsible for using it safely. 
 
-But, I did make it *slightly* easier for you. If you're using either <a href="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/blob/main/README.md">my LiPo board</a> or the GBPP with LiPo, solder wires or headers from the DC and BT+ holes into the GBPP, thread the wires from the battery through the hole in the board to the GBPP connections, and remember to **REMOVE EM7** if your board revision is v1.6 or earlier. On v2.0, keep EM7 in place. You'll also need a USB-C adapter PCB to go in place of DC jack.
+But, I did make it *slightly* easier for you. If you're using either <a href="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/blob/main/README.md">my LiPo board</a> or the GBPP with LiPo, solder wires or headers from the DC and BT+ holes into the power board, thread the wires from the battery through the hole in the board to the power board connections, and remember to **REMOVE EM7** if your board revision is v1.6 or earlier. On v2.0, keep EM7 in place. You'll also need a USB-C adapter PCB to go in place of DC jack.
 
 ![image](https://user-images.githubusercontent.com/97127539/257223598-7d463a96-67b7-4514-8e9a-4d1b59431016.png)
 
