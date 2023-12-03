@@ -1,12 +1,14 @@
 # Technical Design Document
 
-NOTE: THIS IS SLIGHTLY OUTDATED, AND WILL BE BROUGHT UP-TO-DATE SOON.
-
 This write-up serves as a technical explainer document for the MGBC project. I will not be covering the 5 V power supply board in detail in this explainer; this document is intended for the main MGBC-MBL-01 PCB only. Furthermore, I will not be explaining *every* circuit element in this document, especially the straightforward connections present on the original GBC schematic (i.e. cart connector, link port, etc). The majority of coverage here will be on the new features I have added to the project.
+
+Please let me know if something is incorrect or outdated.
 
 ## Power Supply
 
-![image](https://user-images.githubusercontent.com/97127539/232262379-b7438268-40c1-4e26-ada2-07371bb3e060.png)
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/bcc19366-cfd1-4544-a4cc-2bf9d7cb184c)
+
+**NOTE: For versions v1.6 and earlier, EM7 connects the DC and BT+ test points together.**
 
 (I know the symbols for the fuses and filters are incorrect. I needed an 0603 package for the board and was too lazy to assign the parts the correct symbols. But I guess technically… they are all resistors in some form.)
 
@@ -16,7 +18,14 @@ This write-up serves as a technical explainer document for the MGBC project. I w
 - R1 discharges components connected to the output of the power switch when the power switch is turned off, ensuring quick discharge and reducing the chance of strange operation during a slower power down.
 - U4 is a simple linear regulator for generating the 3.3 V supply necessary for the RAM and the CPU core. I considered using a SMPS instead, but the current requirements are so low, it seemed slightly overkill.
 - The filters (EM6, 7, 8, and 10) are likely fine to exclude, but it doesn't hurt to include them just in case some weird high frequency components have the potential to screw something up down the line. I don't really have the capability (or desire) to properly test what effects removing them may have, but I suspect they're mostly for FCC compliance.
-- EM7 *must* be completely removed if you want to use a USB-C port in place of the DC jack for charging a LiPo battery. The "DC" test point can be used for the USB-C input to the LiPo charger. The "BT+" test point can be used as the output of the charger, which should be managing the output of the LiPo battery. *You should not connect AAA batteries if you are LiPo modding your MGBC - depopulate the battery contacts!*
+
+### EM7 Version Difference
+
+**For v1.6 and earlier:** EM7 *must* be completely removed if you want to use a USB-C port in place of the DC jack for charging a LiPo battery. The "DC" test point can be used for the USB-C input to the LiPo charger. The "BT+" test point can be used as the output of the charger, which should be managing the output of the LiPo battery.
+
+**For v2.0 and later:** EM7 must be included for every build. If you are using a DC jack with AAA batteries, you must also short BT+ and DC holes together with a wire. This will complete the circuit for the DC jack input to the regulator and power switch.
+
+I changed the board to requiring EM7 in all builds, and requiring DC and BT+ to be shorted for AAA builds, because it is inherently safer this way - forgetting to remove EM7 in earlier revisions bypasses any load sharing used on the power boards.
 
 ## Power LED Indicator
 
