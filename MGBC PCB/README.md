@@ -65,13 +65,17 @@ When making the system for use with AAAs, you must connect the two holes labelle
 
 Are you using the Game Boy Pocket Power regulator for U5 for LiPo support? Are you sure you want to? Lithium-ion batteries are **dangerous** so if you're going to be using one... you're on your own. You're responsible for using it safely. 
 
-But, I did make it *slightly* easier for you. If you're using a GBPP with LiPo, solder wires or headers from the DC and BT+ holes into the GBPP, thread the wires from the battery through the hole in the board to the GBPP connections, and remember to **REMOVE EM7** if your board revision is v1.6 or earlier. On v2.0, keep EM7 in place. You'll also need a USB-C adapter PCB to go in place of DC jack.
+But, I did make it *slightly* easier for you. If you're using either <a href="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/blob/main/README.md">my LiPo board</a> or the GBPP with LiPo, solder wires or headers from the DC and BT+ holes into the GBPP, thread the wires from the battery through the hole in the board to the GBPP connections, and remember to **REMOVE EM7** if your board revision is v1.6 or earlier. On v2.0, keep EM7 in place. You'll also need a USB-C adapter PCB to go in place of DC jack.
 
 ![image](https://user-images.githubusercontent.com/97127539/257223598-7d463a96-67b7-4514-8e9a-4d1b59431016.png)
 
 Also, to get the power LED to dim at the correct time, remove R6 from the main MGBC board.
 
 ![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/8f64f24f-2873-4d9a-86ae-6515ef3af8bb)
+
+If you're using Nataliethenerd's <a href="https://www.nataliethenerd.com/product-page/safer-charge-dc">Safer Charge DC</a>, connect a wire from the "To F1" pad on the back of the board to the BT+ hole on the MGBC, and a wire from the "To 5V" pad on the back of the board to the pad on the USB-C breakout board. Then install the board into the U5 socket as normal.
+
+![image](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/469336df-84e2-4dd5-8900-eac6d3844ded)
 
 ## Assembly References
 
