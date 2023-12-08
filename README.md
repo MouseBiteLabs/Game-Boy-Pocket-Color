@@ -65,7 +65,7 @@ The current revision is v2.0, but you may have an earlier board (if you bought o
 | v1.3 | These should be practice boards only.                                                                                        |
 | v1.4 | Use tactile buttons. Minor shell trimming may be required for volume dial and rocker switch.                                 |
 | v1.5 | Minor shell trimming may be required for volume dial and rocker switch.                                                      |
-| v1.6 | No important differences compared to v2.0.                                                                                   |
+| v1.6 | No important differences compared to v2.0. (Check EM7 and DC/BT+ requirements!)                                              |
 
 ### II. Brand New Electronic Parts
 
