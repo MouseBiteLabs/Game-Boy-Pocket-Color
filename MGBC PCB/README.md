@@ -1,11 +1,12 @@
 # MGBC-MBL-01
 
-Version 1.6:
-![black1-6](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/8b585f37-09e6-4f1a-814e-2ad5030e2ccf)
-Version 1.6S:
-![green1-6](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/fd73a8d5-107f-48d9-b630-45dfe71a6a18)
+Version 2.1:
+![green](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/788a0b62-b69e-4dd4-8935-b024266fce41)
 
-*Note: The v1.6 boards are nearly identical to v2.0 boards. New photos will be uploaded... eventually.*
+Version 2.0S:
+![greenwhite](https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color/assets/97127539/01d0a46f-5057-4a89-8211-a1c87957da6c)
+
+*Note: The v2.0 and v2.1 boards are nearly identical - the only difference is v2.1 has a notch cut in the bottom by the regulator.*
 
 This is the main circuit board in the MGBC build. This README will provide instructions for how to customize the build to your liking, as well as attempt to clear up any questions you may have about the build process.
 
@@ -55,7 +56,7 @@ If you want clicky buttons, like the GBA SP has, then you can install tactile sw
 
 ![image](https://user-images.githubusercontent.com/97127539/235406753-a694bea7-ffcf-4bec-903d-00f39ec4b2d9.png)
 
-### Enabling the DC Jack (v2.0 only)
+### Enabling the DC Jack (v2.0 and v2.1 only)
 
 When making the system for use with AAAs, you must connect the two holes labelled BT+ and DC together with a wire or 0 ohm resistor. This is only required on v2.0 and later boards - v1.6 and earlier do not require this. Shorting these holes together connects the DC jack to the input of the regulator. So if you forget to add it, then your DC jack won't work (which may or may not matter to you anyway). DO NOT SHORT THESE TOGETHER IF USING A LITHIUM-ION BATTERY.
 
@@ -65,7 +66,7 @@ When making the system for use with AAAs, you must connect the two holes labelle
 
 Are you using the Game Boy Pocket Power regulator for U5 for LiPo support? Are you sure you want to? Lithium-ion batteries are **dangerous** so if you're going to be using one... you're on your own. You're responsible for using it safely. 
 
-But, I did make it *slightly* easier for you. If you're using either <a href="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/blob/main/README.md">my LiPo board</a> or the GBPP with LiPo, solder wires or headers from the DC and BT+ holes into the power board, thread the wires from the battery through the hole in the board to the power board connections, and remember to **REMOVE EM7** if your board revision is v1.6 or earlier. On v2.0, keep EM7 in place. You'll also need a USB-C adapter PCB to go in place of DC jack.
+But, I did make it *slightly* easier for you. If you're using either <a href="https://github.com/MouseBiteLabs/Pocket-Protector-Power-Board/blob/main/README.md">my LiPo board</a> or the GBPP with LiPo, solder wires or headers from the DC and BT+ holes into the power board, thread the wires from the battery through the hole in the board to the power board connections, and remember to **REMOVE EM7** if your board revision is v1.6 or earlier. On v2.0 and v2.1, keep EM7 in place. You'll also need a USB-C adapter PCB to go in place of DC jack.
 
 ![image](https://user-images.githubusercontent.com/97127539/257223598-7d463a96-67b7-4514-8e9a-4d1b59431016.png)
 
@@ -168,7 +169,11 @@ This should be for reference only. This can be found in the main folder in Excel
 
 ## Revision History
 
-### v2.0 - Final Release
+### v2.1 - Final Release
+
+- Added a notch in the bottom of the board for easier routing of LiPo battery leads
+
+### v2.0 - Release III
 
 - Fixed up/down text for rocker switch functionality.
 - Changed EM7 connection so it is required for power boards using AAAs *and* power boards using Lipo batteries.
