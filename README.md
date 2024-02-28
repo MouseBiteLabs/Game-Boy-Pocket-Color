@@ -55,7 +55,7 @@ You can also use other power supply boards from other creators - check the <a hr
 
 ### Information on Older Revisions
 
-The current revision is v2.0, but you may have an earlier board (if you bought one from me, rest assured it will work perfectly fine - most of the changes between for-sale revisions are inconsequential to the end user). The BOM has changed slightly for v1.6 and later boards, compared to previous revisions. Please view the Excel and/or .csv file above for BOM information (or contact me). Here's a short list of information about the older boards, and what is required/recommended when using them:
+The current revision is v2.1, but you may have an earlier board (if you bought one from me, rest assured it will work perfectly fine - most of the changes between for-sale revisions are inconsequential to the end user). The BOM has changed slightly for v1.6 and later boards, compared to previous revisions. Please view the Excel and/or .csv file above for BOM information (or contact me). Here's a short list of information about the older boards, and what is required/recommended when using them:
 
 | Revision | Recommendations |
 | ---- | ---------------------------------------------------------------------------------------------------------------------------- |
@@ -65,13 +65,14 @@ The current revision is v2.0, but you may have an earlier board (if you bought o
 | v1.3 | These should be practice boards only.                                                                                        |
 | v1.4 | Use tactile buttons. Minor shell trimming may be required for volume dial and rocker switch.                                 |
 | v1.5 | Minor shell trimming may be required for volume dial and rocker switch.                                                      |
-| v1.6 | No important differences compared to v2.0. (Check EM7 and DC/BT+ requirements!)                                              |
+| v1.6 | No important differences compared to the latest revision, but check EM7 and DC/BT+ requirements!                             |
+| v2.0 | No important differences compared to the latest revision.                                                                    |
 
 ### II. Brand New Electronic Parts
 
 The MGBC board uses mostly all-new components. This is not a direct-transfer board. The master BOM with every electronic component required for the main MGBC circuit board is provided in the folder in Excel format. Note that some parts may be out of stock at the links provided, but many can be found at alternate other retailers online, or have a proper substitute. Here is a saved cart from Mouser that contains all the parts in the BOM Excel, including some duplicates: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=854e7f6cf9
 
-*Note: This cart link is for v1.6 and v2.0 boards. Please check out the BOM Excel or .csv file above for information about v1.5 and earlier.*
+*Note: This cart link is for v1.6, v2.0, and v2.1 boards. Please check out the BOM Excel or .csv file above for information about v1.5 and earlier.*
 
 Double check to see if any parts are missing, and consider ordering multiples of some parts. Also, there are some parts you may want to remove (like the tactile switches). **If a part is backordered, or out of stock** - check the Excel file, or the BOM listed at the bottom of the MGBC PCB folder. There may be alternate part options listed. You can also check for stock at places like Digikey, Newark, or LCSC. And you can always use Octopart.com to help find in-stock parts at other websites. Please understand that I can't maintain the cart for every out-of-stock part, so please do some research :)
 
