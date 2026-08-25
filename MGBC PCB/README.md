@@ -19,11 +19,7 @@ The zipped folder contains all the gerber files for this board, if you wish to o
 -	Surface Finish: ENIG (or HASL, which is only acceptable if you are installing tactile buttons)
 -   **NOTE: When ordering PCBs, add this note to the order: "The file milling.gbr contains outlines for plated slots. Please add plated slots on the PCB according to this layer."**
 
-**I sell this board on Etsy, so you don't have to buy multiples from board fabricators:**
-
-<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
-
-You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using these links (disclosure: I receive 10% of the sale value to go towards future PCB orders).
+You can use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using these links (disclosure: I receive 10% of the sale value to go towards future PCB orders).
 
 **Solid color version:**
 
@@ -32,6 +28,18 @@ You can alternatively use the zipped folder at any board fabricator you like. Yo
 **Half-silkscreen version:**
 
 <a href="https://www.pcbway.com/project/shareproject/Game_Boy_Pocket_Color_MGBC_MBL_01_Half_silkscreen_version_7490e384.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a> 
+
+### Purchase from My Website
+
+You can purchase this circuit board at my website, [https://mousebitelabs.store](https://mousebitelabs.store). Click the following image to be directed to the specific item listing:
+
+<a href="https://mousebitelabs.store/products/game-boy-pocket-color-mgbc"><img width="1070" height="182" alt="PCB from MouseBiteLabs" src="https://github.com/user-attachments/assets/14072b8c-4d47-434b-9c31-6d4ec74a28bc" /></a>
+
+### Purchase from Etsy
+
+I also offer the board on Etsy, if you would rather purchase through there - click the banner to be redirected.
+
+<a href="https://www.etsy.com/listing/1459241814/game-boy-pocket-color-pcb-mgbc-mbl-01"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 ## Customization Options
 
